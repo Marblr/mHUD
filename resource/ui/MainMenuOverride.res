@@ -420,7 +420,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"c188"
+		"xpos"			"r157" // can't move this help ???
 		"ypos"			"38"
 		"zpos"			"10"
 		"wide"			"32"
@@ -527,10 +527,10 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"QuestLogButton"
-		"xpos"			"c228"
+		"xpos"			"r135"
 		"ypos"			"28"
 		"zpos"			"1"
-		"wide"			"28"
+		"wide"			"32"
 		"tall"			"32"
 		"autoResize"	"0"
 		"pinCorner"		"3"
@@ -652,7 +652,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_ShowButtonPanel"
-		"xpos"			"c268"
+		"xpos"			"r103"
 		"ypos"			"28"
 		"zpos"			"1"
 		"wide"			"32"
@@ -3794,7 +3794,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"EventPromo"
-		"xpos"			"c0"
+		"xpos"			"r426"
 		"ypos"			"0"
 		"zpos"			"-60"
 		"wide"			"520"
