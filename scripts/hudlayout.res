@@ -474,18 +474,18 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	 "r640"
-		"ypos"	 "12"
+		"ypos"	 "10"
 		"wide"	 "628"
 		"tall"	 "468"
 
 		"MaxDeathNotices" "8"
 		"IconScale"	  "0.35"
-		"LineHeight"	  "12"
+		"LineHeight"	  "15"
 		"LineSpacing"	  "0"
 		"CornerRadius"	  "0"
 		"RightJustify"	  "1"	// If 1, draw notices from the right
 		
-		"TextFont"		"Avenir11"
+		"TextFont"		"AvenirMed12"
 		
 		"TeamBlue"		"mBlueTeam"
 		"TeamRed"		"mRedTeam"
@@ -1397,5 +1397,27 @@
 		"ypos"	"0"
 		"wide"	"f0"
 		"tall"	"480"
+	}
+	"QuestNotificationPanel"
+	{
+		"fieldName"	"QuestNotificationPanel"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"f0"
+	}
+
+	"QuestLogContainer"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName" 		"QuestLogContainer"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"f0"
+		"tall"	 		"f0"
 	}
 }
