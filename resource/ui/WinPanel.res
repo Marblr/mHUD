@@ -203,7 +203,7 @@
 		"fieldName"		"AdvancingTeamLabel"
 		"font"			"Avenir12"
 		"fgcolor"		"mWhite"
-		"xpos"			"61"
+		"xpos"			"136"
 		"ypos"			"112"
 		"zpos"			"11"
 		"wide"			"170"
