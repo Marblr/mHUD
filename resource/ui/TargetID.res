@@ -76,7 +76,7 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TargetNameLabel"
-		"font"			"Avenir11"
+		"font"			"AvenirMed12"
 		"xpos"			"34"
 		"ypos"			"1"
 		"zpos"			"2"
