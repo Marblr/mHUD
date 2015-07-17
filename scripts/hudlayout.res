@@ -1387,7 +1387,6 @@
 		"PaintBackgroundType"	"0"
 	}
 
-
 	HudMiniGame
 	{
 		"fieldName" "HudMiniGame"
@@ -1398,6 +1397,7 @@
 		"wide"	"f0"
 		"tall"	"480"
 	}
+	
 	"QuestNotificationPanel"
 	{
 		"fieldName"	"QuestNotificationPanel"
