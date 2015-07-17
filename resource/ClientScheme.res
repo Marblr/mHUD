@@ -132,7 +132,7 @@ Scheme
 		"HudTrainingHint"			"212 160 23 255"
 		
 		"TanDark"				"117 107 94 255"
-		"TanLight"				"235 226 202 255"
+		"TanLight"				"227 227 227 225" //235 226 202 255
 		"TanDarker"				"46 43 42 255"
 		
 		"StoreDarkTan"			"131 121 104 255"
@@ -1019,10 +1019,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary"
-				"tall"		"14"
+				"name"		"AvenirLTStd-Medium"
+				"tall"		"13"
 				"tall_lodef"	"16"
-				"weight"	"500"
 				"additive"	"0"
 				"antialias" 	"1"
 			}
@@ -1042,9 +1041,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black"
 				"tall"		"14"
-				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -1088,7 +1086,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black"
 				"tall"		"11"
 				"weight"	"500"
 				"additive"	"0"
