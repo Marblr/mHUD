@@ -599,7 +599,7 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"NotificationsContainer"
-			"xpos"			"rs1"
+			"xpos"			"18"
 			"ypos"			"0"
 			"zpos"			"10"
 			"wide"			"16"
@@ -613,7 +613,7 @@
 			{
 				"ControlName"	"ImagePanel"
 				"fieldName"		"SubImage"
-				"xpos"			"18"
+				"xpos"			"0"
 				"ypos"			"0"
 				"zpos"			"3"
 				"wide"			"16"
@@ -632,7 +632,7 @@
 				"font"			"Numbers12"
 				"labelText"		"%noticount%"
 				"textAlignment"	"center"
-				"xpos"			"18"
+				"xpos"			"0"
 				"ypos"			"0"
 				"zpos"			"4"
 				"wide"			"16"
