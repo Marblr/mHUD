@@ -63,7 +63,7 @@ Scheme
 		"mAmmoReserve"		"227 227 227 255"
 		"mAmmoLow"			"120 120 120 255"
 		
-		// Ubercharge
+		// Meters
 		"mChargeLabel"		"120 120 120 255"
 		"mChargeFull"		"90 200 227 255"
 		
@@ -2907,6 +2907,17 @@ Scheme
 			}
 		}
 
+		"Emblems13"
+		{
+			"1"
+			{
+				"name"			"Emblems"
+				"tall"			"13"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Avenir13"
 		{
 			"1"
