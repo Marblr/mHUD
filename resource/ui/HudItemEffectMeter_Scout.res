@@ -8,7 +8,7 @@
 		"xpos"			"c-100"
 		"ypos"			"c142"
 		"xpos_minmode"	"r150"
-		"ypos_minmode"	"r94"
+		"ypos_minmode"	"r77"
 		"wide"			"200"
 		"tall"			"20"
 		"MeterFG"		"White"
