@@ -149,9 +149,9 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"NumPipesLabel"
-			"xpos"			"59"
+			"xpos"			"69"
 			"xpos_minmode"	"17"
-			"ypos"			"2"
+			"ypos"			"4"
 			"ypos_minmode"	"43"
 			"zpos"			"2"
 			"wide"			"15"
