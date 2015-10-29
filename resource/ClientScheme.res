@@ -3186,6 +3186,28 @@ Scheme
 			}
 		}
 
+		"Numbers32"
+		{
+			"1"
+			{
+				"name"			"Numbers"
+				"tall"			"32"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"Numbers36"
+		{
+			"1"
+			{
+				"name"			"Numbers"
+				"tall"			"36"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Numbers40"
 		{
 			"1"

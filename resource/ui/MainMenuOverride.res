@@ -191,6 +191,10 @@
 		{
 			"image"		"../console/title_team_halloween2014"
 		}
+		if_halloween_4
+		{
+			"image"		"../console/title_team_halloween2015"
+		}
 		if_fullmoon
 		{
 			"image"		"../console/title_fullmoon"
@@ -202,6 +206,10 @@
 		if_eotl_launch
 		{
 			"image"		"../console/title_eotl01"
+		}
+		if_operation
+		{
+			"image"		"../console/title_team_halloween2015"
 		}
 		if_community_update
 		{

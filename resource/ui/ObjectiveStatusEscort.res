@@ -33,22 +33,24 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		""
-		"image"			"../hud/cart_track"
-		"scaleImage"	"1"
+		//"image"			"../hud/cart_track"
+		//"scaleImage"	"1"
+		"fillcolor"		"mClear"
 		
 		"if_multiple_trains"
 		{
-			"ypos"			"114"
+			"ypos"			"115"
 			"zpos"			"3"
-			"tall"			"12"
-			"image"			"../hud/cart_track_neutral_opaque"
+			"tall"			"6"
+			//"image"			"../hud/cart_track_neutral_opaque"
+			"fillcolor"		"0 0 0 130"
 		}
-		
 		"if_single_with_hills"
 		{
-			"ypos"	"120"
-			"tall"	"10"
-			"image"			"../hud/cart_track_neutral_opaque"
+			"ypos"			"120"
+			"tall"			"10"
+			//"image"			"../hud/cart_track_neutral_opaque"
+			"fillcolor"		"0 0 0 130"
 		}		
 	}	
 	
@@ -67,9 +69,9 @@
 		
 		"if_multiple_trains"
 		{
-			"ypos"			"114"
+			"ypos"			"115"
 			"zpos"			"6"
-			"tall"			"12"
+			"tall"			"6"
 			"visible"		"1"
 		}
 	}		
@@ -78,11 +80,11 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"HomeCPIcon"	
-		"xpos"		"64"		
-		"ypos"		"116"
+		"xpos"			"64"		
+		"ypos"			"116"
 		"zpos"			"1"
-		"wide"		"18"
-		"tall"		"18"
+		"wide"			"18"
+		"tall"			"18"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -109,10 +111,10 @@
 		
 		"if_multiple_trains"
 		{
-			"xpos"			"59"
+			"xpos"			"63"
 			"zpos"			"5"
-			"wide"			"14"
-			"tall"			"14"
+			"wide"			"10"
+			"tall"			"10"
 			"image"			"../hud/cart_track_neutral_opaque"
 		}
 		
@@ -141,11 +143,11 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"SimpleControlPointTemplate"	
-		"xpos"		"65"		
-		"ypos"		"116"		
+		"xpos"			"65"		
+		"ypos"			"116"		
 		"zpos"			"1"
-		"wide"		"18"		
-		"tall"		"18"
+		"wide"			"18"		
+		"tall"			"18"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -158,10 +160,10 @@
 		"if_multiple_trains"
 		{
 			"xpos"			"61"
-			"ypos"			"114"
+			"ypos"			"113"
 			"zpos"			"5"	
-			"wide"			"12"
-			"tall"			"12"
+			"wide"			"10"
+			"tall"			"10"
 		}
 	}
 
@@ -170,10 +172,10 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"EscortItemPanel"
 		"xpos"			"0"
-		"ypos"		"48"
+		"ypos"			"48"
 		"zpos"			"2"
-		"wide"		"52"
-		"tall"		"75"
+		"wide"			"52"
+		"tall"			"75"
 		"visible"		"1"
 		"enabled"		"1"
 				
@@ -189,12 +191,12 @@
 		{	
 			"ControlName"	"CExLabel"
 			"fieldName"		"RecedeTime"		
-			"font"		"ItemFontAttribSmall"		
-			"xpos"		"23"			
-			"ypos"		"53"			
+			"font"			"ItemFontAttribSmall"		
+			"xpos"			"23"			
+			"ypos"			"53"			
 			"zpos"			"2"
-			"wide"		"7"
-			"tall"		"7"
+			"wide"			"7"
+			"tall"			"7"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -253,10 +255,10 @@
 			
 			"if_multiple_trains"
 			{
-				"xpos"			"11"
-				"ypos"			"43"
-				"wide"			"30"
-				"tall"			"30"
+				"xpos"			"13"
+				"ypos"			"44"
+				"wide"			"26"
+				"tall"			"26"
 			}						
 		}
 		
@@ -290,10 +292,10 @@
 			
 			"if_multiple_trains"
 			{
-				"xpos"			"11"
-				"ypos"			"71"
-				"wide"			"30"
-				"tall"			"30"
+				"xpos"			"13"
+				"ypos"			"70"
+				"wide"			"26"
+				"tall"			"26"
 			}			
 		}
 		
@@ -493,8 +495,8 @@
 				"zpos"				"0"
 				"wide"			"35"				
 				"tall"			"42"
-				"visible"			"1"
-				"enabled"			"1"
+				"visible"			"0"
+				"enabled"			"0"
 				"scaleImage"		"1"
 				"icon"				"cappoint_progressbar_teardrop"
 				"iconColor"			"255 255 255 255"

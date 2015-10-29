@@ -243,7 +243,7 @@
 		"zpos"			"7"
 		"wide"			"31"
 		"tall"			"31"
-		"visible"		"1"
+		"visible"		"0" // was always showing in helltower
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"image"			"../Effects/powerup_warlock_hud"
