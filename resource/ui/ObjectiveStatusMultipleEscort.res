@@ -28,7 +28,7 @@
 		
 		"if_blue_is_top"
 		{
-			"ypos"				"r160"
+			"ypos"				"r150"
 		}
 	}
 
