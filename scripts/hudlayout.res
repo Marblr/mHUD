@@ -880,13 +880,13 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-133"
-		"xpos_lodef"			"c-190"
-		"ypos"				"270"
-		"ypos_lodef"			"250"
+		//"xpos_lodef"			"c-190"
+		"ypos"					"310"
+		//"ypos_lodef"			"250"
 		"wide"					"266"
-		"wide_lodef"			"400"
+		//"wide_lodef"			"400"
 		"tall"					"120"
-		"tall_lodef"			"190"
+		//"tall_lodef"			"190"
 	}
 	
 	FreezePanel
