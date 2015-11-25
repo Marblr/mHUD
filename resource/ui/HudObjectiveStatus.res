@@ -16,7 +16,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"TimePanelValue"
-			"font"			"Avenir16"
+			"font"			"Numbers16"
 			"fgcolor"		"mWhite"
 			"xpos"			"0"
 			"ypos"			"0"
