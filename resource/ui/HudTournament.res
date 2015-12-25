@@ -314,7 +314,7 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TournamentBLUELabel"
-		"font"			"Avenir12"
+		"font"			"Avenir14"
 		"fgcolor_override"		"mWhite"
 		"xpos"			"1"
 		"ypos"			"8"
@@ -338,7 +338,7 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TournamentBLUEStateLabel"
-		"font"			"Avenir13"
+		"font"			"AvenirMed13"
 		"fgcolor_override"		"mWhite"
 		"xpos"			"1"
 		"ypos"			"22"
@@ -383,7 +383,7 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TournamentREDLabel"
-		"font"			"Avenir12"
+		"font"			"Avenir14"
 		"fgcolor_override"		"mWhite"
 		"xpos"			"245"
 		"ypos"			"8"
@@ -407,7 +407,7 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TournamentREDStateLabel"
-		"font"			"Avenir13"
+		"font"			"AvenirMed13"
 		"fgcolor_override"		"mWhite"
 		"xpos"			"245"
 		"ypos"			"22"

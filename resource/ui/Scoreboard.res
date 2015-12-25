@@ -14,17 +14,18 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"medal_width"		"15"
-		"avatar_width"		"3"
+		"avatar_width"		"53"
 		"name_width"		"80"
 		"name_width_short"	"85"
 		"status_width"		"15"	
 		"nemesis_width"		"15"
-		"class_width"		"15"
+		"class_width"		"20"
 		"score_width"		"25"
 		"ping_width"		"20"
 		"stats_width"		"30"
 		"killstreak_width"	"20"
 	}
+	
 	"BlueScoreBG"
 	{
 		"ControlName"		"ImagePanel"
@@ -44,11 +45,32 @@
 			"visible"		"0"
 		}
 	}
+	
+	"BlueScoreBGLine"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"			"BlueScoreBGLine"
+		"xpos"				"3"
+		"ypos"				"61"
+		"wide"				"314"
+		"tall"				"4"
+		"autoResize"		"0"
+		"pinCorner"			"0"
+		"visible"			"1"
+		"enabled"			"1"
+		"fillcolor"			"mClearBlue"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
+	}
+	
 	"RedScoreBG"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"RedScoreBG"
-		"xpos"				"323"
+		"xpos"				"324"
 		"ypos"				"31"
 		"wide"				"236"
 		"tall"				"30"
@@ -63,6 +85,27 @@
 			"visible"		"0"
 		}
 	}
+	
+	"RedScoreBGLine"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"			"RedScoreBGLine"
+		"xpos"				"324"
+		"ypos"				"61"
+		"wide"				"314"
+		"tall"				"4"
+		"autoResize"		"0"
+		"pinCorner"			"0"
+		"visible"			"1"
+		"enabled"			"1"
+		"fillcolor"			"mClearRed"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
+	}
+	
 	"MainBG"
 	{
 		"ControlName"		"EditablePanel"
@@ -92,11 +135,11 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"LeftBG"
-		"xpos"				"81"
-		"ypos"				"66"
+		"xpos"				"3"
+		"ypos"				"65"
 		"zpos"				"-1"
-		"wide"				"236"
-		"tall"				"222"
+		"wide"				"314"
+		"tall"				"252"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -113,11 +156,11 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"RightBG"
-		"xpos"				"323"
-		"ypos"				"66"
+		"xpos"				"324"
+		"ypos"				"65"
 		"zpos"				"-1"
-		"wide"				"236"
-		"tall"				"222"
+		"wide"				"314"
+		"tall"				"252"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -135,10 +178,10 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"			"BottomBG"
 		"xpos"				"81"
-		"ypos"				"292"
+		"ypos"				"322"
 		"zpos"				"2"
 		"wide"				"478"
-		"tall"				"57"
+		"tall"				"69"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -152,17 +195,39 @@
 		}
 	}
 	
+	"BottomBGLine"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"			"BottomBGLine"
+		"xpos"				"81"
+		"ypos"				"388"
+		"zpos"				"3"
+		"wide"				"478"
+		"tall"				"3"
+		"autoResize"		"0"
+		"pinCorner"			"0"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"	
+		"fillcolor"			"mWhite"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
+	}
+	
 	"BlueTeamLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BlueTeamLabel"
-		"font"			"Avenir24"
+		"font"			"Avenir20"
 		"fgcolor"		"mWhite"
 		"labelText"		"%blueteamname%"
 		"textAlignment"		"west"
 		"xpos"			"88" [!$OSX]
 		"xpos"			"15" [$OSX]
-		"ypos"			"31"	[$WIN32]
+		"ypos"			"32"
 		"wide"			"236"
 		"tall"			"30"
 		"autoResize"		"0"
@@ -184,7 +249,7 @@
 		"fgcolor"		"mWhite"
 		"textAlignment"		"east"
 		"xpos"			"74"
-		"ypos"			"31" 
+		"ypos"			"32" 
 		"zpos"			"4"
 		"wide"			"236"
 		"tall"			"30"
@@ -229,7 +294,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"BlueTeamPlayerCount"
-		"font"			"Avenir16"
+		"font"			"AvenirMed14"
 		"fgcolor"		"mWhite"
 		"labelText"		"%blueteamplayercount%"
 		"textAlignment"		"center"
@@ -251,13 +316,13 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"RedTeamLabel"
-		"font"			"Avenir24"
+		"font"			"Avenir20"
 		"fgcolor"		"mWhite"
 		"labelText"		"%redteamname%"
 		"textAlignment"		"east"
-		"xpos"			"316" [!$OSX]
+		"xpos"			"317" [!$OSX]
 		"xpos"			"485" [$OSX]
-		"ypos"			"31"	[$WIN32]
+		"ypos"			"32"
 		"wide"			"236"
 		"tall"			"30"
 		"autoResize"	"0"
@@ -278,8 +343,8 @@
 		"fgcolor"		"mWhite"
 		"labelText"		"%redteamscore%"
 		"textAlignment"		"west"
-		"xpos"			"330"
-		"ypos"			"31" 
+		"xpos"			"331"
+		"ypos"			"32" 
 		"zpos"			"4"
 		"wide"			"236"
 		"tall"			"30"
@@ -324,11 +389,11 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"RedTeamPlayerCount"
-		"font"			"Avenir16"
+		"font"			"AvenirMed14"
 		"fgcolor"		"mWhite"
 		"labelText"		"%redteamplayercount%"
 		"textAlignment"		"center"
-		"xpos"			"323"
+		"xpos"			"324"
 		"ypos"			"31"
 		"wide"			"236"
 		"tall"			"30"
@@ -350,9 +415,9 @@
 		"fgcolor"		"mWhite"
 		"labelText"		"%server%"
 		"textAlignment"		"center"
-		"xpos"			"81"
+		"xpos"			"2"
 		"ypos"			"65"
-		"wide"			"236"
+		"wide"			"315"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -372,9 +437,9 @@
 		"fgcolor"		"mWhite"
 		"labelText"		"%servertimeleft%"
 		"textAlignment"		"center"
-		"xpos"			"323"
+		"xpos"			"324"
 		"ypos"			"65"
-		"wide"			"236"
+		"wide"			"315"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -391,17 +456,17 @@
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"BluePlayerList"
-		"xpos"			"82"
-		"ypos"			"76"
+		"xpos"			"-1"
+		"ypos"			"77"
 		"zpos"			"20"
-		"wide"			"232"
-		"tall"			"280"
+		"wide"			"321"
+		"tall"			"240"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"3"
-		"linespacing"	"16"
+		"linespacing"	"19"
 		"fgcolor"		"blue"
 		//"show_columns"	"1"
 		
@@ -414,17 +479,17 @@
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"RedPlayerList"
-		"xpos"			"325"
-		"ypos"			"76"
+		"xpos"			"321"
+		"ypos"			"77"
 		"zpos"			"20"
-		"wide"			"232"
+		"wide"			"321"
 		"tall"			"280"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"3"
-		"linespacing"	"16"
+		"linespacing"	"19"
 		"textcolor"		"red"
 		//"show_columns"	"1"
 		
@@ -463,12 +528,12 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Spectators"
-		"font"			"AvenirLight12"
+		"font"			"AvenirMed12"
 		"fgcolor"		"mWhite"
 		"labelText"		"%spectators%"
 		"textAlignment"		"west"
 		"xpos"			"84"
-		"ypos"			"348"
+		"ypos"			"388"
 		"zpos"			"4"
 		"wide"			"424"
 		"tall"			"20"
@@ -491,7 +556,7 @@
 		"labelText"		"%waitingtoplay%"
 		"textAlignment"		"west"
 		"xpos"			"84"
-		"ypos"			"356"
+		"ypos"			"388"
 		"zpos"			"4"
 		"wide"			"424"
 		"tall"			"20"
@@ -866,7 +931,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
 		"xpos"			"-25"
-		"ypos"			"292"
+		"ypos"			"325"
 		"zpos"			"3"
 		"wide"			"578"
 		"tall"			"70"
@@ -884,12 +949,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"KillsLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_KillsLabel"
 			"textAlignment"		"east"
 			"xpos"			"80"
-			"ypos"			"0"	[$WIN32]
+			"ypos"			"0"
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
@@ -902,12 +967,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"DeathsLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_DeathsLabel"
 			"textAlignment"		"east"
 			"xpos"			"80"
-			"ypos"			"12"	[$WIN32]
+			"ypos"			"14"
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
@@ -920,12 +985,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"AssistsLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_AssistsLabel"
 			"textAlignment"		"east"
 			"xpos"			"80"
-			"ypos"			"24"	[$WIN32]
+			"ypos"			"28"
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
@@ -938,12 +1003,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"DestructionLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_DestructionLabel"
 			"textAlignment"		"east"
 			"xpos"			"445"
-			"ypos"			"36"	[$WIN32]
+			"ypos"			"42"
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
@@ -956,12 +1021,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Kills2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%kills%"
 			"textAlignment"		"west"
 			"xpos"			"180"
-			"ypos"			"0"	[$WIN32]
+			"ypos"			"-2"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -974,12 +1039,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Deaths2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%deaths%"
 			"textAlignment"		"west"
 			"xpos"			"180"
-			"ypos"			"12"	[$WIN32]
+			"ypos"			"13"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1012,12 +1077,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Assists2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%assists%"
 			"textAlignment"		"west"
 			"xpos"			"180"
-			"ypos"			"24"	[$WIN32]
+			"ypos"			"27"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1030,12 +1095,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Destruction2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%destruction%"
 			"textAlignment"		"west"
 			"xpos"			"545"
-			"ypos"			"36"	[$WIN32]
+			"ypos"			"41"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1048,12 +1113,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"CapturesLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_CapturesLabel"
 			"textAlignment"		"east"
-			"xpos"			"200"	[$WIN32]
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"200"
+			"ypos"			"0"
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"20"
@@ -1066,12 +1131,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"DefensesLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_DefensesLabel"
 			"textAlignment"		"east"
-			"xpos"			"200"	[$WIN32]
-			"ypos"			"12"	[$WIN32]
+			"xpos"			"200"
+			"ypos"			"14"
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"20"
@@ -1084,12 +1149,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"DominationLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_DominationLabel"
 			"textAlignment"		"east"
-			"xpos"			"200"	[$WIN32]
-			"ypos"			"24"	[$WIN32]
+			"xpos"			"200"
+			"ypos"			"28"
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"20"
@@ -1102,12 +1167,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"RevengeLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_RevengeLabel"
 			"textAlignment"		"east"
-			"xpos"			"200"	[$WIN32]
-			"ypos"			"36"	[$WIN32]
+			"xpos"			"200"
+			"ypos"			"42"
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"20"
@@ -1120,12 +1185,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Captures2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%captures%"
 			"textAlignment"		"west"
-			"xpos"			"305"	[$WIN32]
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"305"
+			"ypos"			"-2"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1138,12 +1203,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Defenses2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%defenses%"
 			"textAlignment"		"west"
-			"xpos"			"305"	[$WIN32]
-			"ypos"			"12"	[$WIN32]
+			"xpos"			"305"
+			"ypos"			"13"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1156,12 +1221,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Domination2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%dominations%"
 			"textAlignment"		"west"
-			"xpos"			"305"	[$WIN32]
-			"ypos"			"24"	[$WIN32]
+			"xpos"			"305"
+			"ypos"			"27"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1174,12 +1239,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Revenge2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%Revenge%"
 			"textAlignment"		"west"
-			"xpos"			"305"	[$WIN32]
-			"ypos"			"36"	[$WIN32]
+			"xpos"			"305"
+			"ypos"			"41"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1192,14 +1257,14 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"HealingLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_HealingLabel"
 			"textAlignment"		"east"
-			"xpos"			"326"	[$WIN32]
-			"ypos"			"36"	[$WIN32]
+			"xpos"			"326"
+			"ypos"			"42"
 			"zpos"			"3"
-			"wide"			"95"	[$WIN32]
+			"wide"			"95"
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1210,12 +1275,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"InvulnLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_InvulnLabel"
 			"textAlignment"		"east"
-			"xpos"			"326"	[$WIN32]
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"326"
+			"ypos"			"0"
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
@@ -1228,14 +1293,14 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"TeleportsLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_TeleportsLabel"
 			"textAlignment"		"east"
-			"xpos"			"326"	[$WIN32]
-			"ypos"			"24"	[$WIN32]
+			"xpos"			"326"
+			"ypos"			"28"
 			"zpos"			"3"
-			"wide"			"95"	[$WIN32]
+			"wide"			"95"
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1246,14 +1311,14 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"HeadshotsLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_HeadshotsLabel"
 			"textAlignment"		"east"
-			"xpos"			"326"	[$WIN32]
-			"ypos"			"12"	[$WIN32]
+			"xpos"			"326"
+			"ypos"			"14"
 			"zpos"			"3"
-			"wide"			"95"	[$WIN32]
+			"wide"			"95"
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1264,12 +1329,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Healing2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%healing%"
 			"textAlignment"		"west"
-			"xpos"			"425"	[$WIN32]
-			"ypos"			"36"	[$WIN32]
+			"xpos"			"425"
+			"ypos"			"41"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1282,12 +1347,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Invuln2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%invulns%"
 			"textAlignment"		"west"
-			"xpos"			"425"	[$WIN32]
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"425"
+			"ypos"			"-2"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1300,12 +1365,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Teleports2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%teleports%"
 			"textAlignment"		"west"
-			"xpos"			"425"	[$WIN32]
-			"ypos"			"24"	[$WIN32]
+			"xpos"			"425"
+			"ypos"			"27"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1318,12 +1383,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Headshots2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%headshots%"
 			"textAlignment"		"west"
-			"xpos"			"425"	[$WIN32]
-			"ypos"			"12"	[$WIN32]
+			"xpos"			"425"
+			"ypos"			"13"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1336,12 +1401,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"BackstabsLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_BackstabsLabel"
 			"textAlignment"		"east"
-			"xpos"			"445"	[$WIN32]
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"445"
+			"ypos"			"0"
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
@@ -1354,12 +1419,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Backstabs2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%backstabs%"
-			"textAlignment"		"west"		[$WIN32]
-			"xpos"			"545"	[$WIN32]
-			"ypos"			"0"	[$WIN32]
+			"textAlignment"		"west"
+			"xpos"			"545"
+			"ypos"			"-2"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1372,12 +1437,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"BonusLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_ScoreBoard_BonusLabel"
 			"textAlignment"		"east"
-			"xpos"			"445"	[$WIN32]
-			"ypos"			"12"	[$WIN32]
+			"xpos"			"445"
+			"ypos"			"14"
 			"zpos"			"3"
 			"zpos"			"3"
 			"wide"			"95"
@@ -1391,12 +1456,12 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Bonus2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%bonus%"
-			"textAlignment"		"west"		[$WIN32]
-			"xpos"			"545"	[$WIN32]
-			"ypos"			"12"	[$WIN32]
+			"textAlignment"		"west"
+			"xpos"			"545"
+			"ypos"			"13"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1409,12 +1474,12 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"SupportLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_Scoreboard_Support"
 			"textAlignment"	"east"
-			"xpos"			"445"	[$WIN32]
-			"ypos"			"24"	[$WIN32]
+			"xpos"			"445"
+			"ypos"			"28"
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
@@ -1427,12 +1492,12 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Support2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%support%"
-			"textAlignment"	"west"		[$WIN32]
-			"xpos"			"545"	[$WIN32]
-			"ypos"			"24"	[$WIN32]
+			"textAlignment"	"west"
+			"xpos"			"545"
+			"ypos"			"27"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1445,12 +1510,12 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DamageLabel"
-			"font"			"AvenirLight12"
+			"font"			"AvenirMed13"
 			"fgcolor"		"mWhite"
 			"labelText"		"#TF_Scoreboard_Damage"
 			"textAlignment"	"east"
-			"xpos"			"80"	[$WIN32]
-			"ypos"			"36"	[$WIN32]
+			"xpos"			"80"
+			"ypos"			"42"
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
@@ -1463,12 +1528,12 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Damage2"
-			"font"			"Numbers12"
+			"font"			"Numbers15"
 			"fgcolor"		"mWhite"
 			"labelText"		"%damage%"
-			"textAlignment"	"west"		[$WIN32]
-			"xpos"			"180"	[$WIN32]
-			"ypos"			"36"	[$WIN32]
+			"textAlignment"	"west"
+			"xpos"			"180"
+			"ypos"			"41"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"

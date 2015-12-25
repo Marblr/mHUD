@@ -349,7 +349,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player1Name"
-		"font"			"Avenir10"
+		"font"			"AvenirMed11"
 		"xpos"			"66"
 		"ypos"			"125"
 		"zpos"			"3"
@@ -368,7 +368,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player1Class"
-		"font"			"Avenir10"
+		"font"			"AvenirMed11"
 		"xpos"			"226"
 		"ypos"			"125"
 		"zpos"			"3"
@@ -385,7 +385,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player1Score"
-		"font"			"Avenir10"
+		"font"			"AvenirMed11"
 		"xpos"			"343"
 		"ypos"			"125"
 		"zpos"			"3"
@@ -419,7 +419,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player2Name"
-		"font"			"Avenir10"
+		"font"			"AvenirMed11"
 		"xpos"			"66"
 		"ypos"			"136"
 		"zpos"			"3"
@@ -438,7 +438,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player2Class"
-		"font"			"Avenir10"
+		"font"			"AvenirMed11"
 		"xpos"			"226"
 		"ypos"			"136"
 		"zpos"			"3"
@@ -457,7 +457,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player2Score"
-		"font"			"Avenir10"
+		"font"			"AvenirMed11"
 		"xpos"			"343"
 		"ypos"			"136"
 		"zpos"			"3"
@@ -491,7 +491,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player3Name"
-		"font"			"Avenir10"
+		"font"			"AvenirMed11"
 		"xpos"			"66"
 		"ypos"			"147"
 		"zpos"			"3"
@@ -510,7 +510,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player3Class"
-		"font"			"Avenir10"
+		"font"			"AvenirMed11"
 		"xpos"			"226"
 		"ypos"			"147"
 		"zpos"			"3"
@@ -529,7 +529,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player3Score"
-		"font"			"Avenir10"
+		"font"			"AvenirMed11"
 		"xpos"			"343"
 		"ypos"			"147"
 		"zpos"			"3"

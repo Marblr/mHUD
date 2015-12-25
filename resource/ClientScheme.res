@@ -40,10 +40,12 @@ Scheme
 		
 		// Transparent Colors
 		
-		"mClear"			"0 0 0 200"
+		"mClear"			"0 0 0 225"
 		"mClearWhite"		"227 227 227 200"
 		
-		"mClearGray"		"60 60 60 200"
+		"mClearGrayLight"	"120 120 120 200"
+		"mClearGray"		"100 100 100 200"
+		"mClearGrayDark"	"60 60 60 200"
 		
 		"mClearBlue"		"91 122 142 200"
 		"mClearRed"			"189 59 59 200"
@@ -2918,6 +2920,17 @@ Scheme
 			}
 		}
 		
+		"Numbers13"
+		{
+			"1"
+			{
+				"name"			"Numbers"
+				"tall"			"13"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Avenir13"
 		{
 			"1"
@@ -2962,6 +2975,17 @@ Scheme
 			}
 		}
 		
+		"AvenirLight14"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Light"
+				"tall"			"14"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Numbers14"
 		{
 			"1"
@@ -2980,6 +3004,17 @@ Scheme
 				"name"			"Icons"
 				"tall"			"14"
 				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"Numbers15"
+		{
+			"1"
+			{
+				"name"			"Numbers"
+				"tall"			"15"
+				"additive" 		"0"
 				"antialias"		"1"
 			}
 		}
@@ -3004,6 +3039,17 @@ Scheme
 				"name"			"AvenirLTStd-Black"
 				"tall"			"16"
 				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirMed16"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Medium"
+				"tall"			"16"
+				"additive" 		"0"
 				"antialias"		"1"
 			}
 		}
@@ -3052,6 +3098,17 @@ Scheme
 			}
 		}
 		
+		"AvenirMed18"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Medium"
+				"tall"			"18"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"AvenirLight18"
 		{
 			"1"
@@ -3059,6 +3116,17 @@ Scheme
 				"name"			"AvenirLTStd-Light"
 				"tall"			"18"
 				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"Numbers18"
+		{
+			"1"
+			{
+				"name"			"Numbers"
+				"tall"			"18"
+				"additive" 		"0"
 				"antialias"		"1"
 			}
 		}
@@ -3074,11 +3142,33 @@ Scheme
 			}
 		}
 		
+		"Avenir19"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black"
+				"tall"			"19"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Avenir20"
 		{
 			"1"
 			{
 				"name"			"AvenirLTStd-Black"
+				"tall"			"20"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirMed20"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Medium"
 				"tall"			"20"
 				"additive" 		"0"
 				"antialias"		"1"
@@ -3140,6 +3230,17 @@ Scheme
 			}
 		}
 		
+		"AvenirMed24"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Medium"
+				"tall"			"24"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"AvenirLight24"
 		{
 			"1"
@@ -3186,6 +3287,17 @@ Scheme
 			}
 		}
 
+		"Icons30"
+		{
+			"1"
+			{
+				"name"			"Icons"
+				"tall"			"30"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Numbers32"
 		{
 			"1"
@@ -3197,6 +3309,17 @@ Scheme
 			}
 		}
 		
+		"Icons34"
+		{
+			"1"
+			{
+				"name"			"Icons"
+				"tall"			"34"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Numbers36"
 		{
 			"1"
@@ -3204,6 +3327,17 @@ Scheme
 				"name"			"Numbers"
 				"tall"			"36"
 				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"Icons38"
+		{
+			"1"
+			{
+				"name"			"Icons"
+				"tall"			"38"
+				"additive"		"0"
 				"antialias"		"1"
 			}
 		}
@@ -3246,6 +3380,17 @@ Scheme
 			"1"
 			{
 				"name"			"AvenirLTStd-Light"
+				"tall"			"40"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"Icons40"
+		{
+			"1"
+			{
+				"name"			"Icons"
 				"tall"			"40"
 				"additive"		"0"
 				"antialias"		"1"

@@ -175,45 +175,9 @@
 		"image"			""
 		"scaleImage"	"1"
 		
-		if_halloween_0
-		{
-			"image"		"../console/title_team_halloween2011"
-		}
-		if_halloween_1
-		{
-			"image"		"../console/title_team_halloween2012"
-		}
-		if_halloween_2
-		{
-			"image"		"../console/title_team_halloween2013"
-		}
-		if_halloween_3
-		{
-			"image"		"../console/title_team_halloween2014"
-		}
-		if_halloween_4
-		{
-			"image"		"../console/title_team_halloween2015"
-		}
-		if_fullmoon
-		{
-			"image"		"../console/title_fullmoon"
-		}
-		if_christmas
-		{
-			"image"		"../console/background_xmas2011"
-		}
-		if_eotl_launch
-		{
-			"image"		"../console/title_eotl01"
-		}
 		if_operation
 		{
-			"image"		"../console/title_team_halloween2015"
-		}
-		if_community_update
-		{
-			"image"		"../console/title_invasion"
+			"image"		"../console/title_team_tough_break"
 		}
 	}
 					
@@ -230,6 +194,12 @@
 		"enabled"		"1"
 		"image"			"../logo/new_tf2_logo"
 		"scaleImage"	"1"
+		
+		if_operation
+		{
+			"image"		"../logo/tough_break_logo"
+			"ypos"		"137"
+		}
 	}	
 	
 	"TFCharacterImage"
@@ -719,7 +689,7 @@
 		"ypos"			"60"
 		"zpos"			"1"
 		"wide"			"300"
-		"tall"			"270"
+		"tall"			"395"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
 		"paintbackground"	"0"
@@ -773,7 +743,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fillcolor"		"mClear"
+			"fillcolor"		"mDark"
 		}
 		
 		"MOTD_TitleBG"
@@ -818,7 +788,7 @@
 			"fieldName"		"MOTD_CloseButton"
 			"xpos"			"277"
 			"ypos"			"4"
-			"zpos"			"10"
+			"zpos"			"1000"
 			"wide"			"19"
 			"tall"			"19"
 			"autoResize"	"0"
@@ -832,11 +802,9 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"default"		"0"
-
-			"navDown"			"MOTD_URLButton"
-			"navActivate"		"<QuickplayButton"
-			
 			"Command"		"motd_hide"
+			"proportionaltoparent" "1"
+			"actionsignallevel" "2"
 			
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
@@ -845,10 +813,6 @@
 			"border_armed"		"NoBorder"
 			"paintbackground"	"1"
 		
-			"defaultBgColor_override"	"mDark"
-			"armedBgColor_override"		"mWhite"
-			"depressedBgColor_override"	"mDark"
-			
 			"defaultFgColor_override"	"mWhite"
 			"armedFgColor_override" 	"mDark"
 			"depressedFgColor_override" "mWhite"
@@ -866,7 +830,7 @@
 				"enabled"		"0"
 				"image"			"close_button"
 				"scaleImage"	"1"
-			}				
+			}							
 		}	
 
 		"MOTD_HeaderIcon"
@@ -888,14 +852,14 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"MOTD_TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"Avenir16"
 			"labelText"		"%motdtitle%"
 			"textAlignment"	"center"
 			"xpos"			"0"
-			"ypos"			"29"
+			"ypos"			"30"
 			"zpos"			"4"
 			"wide"			"300"
-			"tall"			"15"
+			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -907,14 +871,14 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"MOTD_Label"
-			"font"			"HudFontSmall"
+			"font"			"AvenirMed12"
 			"labelText"		"%motddate%"
 			"textAlignment"	"center"
 			"xpos"			"0"
-			"ypos"			"44"
+			"ypos"			"51"
 			"zpos"			"4"
 			"wide"			"300"
-			"tall"			"15"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -927,7 +891,7 @@
 			"ControlName"	"ImagePanel"
 			"fieldName"		"MOTD_TitleImageBg"
 			"xpos"			"cs-0.5"
-			"ypos"			"59"
+			"ypos"			"72"
 			"zpos"			"99"
 			"wide"			"250"
 			"tall"			"150"
@@ -943,7 +907,7 @@
 			"ControlName"	"EditablePanel"
 			"fieldName"		"MOTD_TitleImageContainer"
 			"xpos"			"cs-0.5"
-			"ypos"			"59"
+			"ypos"			"72"
 			"zpos"			"100"
 			"wide"			"250"
 			"tall"			"150"
@@ -971,10 +935,10 @@
 			"ControlName"	"ScrollableEditablePanel"
 			"fieldName"		"MOTD_TextScroller"
 			"xpos"			"30"
-			"ypos"			"213"
+			"ypos"			"229"
 			"zpos"			"4"
 			"wide"			"260"
-			"tall"			"38"
+			"tall"			"130"
 			"PaintBackgroundType"	"2"
 			"fgcolor_override"	"117 107 94 255"
 			
@@ -1015,10 +979,10 @@
 			"ControlName"	"CExButton"
 			"fieldName"		"MOTD_URLButton"
 			"xpos"			"75"
-			"ypos"			"rs1.2"
+			"ypos"			"r30"
 			"zpos"			"4"
 			"wide"			"150"
-			"tall"			"15"
+			"tall"			"22"
 			"autoResize"	"0"
 			"pinCorner"		"3"
 			"visible"		"1"
@@ -1027,7 +991,7 @@
 			"labelText"		"#MMenu_MOTD_URL"
 			"textinsetx"	"20"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallestBold"
+			"font"			"Avenir14"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1042,9 +1006,9 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"defaultBgColor_override"	"mDark"
+			"defaultBgColor_override"	"mClear"
 			"armedBgColor_override"		"mWhite"
-			"depressedBgColor_override"	"mDark"
+			"depressedBgColor_override"	"mClear"
 			
 			"defaultFgColor_override"	"mWhite"
 			"armedFgColor_override" 	"mDark"
@@ -1145,6 +1109,47 @@
 			}
 		}
 	}	
+
+	"ShowWarButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"ShowWarButton"
+		"xpos"			"c100"
+		"ypos"			"30"
+		"zpos"			"1"
+		"wide"			"120"
+		"tall"			"28"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"0"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"War is here!"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"center"
+		"textinsetx"	"25"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"Command"		"showcomic"
+		"proportionaltoparent" "1"
+		
+		"navUp"			"Notifications_Panel"
+		"navLeft"		"SettingsButton"
+		
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"border_default"	"MainMenuButtonDefault"
+		"border_armed"		"MainMenuButtonArmed"
+		"paintbackground"	"0"
+		
+		"defaultFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "235 226 202 255"
+		"depressedFgColor_override" "46 43 42 255"
+
+		"image_drawcolor"	"117 107 94 255"
+		"image_armedcolor"	"235 226 202 255"
+	}
 	
 	"Notifications_Panel"
 	{
@@ -3768,7 +3773,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"EventPromo"
-		"xpos"			"r426"
+		"xpos"			"r425"
 		"ypos"			"0"
 		"zpos"			"-60"
 		"wide"			"520"
@@ -3812,7 +3817,7 @@
 			{
 				"ControlName"	"ImagePanel"
 				"fieldname"		"EventBGPanel"
-				"xpos"			"0"
+				"xpos"			"-1"
 				"ypos"			"30"
 				"zpos"			"0"
 				"wide"			"260"
@@ -3973,21 +3978,37 @@
 				{
 					"0"
 					{
-						"item"		"Halloween 2015 Key"
+						"item"		 	"Unused Operation Tough Break Pass"
 						"show_market"	"0"
 					}
 					"1"
 					{
-						"item"		"Halloween 2015 case"
+						"item"		"Tough Break Case 01 Pyroland"
+						"show_market"	"1"
 					}
 					"2"
 					{
-						"item"		"Taunt: Zoomin' Broom"
-						"show_market"	"0"
+						"item"		"Tough Break Case 02 Warbirds"
+						"show_market"	"1"
 					}
 					"3"
 					{
-						"item"		"Taunt: Maggot's Condolence"
+						"item"		"Tough Break Key"
+						"show_market"	"0"
+					}
+					"4"
+					{
+						"item"		"Tough Break Cosmetic Case"
+						"show_market"	"1"
+					}
+					"5"
+					{
+						"item"		"Tough Break Cosmetic Key"
+						"show_market"	"0"
+					}
+					"5"
+					{
+						"item"		"Taunt: Aerobic Taunt"
 						"show_market"	"0"
 					}
 				}
