@@ -3,27 +3,28 @@
 	"scores"
 	{
 		"ControlName"		"CTFClientScoreBoardDialog"
-		"fieldName"		"scoreinfo"
-		"xpos"			"cs-0.5"
-		"ypos"			"31"
-		"wide"			"640"		// could make wide and tall "f0" so I can use xpos and ypos
-		"tall"			"448"		// values relative to the center of the viewport, however
-		"autoResize"	"0"			// it causes alignment problems with other HUD elements
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"fieldName"			"scoreinfo"
+		"xpos"				"cs-0.5"
+		"ypos"				"31"
+		"wide"				"640"		// could make wide and tall "f0" so I can use xpos and ypos
+		"tall"				"448"		// values relative to the center of the viewport, however
+		"autoResize"		"0"			// it causes alignment problems with other HUD elements
+		"pinCorner"			"0"
+		"visible"			"1"
+		"enabled"			"1"
 		"tabPosition"		"0"
 		"medal_width"		"15"
 		"avatar_width"		"53"
+		"spacer"			"5"
 		"name_width"		"80"
-		"name_width_short"	"85"
-		"status_width"		"15"	
+		"name_width_short"	"85"	
 		"nemesis_width"		"15"
 		"class_width"		"20"
 		"score_width"		"25"
 		"ping_width"		"20"
 		"stats_width"		"30"
-		"killstreak_width"	"20"
+		"killstreak_width"	"15"
+		"killstreak_image_width" "15"
 	}
 	
 	"BlueScoreBG"
