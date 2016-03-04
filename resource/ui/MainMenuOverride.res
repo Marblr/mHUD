@@ -200,6 +200,11 @@
 			"image"		"../logo/tough_break_logo"
 			"ypos"		"137"
 		}
+		
+		if_competitive
+		{
+			"ypos"		"107"
+		}
 	}	
 	
 	"TFCharacterImage"
@@ -221,15 +226,20 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MainMenuBGPanel"
 		"xpos"			"75" //c-290
-		"ypos"			"205" //114 +72
+		"ypos"			"205" //205
 		"zpos"			"-1"
 		"wide"			"260"
-		"tall"			"97"
+		"tall"			"97" //97
 		"visible"		"1"
 		"pinCorner"		"0"
 		"autoResize"	"0"
 		"fillcolor"		"mClear"
-
+		
+		if_competitive
+		{
+			"ypos"		"175"
+			"tall"		"127"
+		}
 	}	
 	"PlayLabel"
 	{
@@ -1899,7 +1909,7 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"QuickplayButton"
 		"xpos"			"80"
-		"ypos"			"211"
+		"ypos"			"211" //211
 		"zpos"			"11"
 		"wide"			"250"
 		"tall"			"26"
@@ -1909,6 +1919,11 @@
 		"navDown"		"PlayPVEButton"
 		"navRight"		"Notifications_ShowButtonPanel"
 		"navToRelay"	"SubButton"
+		
+		if_competitive
+		{
+			"ypos"		"181"
+		}
 
 		"SubButton"
 		{
@@ -2104,12 +2119,17 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"PlayPVEButton"
 		"xpos"			"80"
-		"ypos"			"241"
+		"ypos"			"241" //241
 		"zpos"			"11"
 		"wide"			"250"
 		"tall"			"26"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
+		
+		if_competitive
+		{
+			"ypos"		"211"
+		}
 
 		"SubButton"
 		{
@@ -2169,18 +2189,20 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"PlayCompetitiveButton"
-		"xpos"			"c-285"
-		"ypos"			"180"
+		"xpos"			"80"
+		"ypos"			"241"
 		"zpos"			"11"
-		"wide"			"270"
-		"tall"			"36"
+		"wide"			"250"
+		"tall"			"26"
 		"visible"		"0"
 		"enabled"		"0"
-		"PaintBackgroundType"	"0"
+		"PaintBackgroundType"	"2"
+		
 		"navUp"			"PlayPVEButton"
 		"navDown"		"ServerBrowserButton"
 		"navRight"		"Notifications_ShowButtonPanel"
 		"navToRelay"	"SubButton"
+		
 		"SubButton"
 		{
 			"ControlName"	"CExImageButton"
@@ -2196,24 +2218,29 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"west"
+			"font"			"Avenir14"
+			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"default"		"1"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
-			"paintbackground"	"0"
+			"border_default"	"NoBorder"
+			"border_armed"		"NoBorder"
+			"paintbackground"	"1"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultBgColor_override"	"mDark"
+			"armedBgColor_override"		"mWhite"
+			"depressedBgColor_override"	"mDark"
 			
-			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"defaultFgColor_override"	"mWhite"
+			"armedFgColor_override" 	"mDark"
+			"depressedFgColor_override" "mWhite"
+			
+			"image_drawcolor"	"mWhite"
+			"image_armedcolor"	"mDark"
+			
 			"SubImage"
 			{
 				"ControlName"	"ImagePanel"
@@ -2222,24 +2249,41 @@
 				"ypos"			"6"
 				"zpos"			"1"
 				"wide"			"14"
-				"tall"			"14"
-				"visible"		"1"
-				"enabled"		"1"
+				"tall"			"0"
+				"visible"		"0"
+				"enabled"		"0"
 				"scaleImage"	"1"
 			}
 		}
-		"CompetitiveBetaImage"
+	}
+
+	"CompetitiveBetaImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldname"		"CompetitiveBetaImage"
+		// Competitive button, plus offset.
+		"xpos"			"300"
+		"ypos"			"241"
+		"zpos"			"12"
+		"wide"			"30"
+		"tall"			"30"
+		"visible"		"0"
+		"enabled"		"0"
+		"image"			"beta"
+		"scaleImage"	"1"
+		if_competitive
 		{
-			"ControlName"	"ImagePanel"
-			"fieldname"		"CompetitiveBetaImage"
-			"xpos"			"223"
-			"ypos"			"3"
-			"zpos"			"12"
-			"wide"			"20"
-			"tall"			"20"
-			"visible"		"1"
-			"image"			"beta"
-			"scaleImage"	"1"
+				"visible"		"1"
+				"enabled"		"1"
+		}
+		if_competitive_stress_event
+		{
+			// Move up/left 10px, bump up to 20x20
+			"ypos"	"225"
+			"xpos"	"290"
+			"wide"	"56"
+			"tall"	"56"
+			"image"	"beta_stress"
 		}
 	}
 	

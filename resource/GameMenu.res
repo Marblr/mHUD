@@ -28,6 +28,14 @@
 		"subimage" "glyph_coop"
 		"OnlyAtMenu" "1"
 	}
+	"PlayCompetitiveButton"
+	{
+		"label" "COMPETITIVE" 
+		"command" "ladder_ui_show"
+		"subimage" "glyph_practice"
+		"OnlyAtMenu" "1"
+		"OnlyWhenCompetitiveEnabled" "1"
+	}
 	"ServerBrowserButton"
 	{
 		"label" "SERVERS"
