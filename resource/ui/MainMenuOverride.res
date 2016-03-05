@@ -197,13 +197,13 @@
 		
 		if_operation
 		{
-			"image"		"../logo/tough_break_logo"
-			"ypos"		"137"
+			"image"		"../logo/new_tf2_logo"
+			"ypos"		"143"
 		}
 		
 		if_competitive
 		{
-			"ypos"		"107"
+			"ypos"		"143" //113
 		}
 	}	
 	
@@ -215,7 +215,7 @@
 		"ypos"			"-80"
 		"zpos"			"-99"
 		"wide"			"600"
-		"tall"			"600"
+		"tall"			"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"
@@ -237,8 +237,8 @@
 		
 		if_competitive
 		{
-			"ypos"		"175"
-			"tall"		"127"
+			"ypos"		"205" //175
+			"tall"		"97" //127
 		}
 	}	
 	"PlayLabel"
@@ -542,7 +542,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"labelText"		"V"
+			"labelText"		"b"
 			"font"			"Icons16"
 			"command"		"questlog"
 			"textAlignment"	"center"
@@ -948,7 +948,7 @@
 			"ypos"			"229"
 			"zpos"			"4"
 			"wide"			"260"
-			"tall"			"130"
+			"tall"			"116"
 			"PaintBackgroundType"	"2"
 			"fgcolor_override"	"117 107 94 255"
 			
@@ -989,7 +989,7 @@
 			"ControlName"	"CExButton"
 			"fieldName"		"MOTD_URLButton"
 			"xpos"			"75"
-			"ypos"			"r30"
+			"ypos"			"r44"
 			"zpos"			"4"
 			"wide"			"150"
 			"tall"			"22"
@@ -1024,6 +1024,41 @@
 			"armedFgColor_override" 	"mDark"
 			"depressedFgColor_override" "mWhite"
 		}	
+		
+		"MOTD_Divider"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"MOTD_Divider"
+			"xpos"			"15"
+			"ypos"			"378"
+			"zpos"			"2"
+			"wide"			"270"
+			"tall"			"1"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fillcolor"		"mWhite"
+		}
+		
+		"MOTD_HudVersion"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"MOTD_HudVersion"
+			"xpos"			"25"
+			"ypos"			"382"
+			"zpos"			"2"
+			"wide"			"250"
+			"tall"			"11"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"AvenirMed9"
+			"textAlignment"	"center"
+			"labelText"		"mHUD version from 2016-03-04"
+			"fgcolor"		"mWhite"
+		}
 		
 		"MOTD_PrevButton"
 		{
@@ -1283,7 +1318,7 @@
 		"ypos"			"271"
 		"zpos"			"11"
 		"wide"			"122"
-		"tall"			"26"
+		"tall"			"0"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
 
@@ -1822,6 +1857,7 @@
 		"armedFgColor_override" "mWhite"
 		"depressedFgColor_override" "46 43 42 255"
 	}
+	
 	"FreeTrialPanel"
 	{
 		"ControlName"	"EditablePanel"
@@ -1902,7 +1938,7 @@
 			"fgcolor"		"137 134 127 255"
 		}
 	}
-
+	
 	// command comes from GameMenu.res
 	"QuickplayButton"
 	{
@@ -1922,7 +1958,7 @@
 		
 		if_competitive
 		{
-			"ypos"		"181"
+			"ypos"		"211" //181
 		}
 
 		"SubButton"
@@ -2118,17 +2154,17 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"PlayPVEButton"
-		"xpos"			"80"
-		"ypos"			"241" //241
+		"xpos"			"208"
+		"ypos"			"271"
 		"zpos"			"11"
-		"wide"			"250"
+		"wide"			"122"
 		"tall"			"26"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
 		
 		if_competitive
 		{
-			"ypos"		"211"
+			"ypos"		"271" //211
 		}
 
 		"SubButton"
@@ -2137,7 +2173,7 @@
 			"fieldName"		"SubButton"
 			"xpos"			"0"
 			"ypos"			"0"
-			"wide"			"250"
+			"wide"			"122"
 			"tall"			"26"
 			"autoResize"	"0"
 			"pinCorner"		"3"
@@ -2185,23 +2221,18 @@
 		}
 	}
 	
-	"PlayCompetitiveButton"
+	"CompetitiveButton"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"PlayCompetitiveButton"
+		"fieldname"		"CompetitiveButton"
 		"xpos"			"80"
 		"ypos"			"241"
 		"zpos"			"11"
 		"wide"			"250"
 		"tall"			"26"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"PaintBackgroundType"	"2"
-		
-		"navUp"			"PlayPVEButton"
-		"navDown"		"ServerBrowserButton"
-		"navRight"		"Notifications_ShowButtonPanel"
-		"navToRelay"	"SubButton"
 		
 		"SubButton"
 		{
@@ -2213,8 +2244,8 @@
 			"tall"			"26"
 			"autoResize"	"0"
 			"pinCorner"		"3"
-			"visible"		"0"
-			"enabled"		"0"
+			"visible"		"1"
+			"enabled"		"1"
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"

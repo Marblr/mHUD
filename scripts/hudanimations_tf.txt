@@ -1443,7 +1443,7 @@ FireCommand 0 "animation open"
 
 event HudTournament_ShowTimerCompetitive
 {
-Animate CountdownLabel ypos 150 Linear 0 0
+Animate CountdownLabel ypos 101 Linear 0 0
 Animate CountdownLabelShadow ypos 150 Linear 0 0
 
 SetVisible CountdownBG 1 0
