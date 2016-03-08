@@ -86,7 +86,7 @@
 		"tabxindent"	"109"
 		"tabxdelta"		"10"
 		"tabwidth"		"240"
-		"tabheight"		"34"
+		"tabheight"		"32"
 		"transition_time" "0"
 		
 		"HeaderLine"
@@ -94,7 +94,7 @@
 			"ControlName"	"ImagePanel"
 			"fieldName"		"HeaderLine"
 			"xpos"			"0"
-			"ypos"			"32"
+			"ypos"			"31"
 			"zpos"			"5"
 			"wide"			"f0"
 			"tall"			"2"
@@ -113,7 +113,7 @@
 			"selectedcolor"		"mWhite"
 			"unselectedcolor"	"mGray"	
 			"paintbackground"	"1"
-			"activeborder_override"	"NoBorder"
+			"activeborder_override"	"mWhiteHeaderButton"
 			"normalborder_override" "NoBorder"
 			
 			"fgcolor"	"mWhite"

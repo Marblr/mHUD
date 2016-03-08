@@ -308,7 +308,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"mDark"
+			"fgcolor"		"mDark"
 			"auto_wide_tocontents" "1"
 		}
 	}	
@@ -1056,7 +1056,7 @@
 			"enabled"		"1"
 			"font"			"AvenirMed9"
 			"textAlignment"	"center"
-			"labelText"		"mHUD version from 2016-03-04"
+			"labelText"		"mHUD version from 2016-03-07"
 			"fgcolor"		"mWhite"
 		}
 		
@@ -1315,10 +1315,10 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"TrainingButton"
 		"xpos"			"208"
-		"ypos"			"271"
+		"ypos"			"354"
 		"zpos"			"11"
 		"wide"			"122"
-		"tall"			"0"
+		"tall"			"26"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
 
@@ -1412,7 +1412,7 @@
 			"tall"			"26"
 			"autoResize"	"0"
 			"pinCorner"		"3"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"textinsetx"	"25"

@@ -26,14 +26,14 @@
 		
 		"item_backpack_offcenter_x"		"-288"
 		"item_backpack_xdelta"			"4"
-		"item_backpack_ydelta"			"3"
+		"item_backpack_ydelta"			"4"
 
 		"button_xpos_offcenter"	"175"		
 		"button_ypos"	"85"
 		"button_ydelta"	"80"
 		"button_override_delete_xpos" "0"
 
-		"page_button_y"	"288"
+		"page_button_y"	"291"
 		"page_button_x_delta" "3"
 		"page_button_y_delta" "3"
 		"page_button_per_row" "20"
