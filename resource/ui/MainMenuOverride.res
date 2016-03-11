@@ -270,7 +270,7 @@
 		"tall"			"50"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"NoBorder"
+		"border"		"mDarkBorder"
 		
 		"TipSubLabel"
 		{
@@ -1056,7 +1056,7 @@
 			"enabled"		"1"
 			"font"			"AvenirMed9"
 			"textAlignment"	"center"
-			"labelText"		"mHUD version from 2016-03-07"
+			"labelText"		"mHUD version from 2016-03-11"
 			"fgcolor"		"mWhite"
 		}
 		
@@ -2024,7 +2024,7 @@
 		"ypos"			"211"
 		"zpos"			"11"
 		"wide"			"270"
-		"tall"			"36"
+		"tall"			"26"
 		"visible"		"1"
 		"PaintBackgroundType"	"0"
 
@@ -2091,7 +2091,7 @@
 		"ypos"			"241"
 		"zpos"			"11"
 		"wide"			"270"
-		"tall"			"36"
+		"tall"			"0"
 		"visible"		"1"
 		"PaintBackgroundType"	"0"
 

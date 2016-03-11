@@ -33,7 +33,7 @@
 		"label" "COMPETITIVE" 
 		"command" "ladder_ui_show"
 		"subimage" "glyph_practice"
-		"OnlyAtMenu" "1"
+		"OnlyAtMenu" "0"
 	}
 	"ServerBrowserButton"
 	{
@@ -73,7 +73,7 @@
 		"label" "TRAINING"
 		"command" "offlinepractice"
 		"subimage" "glyph_practice"
-		"OnlyAtMenu" "1"
+		"OnlyAtMenu" "0"
 	}
 	
 	// These buttons get positioned by the MainMenuOverride.res	
