@@ -1056,7 +1056,7 @@
 			"enabled"		"1"
 			"font"			"AvenirMed9"
 			"textAlignment"	"center"
-			"labelText"		"mHUD version from 2016-03-11"
+			"labelText"		"mHUD version from 2016-03-19"
 			"fgcolor"		"mWhite"
 		}
 		

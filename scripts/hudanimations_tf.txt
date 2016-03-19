@@ -1479,4 +1479,34 @@ Animate BlueMedals ypos 75 Accel 0 0.1
 Animate RedMedals ypos 75 Accel 0 0.1
 }
 
+event CompetitiveGame_HideDisconnectButton
+{
+    Animate DisconnectButton ypos r-100 Accel 0 0
+}
+ 
+event CompetitiveGame_ShowDisconnectButton
+{
+    Animate DisconnectButton ypos r50 Accel 0 0.4
+}
+ 
+event CompetitiveGame_ShowWinnersSign
+{
+    FireCommand 0.5 "animation intro"
+    FireCommand 12.3 "animation outro"
+}
+ 
+ 
+event HudTournament_ShowRoundSign
+{
+    SetVisible RoundSignModel 1 0
+    RunEventChild RoundSignModel HudTournament_PlaySignAnim 0
+    SetVisible RoundSignModel 0 6
+}
+ 
+event HudTournament_PlaySignAnim
+{
+    FireCommand 0 "animation intro"
+    FireCommand 5 "animation outro"
+}
+
 //
