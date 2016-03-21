@@ -1,16 +1,29 @@
 "Resource/UI/HudObjectiveKothTimePanel.res"
 {	
+	"HudKothTimeStatus"
+	{
+		if_comp
+		{
+			"zpos"		"5"
+		}
+	}
 	"BlueTimer"
 	{
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"BlueTimer"
-		"xpos"				"54"
+		"xpos"				"57"
 		"ypos"				"4"
 		"zpos"				"2"
 		"wide"				"40"
 		"tall"				"40"
 		"visible"			"1"
 		"enabled"			"1"
+		
+		if_comp
+		{
+			"xpos"			"62"
+			"ypos"			"8"
+		}
 		
 		"TimePanelValue"
 		{
@@ -34,13 +47,19 @@
 	{
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"RedTimer"
-		"xpos"				"106"
+		"xpos"				"104"
 		"ypos"				"4"
 		"zpos"				"2"
 		"wide"				"40"
 		"tall"				"40"
 		"visible"			"1"
 		"enabled"			"1"
+		
+		if_comp
+		{
+			"xpos"			"99"
+			"ypos"			"8"
+		}
 		
 		"TimePanelValue"
 		{

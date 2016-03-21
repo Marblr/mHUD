@@ -1056,7 +1056,7 @@
 			"enabled"		"1"
 			"font"			"AvenirMed9"
 			"textAlignment"	"center"
-			"labelText"		"mHUD version from 2016-03-19"
+			"labelText"		"mHUD version from 2016-03-21"
 			"fgcolor"		"mWhite"
 		}
 		
@@ -2294,7 +2294,7 @@
 		"fieldname"		"CompetitiveBetaImage"
 		// Competitive button, plus offset.
 		"xpos"			"300"
-		"ypos"			"241"
+		"ypos"			"239"
 		"zpos"			"12"
 		"wide"			"30"
 		"tall"			"30"

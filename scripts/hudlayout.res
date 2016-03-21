@@ -45,9 +45,9 @@
 		"wide"	"200"
 		"tall"	"160"
 		
-		"blue_active_xpos"			"54"
+		"blue_active_xpos"			"57"
 	
-		"red_active_xpos"			"106"
+		"red_active_xpos"			"104"
 	}	
 
 	HudItemEffectMeter
@@ -474,7 +474,7 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	 "r640"
-		"ypos"	 "10"
+		"ypos"	 "30"
 		"wide"	 "628"
 		"tall"	 "468"
 
@@ -1457,7 +1457,7 @@
         "visible"               "1"
         "enabled"               "1"
         "xpos"                  "0"
-        "ypos"                  "0"
+        "ypos"                  "3"
         "zpos"                  "2"
         "wide"                  "f0"
         "tall"                  "f0"
@@ -1469,7 +1469,7 @@
         "visible"               "1"
         "enabled"               "1"
         "xpos"                  "0"
-        "ypos"                  "0"
+        "ypos"                  "3"
         "zpos"                  "2"
         "wide"                  "f0"
         "tall"                  "f0"

@@ -31,9 +31,9 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"BlueScoreBG"
-		"xpos"				"81"
-		"ypos"				"31"
-		"wide"				"236"
+		"xpos"				"3"
+		"ypos"				"35"
+		"wide"				"314"
 		"tall"				"30"
 		"autoResize"		"0"
 		"pinCorner"			"0"
@@ -54,7 +54,7 @@
 		"xpos"				"3"
 		"ypos"				"61"
 		"wide"				"314"
-		"tall"				"4"
+		"tall"				"0"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -71,9 +71,9 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"RedScoreBG"
-		"xpos"				"324"
-		"ypos"				"31"
-		"wide"				"236"
+		"xpos"				"323"
+		"ypos"				"35"
+		"wide"				"314"
 		"tall"				"30"
 		"autoResize"		"0"
 		"pinCorner"			"0"
@@ -94,7 +94,7 @@
 		"xpos"				"324"
 		"ypos"				"61"
 		"wide"				"314"
-		"tall"				"4"
+		"tall"				"0"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -140,12 +140,13 @@
 		"ypos"				"65"
 		"zpos"				"-1"
 		"wide"				"314"
-		"tall"				"252"
+		"tall"				"252" //252 for 12, 140 for 6
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
 		"enabled"			"1"
 		"fillcolor"			"mClear"
+		"border"			"mBlue"
 		
 		if_mvm
 		{
@@ -157,16 +158,17 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"RightBG"
-		"xpos"				"324"
+		"xpos"				"323"
 		"ypos"				"65"
 		"zpos"				"-1"
 		"wide"				"314"
-		"tall"				"252"
+		"tall"				"252" //252 for 12, 140 for 6s
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
 		"enabled"			"1"
 		"fillcolor"			"mClear"
+		"border"			"mRed"
 		
 		if_mvm
 		{
@@ -178,10 +180,10 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"BottomBG"
-		"xpos"				"81"
+		"xpos"				"3"
 		"ypos"				"322"
 		"zpos"				"2"
-		"wide"				"478"
+		"wide"				"634"
 		"tall"				"69"
 		"autoResize"		"0"
 		"pinCorner"			"0"
@@ -189,28 +191,7 @@
 		"enabled"			"1"
 		"tabPosition"		"0"	
 		"fillcolor"			"mClear"
-		
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	
-	"BottomBGLine"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"			"BottomBGLine"
-		"xpos"				"81"
-		"ypos"				"388"
-		"zpos"				"3"
-		"wide"				"478"
-		"tall"				"3"
-		"autoResize"		"0"
-		"pinCorner"			"0"
-		"visible"			"1"
-		"enabled"			"1"
-		"tabPosition"		"0"	
-		"fillcolor"			"mWhite"
+		"border"			"mWhiteBottom3"
 		
 		if_mvm
 		{
@@ -226,10 +207,11 @@
 		"fgcolor"		"mWhite"
 		"labelText"		"%blueteamname%"
 		"textAlignment"		"west"
-		"xpos"			"88" [!$OSX]
+		"xpos"			"10" [!$OSX]
 		"xpos"			"15" [$OSX]
-		"ypos"			"32"
-		"wide"			"236"
+		"ypos"			"35"
+		"zpos"			"20"
+		"wide"			"200"
 		"tall"			"30"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -249,8 +231,8 @@
 		"labelText"		"%blueteamscore%"
 		"fgcolor"		"mWhite"
 		"textAlignment"		"east"
-		"xpos"			"74"
-		"ypos"			"32" 
+		"xpos"			"76"
+		"ypos"			"35" 
 		"zpos"			"4"
 		"wide"			"236"
 		"tall"			"30"
@@ -298,10 +280,10 @@
 		"font"			"AvenirMed14"
 		"fgcolor"		"mWhite"
 		"labelText"		"%blueteamplayercount%"
-		"textAlignment"		"center"
-		"xpos"			"81"
-		"ypos"			"31"
-		"wide"			"236"
+		"textAlignment"		"east"
+		"xpos"			"200"
+		"ypos"			"35"
+		"wide"			"60"
 		"tall"			"30"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -321,10 +303,11 @@
 		"fgcolor"		"mWhite"
 		"labelText"		"%redteamname%"
 		"textAlignment"		"east"
-		"xpos"			"317" [!$OSX]
+		"xpos"			"429" [!$OSX]
 		"xpos"			"485" [$OSX]
-		"ypos"			"32"
-		"wide"			"236"
+		"ypos"			"35"
+		"zpos"			"20"
+		"wide"			"200"
 		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -344,8 +327,8 @@
 		"fgcolor"		"mWhite"
 		"labelText"		"%redteamscore%"
 		"textAlignment"		"west"
-		"xpos"			"331"
-		"ypos"			"32" 
+		"xpos"			"328"
+		"ypos"			"35" 
 		"zpos"			"4"
 		"wide"			"236"
 		"tall"			"30"
@@ -393,10 +376,10 @@
 		"font"			"AvenirMed14"
 		"fgcolor"		"mWhite"
 		"labelText"		"%redteamplayercount%"
-		"textAlignment"		"center"
-		"xpos"			"324"
-		"ypos"			"31"
-		"wide"			"236"
+		"textAlignment"		"west"
+		"xpos"			"385"
+		"ypos"			"35"
+		"wide"			"60"
 		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -480,10 +463,10 @@
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"RedPlayerList"
-		"xpos"			"321"
+		"xpos"			"320"
 		"ypos"			"77"
 		"zpos"			"20"
-		"wide"			"321"
+		"wide"			"320"
 		"tall"			"280"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -721,7 +704,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerDuelStatsPanel"
 		"xpos"			"0"
-		"ypos"			"395"
+		"ypos"			"325"
 		"zpos"			"3"
 		"wide"			"600"
 		"tall"			"53"

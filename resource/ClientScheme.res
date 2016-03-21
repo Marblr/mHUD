@@ -36,7 +36,7 @@ Scheme
 		"mBlue"				"90 200 227 255"
 		"mRed"				"227 60 60 255"
 		"mBlueTeam"			"91 122 142 255"
-		"mRedTeam"			"189 59 59 225"
+		"mRedTeam"			"189 59 59 255"
 		
 		"mBackpackBlank"	"42 42 42 255"
 		"mBackpackBlankHover"	"75 75 75 255"
@@ -3501,6 +3501,8 @@ Scheme
 	//////////////////// BORDERS //////////////////////////////
 	//
 	// describes all the border types
+	// mHUD BORDERS
+	
 	Borders
 	{
 		NoBorder
@@ -3724,6 +3726,29 @@ Scheme
 					"offset" "0 0"
 				}
 			}
+			Bottom
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteBottom3
+		{
+			"inset" "0 0 0 0"
 			Bottom
 			{
 				"1"

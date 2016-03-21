@@ -15,6 +15,7 @@
 		"scaleImage"		"1"	
 		"teambg_2"		"../hud/death_panel_red_bg"
 		"teambg_3"		"../hud/death_panel_blue_bg"
+		"border"		"mWhiteBottom3"
 		
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
@@ -39,19 +40,6 @@
 		"labelText"		"S"
 		"textAlignment"	"center"
 		"fgcolor"		"mDark"
-	}
-	"Line"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"Line"
-		"xpos"			"c-160"
-		"ypos"			"c164"
-		"zpos"			"1"
-		"wide"			"319"
-		"tall"			"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"mWhite"
 	}
 	"IconBG"
 	{

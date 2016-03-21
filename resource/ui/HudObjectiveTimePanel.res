@@ -16,6 +16,11 @@
 		
 		"draw_corner_width"		"-5"
 		"draw_corner_height" 	"-5"
+		
+		if_comp
+		{
+			"tall"		"0"
+		}
 	}
 	
 	"TimePanelProgressBar"
