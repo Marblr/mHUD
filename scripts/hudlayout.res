@@ -869,7 +869,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-150"
-		"ypos"					"255"
+		"ypos"					"70"
 		"wide"					"300"
 		"tall"					"215"
 	}
@@ -1457,7 +1457,7 @@
         "visible"               "1"
         "enabled"               "1"
         "xpos"                  "0"
-        "ypos"                  "3"
+        "ypos"                  "0"
         "zpos"                  "2"
         "wide"                  "f0"
         "tall"                  "f0"

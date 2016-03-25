@@ -70,10 +70,10 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"BluBackground"
 		"xpos"			"113"
-		"ypos"			"0"
+		"ypos"			"2"
 		"zpos"			"6"
 		"wide"			"38"
-		"tall"			"10"
+		"tall"			"8"
 		"fillcolor"		"mClearBlue"
 	}
 	
@@ -82,10 +82,10 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"RedBackground"
 		"xpos"			"151"
-		"ypos"			"0"
+		"ypos"			"2"
 		"zpos"			"6"
 		"wide"			"38"
-		"tall"			"10"
+		"tall"			"8"
 		"fillcolor"		"mClearRed"
 	}
 	

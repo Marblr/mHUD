@@ -121,7 +121,7 @@
 			"tall"			"60"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"labelText"		"#Building_hud_sentry_not_built"
 			"labelText_lodef"		"#Building_hud_sentry_not_built_360"
@@ -152,7 +152,7 @@
 			"tall"					"60"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClearRed"
+			"fillcolor"				"mClearGray"
 		}
 		
 		"BuiltHealthBG"

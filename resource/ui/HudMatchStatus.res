@@ -53,7 +53,7 @@
 	{
 		"fieldName"		"RoundCounter"
 		"xpos"			"cs-0.5"
-		"ypos"			"-2"
+		"ypos"			"1"
 		"zpos"			"1"		
 		"wide"			"300"
 		"tall"			"100"
@@ -66,11 +66,11 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"			"ObjectiveStatusTimePanel"
-		"xpos"				"c-55"
+		"xpos"				"c-20"
 		"xpos_hidef"		"c-150"
 		"xpos_lodef"		"c-150"
-		"ypos"				"0"	[$WIN32]
-		"ypos_minmode"		"-14"	[$WIN32]
+		"ypos"				"3"	[$WIN32]
+		//"ypos_minmode"		"-14"	[$WIN32]
 		"ypos"				"24"	[$X360]
 		"zpos"				"2"
 		"wide"				"110"
@@ -91,7 +91,7 @@
 		if_comp
 		{
 			"xpos"					"c-20"
-			"ypos_minmode"			"0"
+			//"ypos_minmode"		"0"
 			"delta_item_x"			"35"
 			"delta_item_start_y"	"12"
 			"delta_item_end_y"		"50"
@@ -105,23 +105,23 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"TimePanelValue"
-			"font"			"HudFontMediumSmall"
-			"font_minmode"	"HudFontSmall"
-			"font_lodef"	"HudFontMedium"
+			"font"			"Numbers16"
+			//"font_minmode"	"HudFontSmall"
+			//"font_lodef"	"HudFontMedium"
 			"fgcolor"		"TanLight"
-			"xpos"			"23"
-			"xpos_minmode"	"39"
-			"xpos_hidef"	"114"
-			"xpos_lodef"	"114"
-			"ypos"			"11"
-			"ypos_minmode"	"6"
-			"ypos_hidef"	"15"
-			"ypos_lodef"	"18"
+			"xpos"			"0"
+			//"xpos_minmode"	"39"
+			//"xpos_hidef"	"114"
+			//"xpos_lodef"	"114"
+			"ypos"			"0"
+			//"ypos_minmode"	"6"
+			//"ypos_hidef"	"15"
+			//"ypos_lodef"	"18"
 			"zpos"			"3"
-			"wide"			"45"
-			"wide_minmode"	"30"
-			"wide_lodef"	"50"
-			"tall"			"31"
+			"wide"			"40"
+			//"wide_minmode"	"30"
+			//"wide_lodef"	"50"
+			"tall"			"19"
 			"visible"		"1"
 			"enabled"		"1"
 			"textAlignment"		"center"

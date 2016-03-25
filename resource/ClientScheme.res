@@ -136,9 +136,9 @@ Scheme
 		// training
 		"HudTrainingHint"			"212 160 23 255"
 		
-		"TanDark"				"117 107 94 255"
+		"TanDark"				"110 110 110 255" //117 107 94 255"
 		"TanLight"				"227 227 227 225" //235 226 202 255
-		"TanDarker"				"46 43 42 255"
+		"TanDarker"				"30 30 30 255" //46 43 42 255
 		
 		"StoreDarkTan"			"131 121 104 255"
 		"StoreGreen"			"76 107 34 255"
@@ -2849,6 +2849,17 @@ Scheme
 			}
 		}
 		
+		"Numbers10"
+		{
+			"1"
+			{
+				"name"			"Numbers"
+				"tall"			"10"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Avenir11"
 		{
 			"1"
@@ -2876,6 +2887,28 @@ Scheme
 			"1"
 			{
 				"name"			"AvenirLTStd-Light"
+				"tall"			"11"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"Numbers11"
+		{
+			"1"
+			{
+				"name"			"Numbers"
+				"tall"			"11"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"Icons11"
+		{
+			"1"
+			{
+				"name"			"Icons"
 				"tall"			"11"
 				"additive"		"0"
 				"antialias"		"1"
@@ -2975,6 +3008,17 @@ Scheme
 			"1"
 			{
 				"name"			"AvenirLTStd-Medium"
+				"tall"			"13"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"Icons13"
+		{
+			"1"
+			{
+				"name"			"Icons"
 				"tall"			"13"
 				"additive"		"0"
 				"antialias"		"1"
@@ -3512,7 +3556,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Blank"
+					"color" "0 0 0 0"
 					"offset" "0 0"
 				}
 			}
@@ -3521,7 +3565,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Blank"
+					"color" "0 0 0 0"
 					"offset" "0 0"
 				}
 			}
@@ -3530,7 +3574,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Blank"
+					"color" "0 0 0 0"
 					"offset" "0 0"
 				}
 			}
@@ -3539,7 +3583,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Blank"
+					"color" "0 0 0 0"
 					"offset" "0 0"
 				}
 			}
@@ -3618,6 +3662,66 @@ Scheme
 			Bottom
 			{
 				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteBorder2
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
 				{
 					"color" "mWhite"
 					"offset" "0 0"
@@ -3768,6 +3872,10 @@ Scheme
 				}
 			}
 		}
+		
+		///////////////////
+		// mHud borders end
+		///////////////////
 		
 		TeamMenuBorder
 		{
@@ -4221,8 +4329,8 @@ Scheme
 			"image"					"../hud/color_panel_red"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
 		}
 		TFFatLineBorderBlueBG
 		{
@@ -4232,20 +4340,20 @@ Scheme
 			"image"					"../hud/color_panel_blu"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
 		}
 
 		TFFatLineBorderBlueBGOpaque
 		{
-			"bordertype"	"scalable_image"
-			"backgroundtype"	"2"
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
 
-			"image"	"../hud/color_panel_blu_opaque"
-			"src_corner_height"	"23"	// pixels inside the image
-			"src_corner_width"	"23"
-			"draw_corner_width"	"5"	// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" "5"	
+			"image"					"../hud/color_panel_blu_opaque"
+			"src_corner_height"		"23"	// pixels inside the image
+			"src_corner_width"		"23"
+			"draw_corner_width"		"5"	// screen size of the corners ( and sides ), proportional
+			"draw_corner_height"	"5"	
 		}
 		
 		TFFatLineBorderClearBG

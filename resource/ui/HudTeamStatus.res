@@ -18,19 +18,21 @@
 		{
 			"visible"		"0"
 			"wide"			"26"
-			"tall"			"26"
+			"tall"			"50"
 			"zpos"			"1"
 
 			"color_portrait_bg_red"	"159 59 59 255" //119 62 61 255
 			"color_portrait_bg_blue"	"91 117 137 255" //62 81 101 255
-			"color_portrait_bg_red_dead"	"40 40 40 255" //49 44 42 255
-			"color_portrait_bg_blue_dead"	"40 40 40 255" //44 49 51 255
+			"color_portrait_bg_red_dead"	"0 0 0 225" //49 44 42 255
+			"color_portrait_bg_blue_dead"	"0 0 0 225" //44 49 51 255
 			"color_bar_health_high"	"84 191 58 255"
 			"color_bar_health_med"	"191 183 58 255"
 			"percentage_health_med"	"0.6"
 			"color_bar_health_low"	"191 58 58 255"
 			"percentage_health_low"	"0.3"
 			"color_portrait_blend_dead"	"96 96 96 255"
+			"color_portrait_blend_dead_red"	"255 255 255 255"
+			"color_portrait_blend_dead_blue" "255 255 255 255"
 			
 			"playername"
 			{
@@ -219,6 +221,20 @@
 				"labelText"		"%specindex%"
 				"textAlignment"	"north-west"
 				//"fgcolor"		"235 226 202 255"
+			}
+			"DeathPanel"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"DeathPanel"
+				"xpos"			"2"
+				"ypos"			"0"
+				"zpos"			"0"
+				"wide"			"24"
+				"tall"			"24"
+				"visible"		"0"
+				"enabled"		"1"
+				"image"			"../HUD/comp_player_status"	
+				"scaleImage"	"1"	
 			}
 		}
 	}

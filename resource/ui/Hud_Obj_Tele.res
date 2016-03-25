@@ -67,7 +67,7 @@
 			"tall"			"31"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"labelText"		"#Building_hud_tele_not_built"
 			"textAlignment"	"Left"

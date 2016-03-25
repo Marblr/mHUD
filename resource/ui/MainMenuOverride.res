@@ -408,8 +408,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"r167"
-		"ypos"			"24"
+		"xpos"			"r199"
+		"ypos"			"28"
 		"zpos"			"10"
 		"wide"			"32"
 		"tall"			"32"
@@ -464,7 +464,7 @@
 			"ControlName"	"CExImageButton"
 			"fieldName"		"Notifications_ShowButtonPanel_SB"
 			"xpos"			"0"
-			"ypos"			"4"
+			"ypos"			"0"
 			"zpos"			"1"
 			"wide"			"28"
 			"tall"			"28"
@@ -511,12 +511,12 @@
 		}
 	}
 
-	"QuestLogButton"
+	"WatchStreamButton"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldName"		"QuestLogButton"
-		"xpos"			"r135"
-		"ypos"			"24"
+		"fieldName"		"WatchStreamButton"
+		"xpos"			"r167"
+		"ypos"			"28"
 		"zpos"			"1"
 		"wide"			"32"
 		"tall"			"32"
@@ -534,7 +534,100 @@
 			"ControlName"	"CExImageButton"
 			"fieldName"		"SubButton"
 			"xpos"			"0"
-			"ypos"			"4"
+			"ypos"			"0"
+			"zpos"			"1"
+			"wide"			"28"
+			"tall"			"28"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"labelText"		"d"
+			"font"			"Icons16"
+			"command"		"watch_stream"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"0"
+			"actionsignallevel" "2"
+			"proportionaltoparent"	"1"
+
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+
+			"border_default"	"NoBorder"
+			"border_armed"		"NoBorder"
+			"paintbackground"	"1"
+		
+			"defaultFgColor_override"	"mWhite"
+			"armedFgColor_override" 	"mDark"
+			"depressedFgColor_override" "mWhite"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"1"
+				"wide"			"f0"
+				"tall"			"f0"
+				"visible"		"0"
+				"enabled"		"0"
+				"scaleImage"	"1"
+				"image"			"button_streaming"
+
+				"proportionaltoparent"	"1"
+				"mouseinputenabled"	"0"
+				"keyboardinputenabled" "0"
+			}		
+		}
+	}
+
+	"StreamListPanel"
+	{
+		"ControlName"	"CTFStreamListPanel"
+		"fieldName"		"StreamListPanel"
+		"xpos"			"r375"
+		"ypos"			"60"
+		"zpos"			"1"
+		"wide"			"300"
+		"tall"			"395"
+		"visible"		"0"
+		"PaintBackgroundType"	"2"
+		"paintbackground"	"0"
+		"border"		"MainMenuHighlightBorder"
+		
+
+		"navDown"		"SettingsButton"		// when a sub element can't nav down it will pass through this
+		"navLeft"		"WatchStreamButton"	// when a sub element can't nav left it will pass through this
+	}
+	
+	"QuestLogButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"QuestLogButton"
+		"xpos"			"r135"
+		"ypos"			"28"
+		"zpos"			"1"
+		"wide"			"32"
+		"tall"			"32"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		
+		"navUp"			"Notifications_Panel"
+		"navLeft"		"SettingsButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
 			"wide"			"28"
 			"tall"			"28"
 			"autoResize"	"0"
@@ -1056,7 +1149,7 @@
 			"enabled"		"1"
 			"font"			"AvenirMed9"
 			"textAlignment"	"center"
-			"labelText"		"mHUD version from 2016-03-21"
+			"labelText"		"mHUD version 2016-03-24"
 			"fgcolor"		"mWhite"
 		}
 		
