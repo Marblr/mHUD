@@ -17,9 +17,7 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	"c45"
-		"xpos_minmode"	"r190"
 		"ypos"	"c122"
-		"ypos_minmode"	"c175"
 		"wide"	"132"
 		"tall"	"50"
 	}
@@ -56,9 +54,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"r162"
-		"xpos_minmode"	"r52"
 		"ypos"			"r52"
-		"ypos_minmode"	"r50"
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -71,12 +67,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-101"
-		"xpos_minmode"	"r175"
 		"ypos"			"c118"
-		"ypos_minmode"	"c175"
 		"wide"			"332"
 		"tall"			"52"
-		"tall_minmode"	"84"
 	}
 	
 	HudDemomanCharge
@@ -85,9 +78,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-100"
-		"xpos_minmode"	"r170"
 		"ypos"			"c115"
-		"ypos_minmode"	"c154"
 		"zpos"			"1"			// draw in front of ammo
 		"wide"			"200"
 		"tall"			"30"
@@ -101,14 +92,11 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"r80"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
 		"ypos"			"r21"	[$WIN32]
-		"ypos_minmode"	"r40"	[$WIN32]
 		"xpos"			"r112"	[$X360]
 		"ypos"			"r45"	[$X360]
 		"zpos"			"1"			// draw in front of ammo
 		"wide"			"60"
-		"wide_minmode"	"50"
 		"tall"			"8"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
@@ -120,14 +108,11 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"r80"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
 		"ypos"			"r21"	[$WIN32]
-		"ypos_minmode"	"r40"	[$WIN32]
 		"xpos"			"r112"	[$X360]
 		"ypos"			"r45"	[$X360]
 		"zpos"			"1"			// draw in front of ammo
 		"wide"			"60"
-		"wide_minmode"	"50"
 		"tall"			"8"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
@@ -191,8 +176,6 @@
 		"fieldName"				"CHudAccountPanel"
 		"xpos"					"c80"
 		"ypos"					"r242"
-		"xpos_minmode"			"r150"
-		"ypos_minmode"			"r77"
 		"wide"					"116"
 		"tall"  				"180"
 		"visible" 				"1"
@@ -204,9 +187,7 @@
 	{
 		"fieldName"				"CHealthAccountPanel"
 		"xpos"					"76"
-		"xpos_minmode"			"61"
 		"ypos"					"r152"
-		"ypos_minmode"			"r134"
 		"wide"					"116"
 		"tall"  				"180"
 		"visible" 				"1"
@@ -250,7 +231,6 @@
 		"ypos"		"302"
 		"wide"	 	"252"
 		"tall"	 	"21"
-		"tall_minmode"	 	"21"
 		"priority"	"40"
 		"priority_lodef"	"5"
 
@@ -270,7 +250,6 @@
 		"ypos"		"327"
 		"wide"	 	"252"
 		"tall"	 	"21"
-		"tall_minmode"	 	"21"
 		"priority"	"40"
 		"priority_lodef" "35"
 		
@@ -287,7 +266,6 @@
 		"ypos"		"327"
 		"wide"	 	"252"
 		"tall"	 	"21"
-		"tall_minmode"	 	"21"
 		"priority"	"35"
 
 		if_vr
@@ -474,7 +452,7 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	 "r640"
-		"ypos"	 "30"
+		"ypos"	 "32"
 		"wide"	 "628"
 		"tall"	 "468"
 
@@ -492,7 +470,7 @@
 		"IconColor"		"mWhite"
 		"LocalPlayerColor"	"mDark"
 
-		"BaseBackgroundColor"	"mClear"
+		"BaseBackgroundColor"	"mClearDeathNotice"
 		"LocalBackgroundColor"	"mClearWhite"
 	}
 
@@ -966,7 +944,6 @@
 		"enabled" 		"1"
 		"xpos"			"c-236"
 		"ypos"			"c-55"
-		"ypos_minmode"	"c5"
 		"wide"			"450"
 		"tall"			"195"
 		"PaintBackgroundType"	"0"
@@ -979,7 +956,6 @@
 		"enabled" 		"1"
 		"xpos"			"c-236"
 		"ypos"			"c-55"
-		"ypos_minmode"	"c5"
 		"wide"			"450"
 		"tall"			"200"
 		"PaintBackgroundType"	"0"
@@ -1004,7 +980,6 @@
 		"enabled" 		"1"
 		"xpos"			"c-236"
 		"ypos"			"c-50"
-		"ypos_minmode"	"c5"
 		"wide"			"470"
 		"tall"			"200"
 		"PaintBackgroundType"	"0"
@@ -1016,12 +991,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-100"
-		"xpos_minmode"	"r208"
 		"ypos"			"c116"
-		"ypos_minmode"	"c147"
 		"wide"			"200"
 		"tall"			"51"
-		"tall_minmode"	"100"
 	}		
 
 	HudTeamGoal
