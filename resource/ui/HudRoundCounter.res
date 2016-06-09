@@ -6,7 +6,7 @@
 		"xpos"			"cs-0.5"
 		"ypos"			"-2"
 		"zpos"			"2"		
-		"wide"			"300"
+		"wide"			"76"
 		"tall"			"25"
 		"visible"		"1"
 		"enabled"		"1"
@@ -19,7 +19,7 @@
 
 		"RoundIndicatorPanel_kv"
 		{
-			"ypos"				"3"
+			"ypos"				"4"
 			"wide"				"6"
 			"tall"				"6"
 			"zpos"				"7"
@@ -65,39 +65,65 @@
 		"scaleimage"			"1"
 	}
 	
+	"HudRoundCounterAnchor"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"HudRoundCounterAnchor"
+		"xpos"			"0"
+		"ypos"			"3"
+		"zpos"			"6"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"fillcolor"		"mDark"
+	}
+	
 	"BluBackground"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"BluBackground"
-		"xpos"			"113"
-		"ypos"			"2"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"6"
 		"wide"			"38"
 		"tall"			"8"
 		"fillcolor"		"mClearBlue"
+		
+		"pin_to_sibling"	"HudRoundCounterAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"RedBackground"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"RedBackground"
-		"xpos"			"151"
-		"ypos"			"2"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"6"
-		"wide"			"38"
+		"wide"			"40"
 		"tall"			"8"
 		"fillcolor"		"mClearRed"
+		
+		"pin_to_sibling"	"BluBackground"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"TimerBackground"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TimerBackground"
-		"xpos"			"113"
-		"ypos"			"10"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"6"
 		"wide"			"76"
 		"tall"			"15"
-		"fillcolor"		"mClear"
+		"fillcolor"		"mClearTimer"
+		
+		"pin_to_sibling"	"BluBackground"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 }

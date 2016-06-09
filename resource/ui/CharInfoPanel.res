@@ -45,7 +45,7 @@
 		"image"			""
 		"fillcolor"		"mDark"
 		"tileImage"		"1"
-		"border"		"mWhiteBottom3"
+		"border"		"NoBorder"
 	}				
 	"BackgroundFooter"
 	{
@@ -94,21 +94,20 @@
 			"ControlName"	"ImagePanel"
 			"fieldName"		"HeaderLine"
 			"xpos"			"0"
-			"ypos"			"31"
-			"zpos"			"5"
+			"ypos"			"0"
+			"zpos"			"-1"
 			"wide"			"f0"
-			"tall"			"2"
-			"visible"		"0"
+			"tall"			"32"
+			"visible"		"1"
 			"enabled"		"1"
-			"image"			""
-			"fillcolor"		"mWhite"
-			"scaleImage"	"1"
-		}				
+			"fillcolor"		"0 0 0 0"
+			"border"		"mWhiteBottom3"
+		}
 		
 		"tabskv"
 		{
 			"textinsetx"		"20"
-			"font"				"Avenir24"
+			"font"				"AvenirCaps24"
 			"defaultBgColor_override"	"40 40 40 255"
 			"selectedcolor"		"mWhite"
 			"unselectedcolor"	"mGray"	

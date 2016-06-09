@@ -12,7 +12,7 @@
 		"visible"		"1"
 		"proportionaltoparent"	"1"
 
-		"bgcolor_override"	"0 0 0 100"
+		"bgcolor_override"	"mDarker"
 	}
 
 
@@ -152,7 +152,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor"		"200 0 0 255"
+		"fgcolor"		"227 50 50 255"
 	}
 
 	"Stream_URLButton"

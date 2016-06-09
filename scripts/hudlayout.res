@@ -452,7 +452,7 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	 "r640"
-		"ypos"	 "32"
+		"ypos"	 "26"
 		"wide"	 "628"
 		"tall"	 "468"
 
@@ -828,6 +828,9 @@
 		"ypos"					"315"
 		"wide"					"600"
 		"tall"					"300"
+		"tall"					"300"
+ 		"zpos"					"4"
+ 		"proportionaltoparent"	"1"
 	}
 
 	ArenaWinPanel
@@ -1001,23 +1004,20 @@
 		"fieldName"				"HudTeamGoal"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-160"
-		"ypos"					"65"
-		"ypos_lodef"			"75"
-		"wide"					"320"
-		"tall"					"100"
+		"xpos"					"c-261"
+		"ypos"					"0"
+		"wide"					"440"
+		"tall"					"245"
 	}
-
 
 	HudTeamGoalTournament
 	{
 		"fieldName"				"HudTeamGoalTournament"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-160"
+		"xpos"					"c-261"
 		"ypos"					"15"
-		"ypos_lodef"			"75"
-		"wide"					"320"
+		"wide"					"440"
 		"tall"					"245"
 	}
 
@@ -1025,13 +1025,11 @@
 	{
 		"fieldName"				"HudTeamSwitch"
 		"visible"				"0"
-		"enabled"				"1"
+		"enable"				"1"
 		"xpos"					"c-160"
-		"ypos"					"75"
-		"ypos_hidef"				"90"
-		"ypos_lodef"			"90"
+		"ypos"					"51"
 		"wide"					"320"
-		"tall"					"100"
+		"tall"					"150"
 	}
 
 	HudArenaNotification
@@ -1100,9 +1098,7 @@
 		"enabled"				"1"
 		"xpos"					"c-160"
 		"ypos"					"5"
-		"ypos_minmode"				"15"
-		"ypos_lodef"				"75"
-		"wide"					"125"
+		"wide"					"300"
 		"tall"					"55"
 	}
 	
@@ -1296,7 +1292,7 @@
 	"CHudVote"
 	{
 		"fieldName"		"CHudVote"
-		"xpos"			"0"			
+		"xpos"			"-5"			
 		"ypos"			"0"
 		"wide"			"640"
 		"tall"			"480"
@@ -1312,11 +1308,10 @@
 		"visible"		"0"
 		"enable"		"1"
 		"xpos"			"c-160"
-		"ypos"			"100"
+		"ypos"			"51"
 		"wide"			"320"
 		"tall"			"150"
 	}
-
 
 	"CTFStreakNotice"
 	{
@@ -1410,6 +1405,7 @@
 		"ypos"	"0"
 		"wide"	"f0"
 		"tall"	"f0"
+		"player_name_font"	"AvenirSpecPlayerName"
 	}
 
 	MatchSummary
@@ -1430,18 +1426,6 @@
         "enabled"               "1"
         "xpos"                  "0"
         "ypos"                  "0"
-        "zpos"                  "2"
-        "wide"                  "f0"
-        "tall"                  "f0"
-    }
- 
-    HudTeamStatus
-    {
-        "fieldName"             "HudTeamStatus"
-        "visible"               "1"
-        "enabled"               "1"
-        "xpos"                  "0"
-        "ypos"                  "3"
         "zpos"                  "2"
         "wide"                  "f0"
         "tall"                  "f0"

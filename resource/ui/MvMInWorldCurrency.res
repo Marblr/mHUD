@@ -27,7 +27,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"221 182 72 200"
+		"bgcolor_override"	"221 182 72 0"
 	}
 	
 	"BackgroundGood2"
@@ -66,6 +66,7 @@
 		"fieldName"		"CurrencyGood"
 		"font"			"Avenir16"
 		"fgcolor"		"mDark"
+		"bgcolor_override"	"221 182 72 200"
 		"xpos"			"0"
 		"ypos"			"20"
 		"zpos"			"4"
@@ -82,7 +83,8 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"CurrencyBad"
 		"font"			"Avenir16"
-		"fgcolor"		"130 30 30 255"
+		"fgcolor"		"mDark"
+		"bgcolor_override"	"227 62 52 200"
 		"xpos"			"0"
 		"ypos"			"20"
 		"zpos"			"4"

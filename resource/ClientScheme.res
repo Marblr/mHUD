@@ -1,13 +1,53 @@
-//
-// TRACKER SCHEME RESOURCE FILE
-//
-// sections:
-//		colors			- all the colors used by the scheme
-//		basesettings	- contains settings for app to use to draw controls
-//		fonts			- list of all the fonts used by app
-//		borders			- description of all the borders
-//
-//
+////////////////////////////////////////////////////////////////////////////////////////
+
+// Here you can choose from different styles to show the in-game HUD in.
+// By default, mHUD uses the transparent styles.
+// Uncomment a #base entry to make that style active.
+// Make sure that only *** ONE *** style for each section is uncommented at a time.
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+// Background style of HEALTH and AMMO:
+#base "scheme/Health_transparent.res"				// Transparent background
+//#base "scheme/Health_solid.res"					// Solid background
+//#base "scheme/Health_shadows_solid.res"			// Solid dropshadows
+//#base "scheme/Health_shadows_blur.res"			// Blurred dropshadows
+//#base "scheme/Health_none.res"					// No background
+
+
+
+// Background style of METERS (ubercharge, jarate, etc):
+#base "scheme/Meters_transparent.res"				// Transparent background
+//#base "scheme/Meters_solid.res"					// Solid background
+//#base "scheme/Meters_none.res"					// No background
+
+
+
+// Background style of the SCOREBOARD:
+#base "scheme/Scoreboard_transparent.res"			// Transparent background
+//#base "scheme/Scoreboard_solid.res"				// Solid background
+//#base "scheme/Scoreboard_none.res"				// No background
+
+
+
+// Background style of the KILLFEED:
+#base "scheme/Killfeed_transparent.res"				// Transparent background
+//#base "scheme/Killfeed_solid.res"					// Solid background
+//#base "scheme/Killfeed_none.res"					// No background
+
+
+
+// Background style of OTHER HUD ELEMENTS (winpanel, killstreak counter, objectives, etc):
+#base "scheme/Other_transparent.res"				// Transparent background
+//#base "scheme/Other_solid.res"					// Solid background
+//#base "scheme/Other_none.res"						// No background
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 Scheme
 {
 	//Name - currently overriden in code
@@ -19,36 +59,22 @@ Scheme
 	Colors
 	{
 		/////
-		///// mHUD Colors Start
+		/////	mHUD Colors Start
 		/////
-		
-		///// In-game Customization
-		
-		// The transparent boxes behind in-game HUD elements:
-		"mClearHealth"			"0 0 0 225"
-		"mClearAmmo"			"0 0 0 225"
-		"mClearMeter"			"0 0 0 225"
-		"mClearCountMeter"		"0 0 0 225"
-		"mClearUberMeter"		"0 0 0 225"
-		"mClearStreak"			"0 0 0 225"
-		"mClearDeathNotice"		"0 0 0 225"
-		"mClearScoreboard"		"0 0 0 225"
-		"mClearWinPanel"		"0 0 0 225"
-		
-		// The dropshadows behind in-game HUD elements:
-		"mDarkHealth"			"30 30 30 0"
-		"mDarkAmmo"				"30 30 30 0"
 		
 		// Solid Colors
 		
 		"mWhite"			"227 227 227 255"
+		"mWhite2"			"170 170 170 255"
 		"mDark"				"30 30 30 255"
 		
 		"mDark2"			"40 40 40 255"
 		"mDark3"			"50 50 50 255"
 		"mGray"				"120 120 120 255"
+		"mDarker"			"22 22 22 255"
 		
 		"mGreen"			"0 227 0 255"
+		"mGreenMoney"		"101 165 48 255"
 		
 		"mBlue"				"90 200 227 255"
 		"mRed"				"227 60 60 255"
@@ -67,8 +93,8 @@ Scheme
 		"mClearGray"		"100 100 100 200"
 		"mClearGrayDark"	"60 60 60 200"
 		
-		"mClearBlue"		"91 122 142 200"
-		"mClearRed"			"189 59 59 200"
+		"mClearBlue"		"91 122 142 225"
+		"mClearRed"			"189 59 59 225"
 		
 		"mNone"				"0 0 0 0"
 		
@@ -86,11 +112,23 @@ Scheme
 		"mAmmoLow"			"120 120 120 255"
 		
 		// Meters
-		"mChargeLabel"		"120 120 120 255"
+		"mChargeLabel"		"128 128 128 255"
 		"mChargeFull"		"90 200 227 255"
 		
+		// Misc.
+		"mClassBar1"		"140 106 44 255" // #8C6A2C
+		"mClassBar2"		"134 100 41 255"
+		"mClassBar3"		"128 94 39 255"
+		"mClassBar4"		"122 88 37 255"
+		"mClassBar5"		"116 83 35 255"
+		"mClassBar6"		"110 77 33 255"
+		"mClassBar7"		"104 71 31 255"
+		"mClassBar8"		"98 65 29 255"
+		"mClassBar9"		"93 60 27 255" // #5D3C1B
+		
+		
 		/////
-		///// mHUD Colors End
+		/////	mHUD Colors End
 		/////
 		
 		// base colors
@@ -275,8 +313,8 @@ Scheme
 		// vgui_controls color specifications
 		ReplayBrowser.BgColor								"DarkBrown"
 		ReplayBrowser.Details.TitleEdit.Carat.FgColor		"LightRed"
-		ReplayBrowser.Button.ArmedBgColor					"TFOrange"
-		ReplayBrowser.Button.DepressedBgColor				"TFOrange"
+		ReplayBrowser.Button.ArmedBgColor					"mWhite"
+		ReplayBrowser.Button.DepressedBgColor				"mWhite"
 		ReplayBrowser.CollectionTitle.FgColor				"LightRed"
 		ReplayBrowser.Warning.FgColor						"White"
 		ReplayBrowser.ScrollBar.SliderButton.FgColor		"TransparentYellow"
@@ -285,13 +323,13 @@ Scheme
 		
 		Replay.RenderDialog.BgColor							"LighterDarkBrown"
 		
-		Econ.Dialog.BgColor									"Blank"
-		Econ.Button.BgColor									"TanDark"
-		Econ.Button.FgColor									"TanLight"
-		Econ.Button.ArmedBgColor							"TFOrange"
-		Econ.Button.ArmedFgColor							"TanLight"
-		Econ.Button.DepressedBgColor						"TFOrange"
-		Econ.Button.DepressedFgColor						"Black"
+		Econ.Dialog.BgColor									"mDark2"
+		Econ.Button.BgColor									"mDark"
+		Econ.Button.FgColor									"mWhite"
+		Econ.Button.ArmedBgColor							"mWhite"
+		Econ.Button.ArmedFgColor							"mDark"
+		Econ.Button.DepressedBgColor						"mWhite"
+		Econ.Button.DepressedFgColor						"mDark"
 		
 		Econ.Button.PresetDefaultColorFg					"mDark"
 		Econ.Button.PresetArmedColorFg						"mDark"
@@ -455,7 +493,7 @@ Scheme
 		HudObjectives.FgColor		"HudPanelForeground"
 		HudObjectives.BgColor		"HudPanelBackground"
 		HudObjectives.BorderColor	"HudPanelBorder"
-				
+		
 		HudProgressBar.Active		"HudProgressBarActive"
 		HudProgressBar.InActive		"HudProgressBarInActive"
 		
@@ -882,7 +920,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"44"
 				"tall_lodef"	"52"
 				"weight"	"500"
@@ -895,7 +933,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"35"
 				"tall_lodef"	"40"
 				"weight"	"500"
@@ -931,7 +969,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"30"
 				"weight"	"500"
 				"additive"	"0"
@@ -993,7 +1031,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"24"
 				"weight"	"500"
 				"additive"	"0"
@@ -1004,7 +1042,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"18"
 				"weight"	"500"
 				"additive"	"0"
@@ -1042,7 +1080,7 @@ Scheme
 			"1"
 			{
 				"name"		"AvenirLTStd-Medium"
-				"tall"		"13"
+				"tall"		"12"
 				"tall_lodef"	"16"
 				"additive"	"0"
 				"antialias" 	"1"
@@ -1052,7 +1090,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"16"
 				"weight"	"500"
 				"additive"	"0"
@@ -1063,7 +1101,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AvenirLTStd-Black"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"14"
 				"additive"	"0"
 				"antialias" "1"
@@ -1073,7 +1111,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"14"
 				"weight"	"500"
 				"additive"	"0"
@@ -1085,9 +1123,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary"
-				"tall"		"11"
-				"weight"	"500"
+				"name"		"AvenirLTStd-Light"
+				"tall"		"10"
 				"additive"	"0"
 				"antialias" 	"1"
 			}
@@ -1108,9 +1145,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AvenirLTStd-Black"
+				"name"		"AvenirLTStd-Medium"
 				"tall"		"11"
-				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -1119,7 +1155,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"4"
 				"weight"	"500"
 				"additive"	"0"
@@ -1130,7 +1166,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"10"
 				"weight"	"500"
 				"additive"	"0"
@@ -1141,7 +1177,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"16"
 				"weight"	"500"
 				"additive"	"0"
@@ -1152,7 +1188,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"9"
 				"weight"	"0"
 				"additive"	"0"
@@ -1174,7 +1210,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"6"
 				"weight"	"0"
 				"additive"	"0"
@@ -1771,6 +1807,29 @@ Scheme
 				"antialias" "1"
 			}
 		}
+
+		"MatchSummaryWinner"
+		{
+			"1"
+			{
+				"name"		"TF2 Secondary"
+				"tall"		"20"
+				"weight"	"400"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		
+		"CompMatchStartTeamNames"
+		{
+			"1"
+			{
+				"name"		"AvenirLTStd-Black"
+				"tall"		"20"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
 		
 		"ControlPointTimer"
 		{
@@ -1899,42 +1958,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"10"
-				"weight"	"700"
-				"yres"		"480 599"
-				"dropshadow"	"1"
-			}
-			"2"
-			{
-				"name"		"Verdana"
-				"tall"		"10"
-				"weight"	"700"
-				"yres"		"600 767"
-				"dropshadow"	"1"
-			}
-			"3"
-			{
-				"name"		"Verdana"
-				"tall"		"13"
-				"weight"	"700"
-				"yres"		"768 1023"
-				"dropshadow"	"1"
-			}
-			"4"
-			{
-				"name"		"Verdana"
-				"tall"		"14"
-				"weight"	"700"
-				"yres"		"1024 1199"
-				"dropshadow"	"1"
-			}
-			"5"
-			{
-				"name"		"Verdana"
-				"tall"		"15"
-				"weight"	"700"
-				"yres"		"1200 10000"
+				"name"			"AvenirLTStd-Medium"
+				"tall"			"13"
 				"dropshadow"	"1"
 			}
 		}
@@ -2034,7 +2059,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"36"
 				"tall_lodef"		"28"
 				"weight"	"500"
@@ -2044,7 +2069,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"30"
 				"tall_lodef"		"22"
 				"weight"	"500"
@@ -2130,7 +2155,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"36"
 				"weight"	"500"
 				"additive"	"0"
@@ -2238,9 +2263,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"8"
-				"weight"	"500"
+				"name"		"AvenirLTStd-Black-Caps"
+				"tall"		"9"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -2249,9 +2273,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"9"
-				"weight"	"500"
+				"name"		"AvenirLTStd-Black-Caps"
+				"tall"		"10"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -2260,9 +2283,18 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"12"
-				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"ItemFontNameLarger"
+		{
+			"1"
+			{
+				"name"		"AvenirLTStd-Black-Caps"
+				"tall"		"18"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -2271,7 +2303,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary"
+				"name"		"AvenirLTStd-Medium"
 				"tall"		"7"
 				"weight"	"500"
 				"additive"	"0"
@@ -2282,8 +2314,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"8"
+				"name"		"AvenirLTStd-Medium"
+				"tall"		"9"
 				"antialias" "1"
 				"weight"	"500"
 			}
@@ -2292,7 +2324,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary"
+				"name"		"AvenirLTStd-Medium"
 				"tall"		"8"
 				"weight"	"500"
 				"additive"	"0"
@@ -2303,7 +2335,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary"
+				"name"		"AvenirLTStd-Medium"
 				"tall"		"11"
 				"weight"	"500"
 				"additive"	"0"
@@ -2315,7 +2347,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"9"
 				"weight"	"500"
 				"additive"	"0"
@@ -2326,7 +2358,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"9"
 				"weight"	"500"
 				"blur"		"3"
@@ -2624,7 +2656,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"11"
 				"weight"	"500"
 				"additive"	"0"
@@ -2635,7 +2667,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"14"
 				"weight"	"500"
 				"additive"	"0"
@@ -2659,7 +2691,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"24"
 				"weight"	"500"
 				"additive"	"0"
@@ -2687,7 +2719,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"14"
 				"weight"	"500"
 				"additive"	"0"
@@ -2698,7 +2730,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"AvenirLTStd-Black-Caps"
 				"tall"		"24"
 				"weight"	"500"
 				"additive"	"0"
@@ -2722,6 +2754,18 @@ Scheme
 		//
 		// mHUD Fonts Start
 		//
+		
+		"AvenirSpecPlayerName"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Medium"
+				"tall"			"11"
+				"additive"		"0"
+				"antialias"		"1"
+				"dropshadow"	"1"
+			}
+		}
 		
 		"AvenirLight6"
 		{
@@ -2844,6 +2888,17 @@ Scheme
 			}
 		}
 		
+		"AvenirCaps10"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"10"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"AvenirMed10"
 		{
 			"1"
@@ -2882,6 +2937,17 @@ Scheme
 			"1"
 			{
 				"name"			"AvenirLTStd-Black"
+				"tall"			"11"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirCaps11"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
 				"tall"			"11"
 				"additive" 		"0"
 				"antialias"		"1"
@@ -2943,11 +3009,33 @@ Scheme
 			}
 		}
 		
+		"AvenirCaps12"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"12"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"AvenirMed12"
 		{
 			"1"
 			{
 				"name"			"AvenirLTStd-Medium"
+				"tall"			"12"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirMedCn12"
+		{
+			"1"
+			{
+				"name"			"AvenirNextLTPro-MediumCn"
 				"tall"			"12"
 				"additive"		"0"
 				"antialias"		"1"
@@ -3020,11 +3108,44 @@ Scheme
 			}
 		}
 		
+		"AvenirCaps13"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"13"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"AvenirMed13"
 		{
 			"1"
 			{
 				"name"			"AvenirLTStd-Medium"
+				"tall"			"13"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirMedCn13"
+		{
+			"1"
+			{
+				"name"			"AvenirNextLTPro-MediumCn"
+				"tall"			"13"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirDemiCn13"
+		{
+			"1"
+			{
+				"name"			"AvenirNextLTPro-DemiCn"
 				"tall"			"13"
 				"additive"		"0"
 				"antialias"		"1"
@@ -3047,6 +3168,17 @@ Scheme
 			"1"
 			{
 				"name"			"AvenirLTStd-Black"
+				"tall"			"14"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirCaps14"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
 				"tall"			"14"
 				"additive" 		"0"
 				"antialias"		"1"
@@ -3117,7 +3249,7 @@ Scheme
 				"additive"		"0"
 				"antialias"		"1"
 				"dropshadow" 	"0"
-					"outline"	"1"
+				"outline"		"1"
 			}
 		}
 
@@ -3128,6 +3260,17 @@ Scheme
 				"name"			"AvenirLTStd-Black"
 				"tall"			"16"
 				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirCaps16"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"16"
+				"additive" 		"0"
 				"antialias"		"1"
 			}
 		}
@@ -3181,6 +3324,17 @@ Scheme
 			"1"
 			{
 				"name"			"AvenirLTStd-Black"
+				"tall"			"18"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirCaps18"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
 				"tall"			"18"
 				"additive" 		"0"
 				"antialias"		"1"
@@ -3264,6 +3418,17 @@ Scheme
 			}
 		}
 		
+		"AvenirCaps20"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"20"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"AvenirLight20"
 		{
 			"1"
@@ -3319,6 +3484,17 @@ Scheme
 			}
 		}
 		
+		"AvenirCaps24"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"24"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"AvenirMed24"
 		{
 			"1"
@@ -3363,6 +3539,50 @@ Scheme
 			}
 		}
 		
+		"Avenir28"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black"
+				"tall"			"28"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirCaps28"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"28"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"Avenir30"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black"
+				"tall"			"30"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirCaps30"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"30"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"NumbersDamageLarge"
 		{
 			"1"
@@ -3372,7 +3592,7 @@ Scheme
 				"additive"		"0"
 				"antialias"		"1"
 				"dropshadow" 	"0"
-					"outline"	"1"
+				"outline"		"1"
 			}
 		}
 
@@ -3464,6 +3684,17 @@ Scheme
 			}
 		}
 		
+		"AvenirCaps40"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"40"
+				"additive" 		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"AvenirLight40"
 		{
 			"1"
@@ -3519,6 +3750,17 @@ Scheme
 			}
 		}
 		
+		"NumbersPipes"
+		{
+			"1"
+			{
+				"name"			"Numbers"
+				"tall"			"16"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Avenir48"
 		{
 			"1"
@@ -3526,6 +3768,17 @@ Scheme
 				"name"			"AvenirLTStd-Black"
 				"tall"			"48"
 				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirCaps48"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black-Caps"
+				"tall"			"48"
+				"additive" 		"0"
 				"antialias"		"1"
 			}
 		}
@@ -3646,6 +3899,186 @@ Scheme
 			}
 		}
 		
+		mDarkBorder8
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"4"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"5"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"6"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"7"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"8"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"4"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"5"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"6"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"7"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"8"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"4"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"5"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"6"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"7"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"8"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"4"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"5"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"6"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"7"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"8"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+			}
+		}
+		
 		mWhiteBorder
 		{
 			"inset" "0 0 0 0"
@@ -3739,6 +4172,86 @@ Scheme
 					"offset" "0 0"
 				}
 				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteBorder3
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
 				{
 					"color" "mWhite"
 					"offset" "0 0"
@@ -3867,6 +4380,213 @@ Scheme
 			}
 		}
 		
+		mDarkBorder2
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mDark"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteTop
+		{
+			"inset" "0 0 0 0"
+			Top
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteTop2
+		{
+			"inset" "0 0 0 0"
+			Top
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteTop3
+		{
+			"inset" "0 0 0 0"
+			Top
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteLeft
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteLeft2
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteRight
+		{
+			"inset" "0 0 0 0"
+			Right
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteRight2
+		{
+			"inset" "0 0 0 0"
+			Right
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteBottom
+		{
+			"inset" "0 0 0 0"
+			Bottom
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhiteBottom2
+		{
+			"inset" "0 0 0 0"
+			Bottom
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
 		mWhiteBottom3
 		{
 			"inset" "0 0 0 0"
@@ -3918,24 +4638,68 @@ Scheme
 			}
 		}
 		
-		mWhiteTop3
+		mRedBottom
 		{
 			"inset" "0 0 0 0"
-			Top
+			Bottom
 			{
 				"1"
 				{
-					"color" "mWhite"
+					"color" "mRed"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mRedBottom2
+		{
+			"inset" "0 0 0 0"
+			Bottom
+			{
+				"1"
+				{
+					"color" "mRed"
 					"offset" "0 0"
 				}
 				"2"
 				{
-					"color" "mWhite"
+					"color" "mRed"
 					"offset" "0 0"
 				}
-				"3"
+			}
+		}
+		
+		mBlueBottom2
+		{
+			"inset" "0 0 0 0"
+			Bottom
+			{
+				"1"
 				{
-					"color" "mWhite"
+					"color" "mBlue"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mBlue"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mGreenBottom2
+		{
+			"inset" "0 0 0 0"
+			Bottom
+			{
+				"1"
+				{
+					"color" "mGreenMoney"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mGreenMoney"
 					"offset" "0 0"
 				}
 			}
@@ -3965,6 +4729,27 @@ Scheme
 			"src_corner_width"		"24"
 			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"0"	
+		}
+		
+		mWhiteTopBottom
+		{
+			"inset" "0 0 0 0"
+			Top
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+			Bottom
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
 		}
 		
 		///////////////////
@@ -4347,6 +5132,7 @@ Scheme
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"11"	
 		}
+		
 		OutlinedDullGreyBox
 		{
 			"bordertype"			"scalable_image"
@@ -4371,6 +5157,7 @@ Scheme
 			"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"8"	
 		}
+		
 		TFFatLineBorderOpaque
 		{
 			"bordertype"			"scalable_image"
@@ -4379,9 +5166,10 @@ Scheme
 			"image"					"../hud/color_panel_brown_opaque"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
 		}
+		
 		TFFatLineBorder
 		{
 			"bordertype"			"scalable_image"
@@ -4394,6 +5182,7 @@ Scheme
 			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"0"	
 		}
+		
 		TFFatLineBorderRedBGOpaque
 		{
 			"bordertype"			"scalable_image"
@@ -4402,9 +5191,22 @@ Scheme
 			"image"					"../hud/color_panel_red_opaque"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
 		}
+		
+		TFFatLineBorderRedBGMoreOpaque
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"../hud/color_panel_red_more_opaque"
+			"src_corner_height"		"23"				// pixels inside the image
+			"src_corner_width"		"23"
+			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
+		}
+		
 		TFFatLineBorderRedBGOpaque_Store
 		{
 			"bordertype"			"scalable_image"
@@ -4416,6 +5218,7 @@ Scheme
 			"draw_corner_width"		"11"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"11"	
 		}
+		
 		TFFatLineBorderRedBG
 		{
 			"bordertype"			"scalable_image"
@@ -4427,6 +5230,7 @@ Scheme
 			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"0"	
 		}
+		
 		TFFatLineBorderBlueBG
 		{
 			"bordertype"			"scalable_image"
@@ -4447,8 +5251,20 @@ Scheme
 			"image"					"../hud/color_panel_blu_opaque"
 			"src_corner_height"		"23"	// pixels inside the image
 			"src_corner_width"		"23"
-			"draw_corner_width"		"5"	// screen size of the corners ( and sides ), proportional
-			"draw_corner_height"	"5"	
+			"draw_corner_width"		"0"	// screen size of the corners ( and sides ), proportional
+			"draw_corner_height"	"0"	
+		}
+		
+		TFFatLineBorderBlueBGMoreOpaque
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"../hud/color_panel_blu_more_opaque"
+			"src_corner_height"		"23"				// pixels inside the image
+			"src_corner_width"		"23"
+			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
 		}
 		
 		TFFatLineBorderClearBG
@@ -4459,8 +5275,8 @@ Scheme
 			"image"					"../hud/color_panel_clear"
 			"src_corner_height"		"23"	// pixels inside the image
 			"src_corner_width"		"23"
-			"draw_corner_width"		"5"	// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_width"		"0"	// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
 		}
 		
 		ToolTipBorder
@@ -4544,18 +5360,6 @@ Scheme
 		
 		EconItemBorder
 		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			"color"					"mBackpackBlank"
-			
-			"image"					"backpack_rect_mouseover_color"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
-		}
-		Econ.Button.Border.Default
-		{
 			"inset" "0 0 0 0"
 			Left
 			{
@@ -4587,6 +5391,23 @@ Scheme
 			Bottom
 			{
 				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		Econ.Button.Border.Default
+		{
+			"inset" "0 0 0 0"
+			Bottom
+			{
+				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
 				{
 					"color" "mWhite"
 					"offset" "0 0"
@@ -4609,11 +5430,41 @@ Scheme
 					"color" "mWhite"
 					"offset" "0 0"
 				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"4"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
 			}
 
 			Right
 			{
 				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"4"
 				{
 					"color" "mWhite"
 					"offset" "0 0"
@@ -4627,11 +5478,41 @@ Scheme
 					"color" "mWhite"
 					"offset" "0 0"
 				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"4"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
 			}
 
 			Bottom
 			{
 				"1"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"3"
+				{
+					"color" "mWhite"
+					"offset" "0 0"
+				}
+				"4"
 				{
 					"color" "mWhite"
 					"offset" "0 0"
@@ -9225,6 +10106,16 @@ Scheme
 		{
 			"font" "resource/fonts/Emblems.ttf"
 			"name" "Emblems"
+		}
+		"14"
+		{
+			"font" "resource/fonts/AvenirNextLTPro-DemiCn.otf"
+			"name" "AvenirNextLTPro-DemiCn"
+		}
+		"15"
+		{
+			"font" "resource/fonts/AvenirLTStd-Black-Caps.otf"
+			"name" "AvenirLTStd-Black-Caps"
 		}
 	}
 }

@@ -14,6 +14,20 @@
 		"enabled"		"0"
 		"tabPosition"	"0"
 	}
+	
+	"DarkenPanel"
+	{
+		"ControlName" 			"ImagePanel"
+		"fieldName" 			"DarkenPanel"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"0"
+		"wide"					"f0"
+		"tall"					"f0"
+		"visible" 				"1"
+		"enabled" 				"1"
+		"fillcolor"				"0 0 0 128"
+	}
 
 	"SysMenu"
 	{
@@ -63,12 +77,26 @@
 		"brighttext"	"1"
 	}
 	
+	"TeamMenuAnchor"
+	{
+		"ControlName"					"ImagePanel"
+		"fieldName"						"TeamMenuAnchor"
+		"xpos"							"c0"
+		"ypos"							"c0"
+		"zpos"							"100"		
+		"wide"							"0"
+		"tall"							"0"
+		"visible"						"0"
+		"enabled"						"1"
+		"fillcolor"						"mDark"
+	}
+	
 	"teambutton0"
 	{
 		"ControlName"					"CTFTImageButton"
 		"fieldName"						"teambutton0"
-		"xpos"							"c-58"
-		"ypos"							"c-22"
+		"xpos"							"-2"
+		"ypos"							"22"
 		"zpos"							"100"		
 		"wide"							"56"
 		"tall"							"45"
@@ -95,14 +123,36 @@
 		"defaultFgColor_override"		"mWhite"
 		"armedFgColor_override" 		"mBlueTeam"
 		"depressedFgColor_override"		"mWhite"
+		
+		"pin_to_sibling"	"TeamMenuAnchor"
+		"pin_corner_to_sibling" "PIN_BOTTOMRIGHT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	
+	"teambutton0hotkey"
+	{
+		"ControlName"					"CExImageButton"
+		"fieldName"						"teambutton0hotkey"
+		"xpos"							"9999"
+		"ypos"							"c-22"
+		"zpos"							"100"		
+		"wide"							"56"
+		"tall"							"45"
+		"visible"						"1"
+		"enabled"						"1"
+		"labelText"						"(&1)"
+		"textAlignment"					"center"
+		"command"						"jointeam blue"
+		"team"							"3"		// team blue
+		"font"							"Numbers24"
 	}
 
 	"teambutton1"
 	{
 		"ControlName"					"CTFImageButton"
 		"fieldName"						"teambutton1"
-		"xpos"							"c2"
-		"ypos"							"c-22"
+		"xpos"							"-2"
+		"ypos"							"-22"
 		"zpos"							"100"		
 		"wide"							"56"
 		"tall"							"45"
@@ -129,17 +179,39 @@
 		"defaultFgColor_override"		"mWhite"
 		"armedFgColor_override" 		"mRedTeam"
 		"depressedFgColor_override" 	"mWhite"
+		
+		"pin_to_sibling"	"TeamMenuAnchor"
+		"pin_corner_to_sibling" "PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+
+	"teambutton1hotkey"
+	{
+		"ControlName"					"CExImageButton"
+		"fieldName"						"teambutton1hotkey"
+		"xpos"							"9999"
+		"ypos"							"c-22"
+		"zpos"							"100"		
+		"wide"							"56"
+		"tall"							"45"
+		"visible"						"1"
+		"enabled"						"1"
+		"labelText"						"(&2)"
+		"textAlignment"					"center"
+		"command"						"jointeam red"
+		"team"							"2"		// team red
+		"font"							"Numbers24"
 	}
 
 	"teambutton2"
 	{
 		"ControlName"					"CExImageButton"
 		"fieldName"						"teambutton2"
-		"xpos"							"c-58"
-		"ypos"							"c-42"
+		"xpos"							"0"
+		"ypos"							"3"
 		"zpos"							"100"
 		"wide"							"116" 
-		"tall"							"17"
+		"tall"							"20"
 		"autoResize"					"0"
 		"pinCorner"						"2"
 		"visible"						"1"
@@ -161,17 +233,21 @@
 		"defaultFgColor_override"		"mWhite"
 		"armedFgColor_override" 		"mDark"
 		"depressedFgColor_override"		"mWhite"
+		
+		"pin_to_sibling"	"teambutton0"
+		"pin_corner_to_sibling" "PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPLEFT" // Corner of Element you are pinning to
 	}
 	
 	"teambutton3"
 	{
 		"ControlName"					"CExImageButton"
 		"fieldName"						"teambutton3"
-		"xpos"							"c-58"
-		"ypos"							"c26"
+		"xpos"							"0"
+		"ypos"							"3"
 		"zpos"							"100"
 		"wide"							"116"
-		"tall"							"17"
+		"tall"							"20"
 		"autoResize"					"0"
 		"pinCorner"						"2"
 		"visible"						"1"
@@ -193,13 +269,17 @@
 		"defaultFgColor_override"		"mWhite"
 		"armedFgColor_override" 		"mDark"
 		"depressedFgColor_override"		"mWhite"
+		
+		"pin_to_sibling"	"teambutton0"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
 	"CancelButton2"
 	{
 		"ControlName"					"CExImageButton"
 		"fieldName"						"CancelButton2"
-		"xpos"							"c-58"
+		"xpos"							"9999"
 		"ypos"							"c45"
 		"zpos"							"100"
 		"wide"							"116"
@@ -229,24 +309,38 @@
 	
 	"CancelButton"
 	{
-		"ControlName"	"CExButton"
-		"fieldName"		"CancelButton"
-		"xpos"			"9999"
-		"ypos"			"r40"
-		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"30"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"0"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"#TF_Cancel"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"command"		"cancelmenu"
-		"font"			"MenuSmallFont"
+		"ControlName"					"CExImageButton"
+		"fieldName"						"CancelButton"
+		"xpos"							"0"
+		"ypos"							"3"
+		"zpos"							"100"
+		"wide"							"116"
+		"tall"							"20"
+		"autoResize"					"0"
+		"pinCorner"						"2"
+		"visible"						"1"
+		"enabled"						"1"
+		"tabPosition"					"2"
+		"labelText"						"CANCEL (&Q)"
+		"textAlignment"					"center"
+		"dulltext"						"0"
+		"brighttext"					"0"
+		"paintborder"					"0"
+		"command"						"vguicancel"
+		"associated_model"				"autodoor"	
+		"font"							"Avenir12"
+		
+		"defaultBgColor_override"		"mClear"
+		"armedBgColor_override"			"mClearWhite"
+		"depressedBgColor_override"		"mClear"
+		
+		"defaultFgColor_override"		"mWhite"
+		"armedFgColor_override" 		"mDark"
+		"depressedFgColor_override"		"mWhite"
+		
+		"pin_to_sibling"	"teambutton3"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
 	"TeamMenuSelect"
@@ -334,11 +428,11 @@
 	{
 		"ControlName"	"CModelPanel"
 		"fieldName"		"MenuBG"
-		"xpos"			"0"
+		"xpos"			"9999"
 		"ypos"			"0"
 		"zpos"			"0"		
-		"wide"			"f0"
-		"tall"			"480"
+		"wide"			"0"
+		"tall"			"0"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"

@@ -41,18 +41,18 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"CantBuildReason"
-		"font"			"Avenir12"
+		"font"			"Icons20"
 		"fgcolor"		"mRed"
 		"xpos"			"0"
-		"ypos"			"48"
+		"ypos"			"44"
 		"zpos"			"2"
 		"wide"			"100"
-		"tall"			"18"
+		"tall"			"26"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"Need Metal"
+		"labelText"		"N"
 		"textAlignment"	"Center"
 	}
 	
@@ -76,7 +76,7 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"CostLabel"
-		"font"			"Numbers14"
+		"font"			"Numbers16"
 		"fgcolor"		"mWhite"
 		"xpos"			"23"
 		"ypos"			"18"

@@ -60,7 +60,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labeltext"		"B"
+		"labeltext"		"N"
 		"font"			"Icons12"
 		"textAlignment"	"center"
 		"dulltext"		"0"
@@ -79,9 +79,9 @@
 		"paintbackground"	"1"
 		"paintbackgroundtype"	"2"
 		
-		"defaultFgColor_override"	"227 227 227 255"
-		"armedFgColor_override" 	"30 30 30 255"
-		"depressedFgColor_override" "227 227 227 255"
+		"defaultFgColor_override"	"mWhite"
+		"armedFgColor_override" 	"mDark"
+		"depressedFgColor_override" "mWhite"
 		
 		"SubImage"
 		{
@@ -212,9 +212,9 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"Stream_URLButton"
-		"xpos"			"75"
-		"ypos"			"367"
-		"wide"			"150"
+		"xpos"			"5"
+		"ypos"			"366"
+		"wide"			"290"
 		"tall"			"22"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -234,9 +234,9 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
-		"defaultBgColor_override"	"0 0 0 225"
+		"defaultBgColor_override"	"mDarker"
 		"armedBgColor_override"		"227 227 227 255"
-		"depressedBgColor_override"	"0 0 0 255"
+		"depressedBgColor_override"	"mDarker"
 		
 		"defaultFgColor_override"	"227 227 227 255"
 		"armedFgColor_override" 	"30 30 30 255"

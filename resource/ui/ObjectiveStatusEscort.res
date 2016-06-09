@@ -26,31 +26,24 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"LevelBar"	
 		"xpos"			"73"
-		"ypos"			"123"
+		"ypos"			"121"
 		"zpos"			"0"
 		"wide"			"254"
-		"tall"			"4"
+		"tall"			"8"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		""
 		//"image"			"../hud/cart_track"
 		//"scaleImage"	"1"
-		"fillcolor"		"mClear"
+		"fillcolor"		"mClearOther2"
+		"border"		"mWhiteTopBottom"
 		
 		"if_multiple_trains"
 		{
 			"ypos"			"115"
-			"zpos"			"3"
-			"tall"			"6"
-			//"image"			"../hud/cart_track_neutral_opaque"
-			"fillcolor"		"0 0 0 130"
 		}
 		"if_single_with_hills"
 		{
-			"ypos"			"120"
-			"tall"			"10"
-			//"image"			"../hud/cart_track_neutral_opaque"
-			"fillcolor"		"0 0 0 130"
 		}		
 	}	
 	
@@ -71,7 +64,7 @@
 		{
 			"ypos"			"115"
 			"zpos"			"6"
-			"tall"			"6"
+			"tall"			"8"
 			"visible"		"1"
 		}
 	}		
@@ -112,30 +105,30 @@
 		"if_multiple_trains"
 		{
 			"xpos"			"63"
-			"zpos"			"5"
-			"wide"			"10"
-			"tall"			"10"
+			"zpos"			"1"
+			"wide"			"18"
+			"tall"			"18"
 			"image"			"../hud/cart_track_neutral_opaque"
 		}
 		
 		"if_multiple_trains_top"
 		{
-			"ypos"			"113"
+			"ypos"			"111"
 		}
 		
 		"if_multiple_trains_bottom"
 		{
-			"ypos"			"113"
+			"ypos"			"111"
 		}
 		
 		"if_multiple_trains_red"
 		{
-			"image"			"../hud/cart_home_red_square"
+			"image"			"../hud/cart_home_red_opaque"
 		}
 		
 		"if_multiple_trains_blue"
 		{
-			"image"			"../hud/cart_home_blue_square"
+			"image"			"../hud/cart_home_blue_opaque"
 		}
 	}
 	
@@ -144,10 +137,10 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"SimpleControlPointTemplate"	
 		"xpos"			"65"		
-		"ypos"			"116"		
+		"ypos"			"117"		
 		"zpos"			"1"
-		"wide"			"18"		
-		"tall"			"18"
+		"wide"			"16"
+		"tall"			"16"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -156,14 +149,14 @@
 		"labelText"		""
 		"image"			"../hud/cart_point_neutral"
 		"scaleImage"	"1"	
-												
+		
 		"if_multiple_trains"
 		{
 			"xpos"			"61"
-			"ypos"			"113"
+			"ypos"			"111"
 			"zpos"			"5"	
-			"wide"			"10"
-			"tall"			"10"
+			"wide"			"16"
+			"tall"			"16"
 		}
 	}
 
@@ -192,10 +185,10 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"RecedeTime"		
 			"font"			"ItemFontAttribSmall"		
-			"xpos"			"23"			
+			"xpos"			"19"			
 			"ypos"			"53"			
 			"zpos"			"2"
-			"wide"			"7"
+			"wide"			"15"
 			"tall"			"7"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -209,8 +202,8 @@
 			"if_multiple_trains"
 			{
 				"font"			"ItemFontAttribSmall"
-				"xpos"			"21"
-				"wide"			"11"
+				"xpos"			"19"
+				"wide"			"15"
 				"tall"			"10"
 			}			
 			
@@ -307,7 +300,7 @@
 			"ypos"			"38"
 			"zpos"			"0"
 			"wide"			"60"
-			"tall"			"30"
+			"tall"			"0"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
@@ -328,11 +321,11 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"Speed_Backwards"	
-			"xpos"		"23"
-			"ypos"		"53"
+			"xpos"		"22"
+			"ypos"		"52"
 			"zpos"			"2"
-			"wide"		"7"
-			"tall"		"7"
+			"wide"		"8"
+			"tall"		"8"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
@@ -356,7 +349,7 @@
 			
 			"if_multiple_trains_bottom"
 			{
-				"ypos"			"83"
+				"ypos"			"80"
 			}	
 		}
 		
@@ -368,7 +361,7 @@
 			"ypos"		"52"
 			"zpos"			"3"
 			"wide"		"4"
-			"tall"		"8"
+			"tall"		"0"
 			"visible"		"0"
 			"enabled"		"1"
 			"image"			"capture_icon_white"
@@ -378,7 +371,7 @@
 			{
 				"xpos"			"20"
 				"wide"			"5"
-				"tall"			"10"
+				"tall"			"0"
 			}
 			
 			"if_multiple_trains_top"
@@ -396,9 +389,9 @@
 		{	
 			"ControlName"	"CExLabel"
 			"fieldName"		"CapNumPlayers"
-			"font"		"ItemFontAttribSmall"
-			"xpos"		"25"
-			"ypos"		"53"
+			"font"		"AvenirLight10"
+			"xpos"		"22"
+			"ypos"		"52"
 			"zpos"			"4"
 			"wide"		"20"
 			"tall"		"7"
@@ -413,20 +406,20 @@
 			
 			"if_multiple_trains"
 			{
-				"font"			"ItemFontAttribSmall"
-				"xpos"			"25"
+				"font"			"AvenirLight10"
+				"xpos"			"22"
 				"wide"			"30"
 				"tall"			"10"
 			}			
 			
 			"if_multiple_trains_top"
 			{
-				"ypos"			"46"
+				"ypos"			"45"
 			}										
 			
 			"if_multiple_trains_bottom"
 			{
-				"ypos"			"82"
+				"ypos"			"78"
 			}	
 		}
 		
@@ -434,11 +427,11 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"Blocked"	
-			"xpos"		"23"
-			"ypos"		"53"
+			"xpos"		"22"
+			"ypos"		"52"
 			"zpos"			"2"
-			"wide"		"7"
-			"tall"		"7"
+			"wide"		"8"
+			"tall"		"8"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
@@ -462,7 +455,7 @@
 			
 			"if_multiple_trains_bottom"
 			{
-				"ypos"			"83"
+				"ypos"			"80"
 			}
 		}
 	
@@ -471,42 +464,43 @@
 			"ControlName"		"EditablePanel"
 			"fieldName"			"EscortTeardrop"
 			"xpos"			"9"
-			"ypos"			"8"			
+			"ypos"			"8"
 			"zpos"				"20"
-			"wide"			"65"			
-			"tall"			"42"			
+			"wide"			"65"
+			"tall"			"42"
 			"visible"			"0"
 			"enabled"			"1"
 			
 			"if_multiple_trains"
 			{
 				"xpos"			"9"
-				"ypos"			"2"			
-				"wide"			"65"			
-				"tall"			"42"			
+				"ypos"			"2"
+				"wide"			"65"
+				"tall"			"42"
 			}	
-						
+			
 			"Teardrop"
 			{
 				"ControlName"		"CIconPanel"
 				"fieldName"			"Teardrop"
-				"xpos"				"0"
-				"ypos"				"0"
+				"xpos"				"6"
+				"ypos"				"26"
 				"zpos"				"0"
-				"wide"			"35"				
-				"tall"			"42"
-				"visible"			"0"
-				"enabled"			"0"
+				"wide"			"22"
+				"tall"			"18"
+				"visible"			"1"
+				"enabled"			"1"
 				"scaleImage"		"1"
-				"icon"				"cappoint_progressbar_teardrop"
-				"iconColor"			"255 255 255 255"
+				"bgcolor_override"			"mClearOther2"
+				//"icon"				"cappoint_progressbar_teardrop"
+				//"iconColor"			"255 255 255 255"
 				
 				"if_multiple_trains"
 				{
-					"xpos"			"0"
-					"ypos"			"0"			
-					"wide"			"35"			
-					"tall"			"42"			
+					"xpos"			"6"
+					"ypos"			"30"
+					"wide"			"22"
+					"tall"			"14"
 				}	
 			}
 
@@ -520,7 +514,7 @@
 				"ypos"			"3"
 				"zpos"				"23"
 				"wide"			"35"
-				"tall"			"28"
+				"tall"			"0"
 				"autoResize"		"0"
 				"pinCorner"			"0"
 				"visible"			"0"
@@ -534,9 +528,9 @@
 				{
 					"font"			"DefaultVerySmall"
 					"xpos"			"0"
-					"ypos"			"3"			
-					"wide"			"35"			
-					"tall"			"28"			
+					"ypos"			"3"
+					"wide"			"35"
+					"tall"			"0"
 				}	
 			}
 
@@ -544,23 +538,23 @@
 			{
 				"ControlName"		"CIconPanel"
 				"fieldName"			"Blocked"
-				"xpos"				"2"
-				"ypos"			"2"	
+				"xpos"				"11"
+				"ypos"			"27"	
 				"zpos"				"1"
-				"wide"			"31"
-				"tall"			"31"
+				"wide"			"13"
+				"tall"			"13"
 				"visible"			"1"
 				"enabled"			"1"
 				"scaleImage"		"1"
 				"icon"				"cappoint_progressbar_blocked"
-				"iconColor"			"255 255 255 255"	
+				"iconColor"			"255 40 40 255"
 				
 				"if_multiple_trains"
 				{
-					"xpos"			"2"
-					"ypos"			"2"			
-					"wide"			"31"			
-					"tall"			"31"			
+					"xpos"			"12"
+					"ypos"			"31"
+					"wide"			"10"
+					"tall"			"10"
 				}	
 			}	
 			
@@ -568,11 +562,11 @@
 			{
 				"ControlName"	"ImagePanel"
 				"fieldName"		"Capping"	
-				"xpos"		"8"
-				"ypos"		"8"
+				"xpos"			"11"
+				"ypos"			"28"
 				"zpos"			"1"
-				"wide"		"20"
-				"tall"		"20"
+				"wide"			"13"
+				"tall"			"13"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"0"
@@ -580,15 +574,16 @@
 				"tabPosition"	"0"
 				"labelText"		""
 				"image"			"../hud/cart_arrow_right"
-				"scaleImage"	"1"	
+				"scaleImage"	"1"
+				"fillcolor"		"0 0 0 0"
 				
 				"if_multiple_trains"
 				{
-					"xpos"			"8"
-					"ypos"			"8"			
-					"wide"			"20"			
-					"tall"			"20"			
-				}		
+					"xpos"		"12"
+					"ypos"		"31"
+					"tall"		"10"
+					"wide"		"10"
+				}
 			}			
 		}
 	}

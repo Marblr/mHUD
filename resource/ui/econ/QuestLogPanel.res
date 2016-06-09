@@ -190,7 +190,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"labeltext"		"B"
+			"labeltext"		"N"
 			"font"			"Icons12"
 			"textAlignment"	"center"
 			"dulltext"		"0"
@@ -239,6 +239,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"proportionaltoparent" "1"
+			"border"		"mDarkBorder8"
 
 			"entry_step" "10"
 			"entry_y"	"10"
@@ -303,9 +304,9 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"BadgeProgressLabel"
-			"font"			"AdFont_AdText"
+			"font"			"AvenirMed9"
 			"labelText"		"#QuestLog_BadgeProgress"
-			"textAlignment"	"west"
+			"textAlignment"	"center"
 			"xpos"			"p.15"
 			"ypos"			"0"
 			"zpos"			"2"
@@ -334,7 +335,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"		"0"
-			"bgcolor_override"	"227 227 227 255"
+			"bgcolor_override"	"227 227 227 0"
 			"proportionaltoparent"	"1"
 
 			"BadgeProgressMeter"
@@ -355,13 +356,14 @@
 				"proportionaltoparent"	"1"
 				"fgcolor_override"		"53 118 132 255" //132 76 0 255
 				"bgcolor_override"		"0 0 0 255"
+				"border"		"mWhiteBorder"
 			}
 
 			"BadgeProgressMeterText"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"BadgeProgressMeterText"
-				"font"			"AdFont_AdText"
+				"font"			"AvenirMed8"
 				"labelText"		""
 				"textAlignment"	"center"
 				"xpos"			"0"
@@ -383,14 +385,14 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"ContractsCompletedLabel"
-			"font"			"AdFont_AdText"
+			"font"			"AvenirMed9"
 			"labelText"		"#QuestLog_ContractsCompleted"
-			"textAlignment"	"west"
+			"textAlignment"	"center"
 			"xpos"			"p.57"
 			"ypos"			"0"
 			"zpos"			"2"
 			"wide"			"100"
-			"tall"			"p.45"
+			"tall"			"15"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -414,7 +416,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"		"0"
-			"bgcolor_override"	"227 227 227 255"
+			"bgcolor_override"	"227 227 227 0"
 			"proportionaltoparent"	"1"
 
 			"ContractsCompletedProgressMeter"
@@ -435,13 +437,14 @@
 				"proportionaltoparent"	"1"
 				"fgcolor_override"		"53 118 132 255" //132 76 0 255
 				"bgcolor_override"		"0 0 0 255"
+				"border"		"mWhiteBorder"
 			}
 
 			"ContractsCompletedProgressMeterText"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"ContractsCompletedProgressMeterText"
-				"font"			"AdFont_AdText"
+				"font"			"AvenirMed8"
 				"labelText"		""
 				"textAlignment"	"center"
 				"xpos"			"0"

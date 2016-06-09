@@ -143,7 +143,7 @@
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"Numbers16"
+			"font"			"NumbersPipes"
 			"fgcolor"		"mAmmo"
 		}
 		
@@ -165,8 +165,8 @@
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"Numbers16"
-			"fgcolor"		"mDarkAmmo"
+			"font"			"NumbersPipesShadow"
+			"fgcolor"		"mDarkMeter"
 		}		
 	}
 	
@@ -234,7 +234,7 @@
 			"textAlignment"	"center"
 			"dulltext"		"1"
 			"brighttext"	"0"
-			"font"			"Numbers16"
+			"font"			"NumbersPipes"
 			"fgcolor"		"mAmmoLow"
 		}
 		

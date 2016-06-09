@@ -66,7 +66,7 @@
 		"ControlName"		"CExLabel"
 		"fieldName"		"ReinforcementsLabel"
 		"xpos"			"c-65"
-		"ypos"			"29"
+		"ypos"			"54"
 		"wide"			"130"
 		"tall"			"18"
 		"autoResize"		"0"
@@ -77,7 +77,7 @@
 		"textAlignment"		"center"
 		"font"			"AvenirMed14"
 		"fgcolor_override"		"mWhite"
-		"bgcolor_override"		"mClear"
+		"bgcolor_override"		"mClearRespawn"
 	}
 	"BuyBackLabel"
 	{

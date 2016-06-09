@@ -7,8 +7,8 @@
 		"xpos"		"0"
 		"ypos"		"0"
 		"zpos"		"2"
-		"wide"		"21"
-		"tall"		"21"
+		"wide"		"22"
+		"tall"		"22"
 		"visible"	"1"
 		"enabled"	"1"
 	}
@@ -45,8 +45,8 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"CapNumPlayers"
-		"font"			"CapPlayerFontSmall"
-		"xpos"			"10"
+		"font"			"AvenirMed11"
+		"xpos"			"9"
 		"ypos"			"3"
 		"zpos"			"4"
 		"wide"			"14"
@@ -95,7 +95,7 @@
 		"font"			"ControlPointTimer"
 		"font"	"ControlPointTimerSmaller"
 	}
-				
+
 	"CPTimerBG"
 	{
 		"ControlName"	"Panel"

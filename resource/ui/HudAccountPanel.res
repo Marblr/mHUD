@@ -26,7 +26,7 @@
 		"pinCorner"		"0"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"fillcolor" 	"mClear"
+		"fillcolor" 	"mClearAmmo"
 	}
 	
 	"MetalIcon"	
@@ -55,7 +55,6 @@
 		"fieldName"		"AccountValue"
 		"xpos"			"5"
 		"ypos"			"113"
-		"ypos_lodef"	"121"
 		"zpos"			"2"
 		"wide"			"75"
 		"tall"			"15"
@@ -70,5 +69,27 @@
 		"brighttext"	"0"
 		"font"			"Numbers16"
 		"fgcolor"		"mWhite"
+	}
+	
+	"AccountValueShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AccountValueShadow"
+		"xpos"			"4"
+		"ypos"			"114"
+		"zpos"			"2"
+		"wide"			"75"
+		"tall"			"15"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%metal%"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"Numbers16"
+		"fgcolor"		"mDarkAmmo"
 	}
 }

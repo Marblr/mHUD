@@ -79,7 +79,7 @@
 		"tall"			"155"
 		"visible"		"0"
 		"enabled"		"1"
-		"fillcolor"		"mClear"
+		"fillcolor"		"mClearScoreboard"
 	}
 
 	"MvMPlayerList"
@@ -122,7 +122,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fillcolor"		"mClear"
+			"fillcolor"		"mClearScoreboard"
 		}
 		
 		"CreditsLabel"

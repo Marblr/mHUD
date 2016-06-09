@@ -19,7 +19,8 @@
 		
 		if_comp
 		{
-			"tall"		"0"
+			"tall"		"18"
+			"visible"	"0"
 		}
 	}
 	
@@ -52,21 +53,33 @@
 	"WaitingForPlayersLabel"
 	{
 		"ControlName"		"CExLabel"
-		"fieldName"		"WaitingForPlayersLabel"
-		"xpos"			"0"
-		"ypos"			"23"
-		"zpos"			"5"
-		"wide"			"40"
-		"tall"			"12"
-		"visible"		"0"
-		"enabled"		"1"
-		"labelText"		"Waiting"
+		"fieldName"			"WaitingForPlayersLabel"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"5"
+		"wide"				"40"
+		"tall"				"12"
+		"visible"			"0"
+		"enabled"			"1"
+		"labelText"			"Waiting"
 		"textAlignment"		"center"
-		"dulltext"		"0"
+		"dulltext"			"0"
 		"brighttext"		"0"
-		"wrap"			"0"
-		"font"			"AvenirLight10"
-		"fgcolor"		"mWhite"
+		"wrap"				"0"
+		"font"				"AvenirLight10"
+		"fgcolor"			"mWhite"
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+		if_comp
+		{
+			"xpos"			"1"
+			"ypos"			"23"
+			"wide"			"76"
+			"tall"			"15"
+		}
 	}	
 	
 	"WaitingForPlayersBG"
@@ -74,55 +87,94 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"			"WaitingForPlayersBG"
 		"xpos"				"0"
-		"ypos"				"23"
+		"ypos"				"0"
 		"zpos"				"1"
 		"wide"				"40"
 		"tall"				"12"
 		"visible"			"0"
 		"enabled"			"1"
-		"fillcolor"			"mClear"
+		"fillcolor"			"mClearTimer"
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+		if_comp
+		{
+			"xpos"			"1"
+			"ypos"			"23"
+			"wide"			"76"
+			"tall"			"15"
+			"border"		"mWhiteTop"
+		}
 	}
 	
+	// overtime is different to look good on koth, looks dumb on cp
 	"OvertimeLabel"
 	{
 		"ControlName"		"CExLabel"
-		"fieldName"		"OvertimeLabel"
-		"xpos"			"0"
-		"ypos"			"23"
-		"zpos"			"5"
-		"wide"			"40"
-		"tall"			"12"
-		"visible"		"0"
-		"enabled"		"1"
-		"labelText"		"#game_Overtime"
+		"fieldName"			"OvertimeLabel"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"5"
+		"wide"				"40"
+		"tall"				"12"
+		"visible"			"0"
+		"enabled"			"1"
+		"labelText"			"#game_Overtime"
 		"textAlignment"		"center"
-		"dulltext"		"0"
+		"dulltext"			"0"
 		"brighttext"		"0"
-		"wrap"			"0"
-		"font"			"AvenirLight10"
-		"fgcolor"		"mWhite"
-	}	
+		"wrap"				"0"
+		"font"				"AvenirLight10"
+		"fgcolor"			"mWhite"
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+		if_comp
+		{
+			"xpos"			"2"
+			"ypos"			"23"
+			"wide"			"37"
+		}
+	}
 	
 	"OvertimeBG"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"OvertimeBG"
 		"xpos"				"0"
-		"ypos"				"23"
+		"ypos"				"0"
 		"zpos"				"1"
 		"wide"				"40"
 		"tall"				"12"
 		"visible"			"0"
 		"enabled"			"1"
-		"fillcolor"			"mClear"
+		"fillcolor"			"mClearTimer"
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+		if_comp
+		{
+			"xpos"			"2"
+			"ypos"			"23"
+			"wide"			"37"
+			"tall"			"12"
+			"border"		"mWhiteTop"
+		}
 	}
+	//
 	
 	"SuddenDeathLabel"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"			"SuddenDeathLabel"
 		"xpos"				"0"
-		"ypos"				"23"
+		"ypos"				"0"
 		"zpos"				"5"
 		"wide"				"40"
 		"tall"				"12"
@@ -135,40 +187,77 @@
 		"wrap"				"0"
 		"font"				"AvenirLight10"
 		"fgcolor"			"mWhite"
-	}		
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+		if_comp
+		{
+			"xpos"			"1"
+			"ypos"			"23"
+			"wide"			"76"
+			"tall"			"15"
+		}
+	}
 	
 	"SuddenDeathBG"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"SuddenDeathBG"
 		"xpos"				"0"
-		"ypos"				"23"
+		"ypos"				"0"
 		"zpos"				"1"
 		"wide"				"40"
 		"tall"				"12"
 		"visible"			"0"
 		"enabled"			"1"
-		"fillcolor"			"mClear"
+		"fillcolor"			"mClearTimer"
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+		if_comp
+		{
+			"xpos"			"1"
+			"ypos"			"23"
+			"wide"			"76"
+			"tall"			"15"
+			"border"		"mWhiteTop"
+		}
 	}
 	
 	"SetupLabel"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"SetupLabel"
-		"xpos"			"0"
-		"ypos"			"23"
-		"zpos"			"5"
-		"wide"			"40"
-		"tall"			"12"
-		"visible"		"0"
-		"enabled"		"1"
-		"labelText"		"#game_Setup"
+		"ControlName"		"CExLabel"
+		"fieldName"			"SetupLabel"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"5"
+		"wide"				"40"
+		"tall"				"12"
+		"visible"			"0"
+		"enabled"			"1"
+		"labelText"			"#game_Setup"
 		"textAlignment"		"center"
-		"dulltext"		"0"
+		"dulltext"			"0"
 		"brighttext"		"0"
-		"wrap"			"0"
-		"font"			"AvenirLight10"
-		"fgcolor"		"mWhite"
+		"wrap"				"0"
+		"font"				"AvenirLight10"
+		"fgcolor"			"mWhite"
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+		if_comp
+		{
+			"xpos"			"1"
+			"ypos"			"37"
+			"wide"			"76"
+			"tall"			"12"
+		}
 	}
 	
 	"SetupBG"
@@ -176,59 +265,67 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"			"SetupBG"
 		"xpos"				"0"
-		"ypos"				"23"
+		"ypos"				"0"
 		"zpos"				"1"
 		"wide"				"40"
 		"tall"				"12"
 		"visible"			"0"
 		"enabled"			"1"
-		"fillcolor"			"mClear"
+		"fillcolor"			"mClearTimer"
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+		if_comp
+		{
+			"xpos"			"1"
+			"ypos"			"37"
+			"wide"			"76"
+			"tall"			"12"
+			"border"		"mWhiteTop"
+		}
 	}
 	
 	"ServerTimeLimitLabel"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"ServerTimeLimitLabel"
-		"xpos"			"9999"
-		"ypos"			"33"
-		"ypos_minmode"	"24"
-		"ypos_hidef"	"41"
-		"ypos_lodef"	"41"
-		"zpos"			"5"
-		"wide"			"78"
-		"wide_hidef"	"300"
-		"wide_lodef"	"300"
-		"tall"			"19"
-		"tall_hidef"	"19"
-		"tall_lodef"	"22"
-		"visible"		"0"
-		"enabled"		"0"
-		"labelText"		"%servertimeleft%"
+		"ControlName"		"CExLabel"
+		"fieldName"			"ServerTimeLimitLabel"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"5"
+		"wide"				"40"
+		"tall"				"12"
+		"visible"			"0"
+		"enabled"			"1"
+		"labelText"			"%servertimeleft%"
 		"textAlignment"		"center"
-		"dulltext"		"0"
+		"dulltext"			"0"
 		"brighttext"		"0"
-		"wrap"			"0"
-		"font"			"ClockSubText"
-		"font_minmode"	"ClockSubTextSuddenDeath"
-		"font_hidef"	"HudFontSmall"
-		"font_lodef"	"HudFontSmall"
-	}	
+		"wrap"				"0"
+		"font"				"AvenirMed10"
+		"fgcolor"			"mWhite"
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
 	
 	"ServerTimeLimitLabelBG"
 	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"ServerTimeLimitLabelBG"
-		"xpos"			"9999"
-		"ypos"			"31"
-		"ypos_hidef"	"-100"	//off-screen
-		"ypos_lodef"	"-100"	//off-screen
-		"zpos"			"1"
-		"wide"			"78"
-		"tall"			"20"
-		"tall_minmode"	"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/objectives_timepanel_suddendeath"	
-		"scaleImage"		"1"	
+		"ControlName"		"ImagePanel"
+		"fieldName"			"ServerTimeLimitLabelBG"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"1"
+		"wide"				"40"
+		"tall"				"12"
+		"visible"			"0"
+		"enabled"			"1"
+		"fillcolor"			"mClearTimer"
+		
+		"pin_to_sibling"	"TimePanelBG"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 }

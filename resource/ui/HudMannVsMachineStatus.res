@@ -18,7 +18,7 @@
 		"ControlName"		"CWaveCompleteSummaryPanel"
 		"fieldName"			"WaveCompleteSummaryPanel"
 		"xpos"				"c-150"
-		"ypos"				"120"
+		"ypos"				"122"
 		"zpos"				"0"
 		"wide"				"400"
 		"tall"				"400"
@@ -51,8 +51,6 @@
 		"ypos"				"r89"
 		"wide"				"100"
 		"tall"				"100"
-		"xpos_minmode"		"152"
-		"ypos_minmode"		"r89"
 		"visible" 			"1"
 		"enabled" 			"1"
 	}
@@ -65,8 +63,6 @@
 		"ypos"				"r59"
 		"wide"				"100"
 		"tall"				"100"
-		"xpos_minmode"		"152"
-		"ypos_minmode"		"r59"
 		"visible" 			"1"
 		"enabled" 			"1"
 	}

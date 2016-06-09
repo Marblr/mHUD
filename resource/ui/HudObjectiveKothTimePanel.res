@@ -7,6 +7,7 @@
 			"zpos"		"5"
 		}
 	}
+	
 	"BlueTimer"
 	{
 		"ControlName"		"CTFHudTimeStatus"

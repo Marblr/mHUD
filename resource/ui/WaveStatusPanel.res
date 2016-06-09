@@ -26,7 +26,7 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"Background2"
-		"xpos"			"155"
+		"xpos"			"154"
 		"ypos"			"5"
 		"zpos"			"-1"
 		"wide"			"289"
@@ -35,7 +35,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fillcolor"		"mClear"
+		"fillcolor"		"mClearOther"
 	}
 	
 	"WaveCountLabel"

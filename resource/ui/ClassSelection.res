@@ -30,6 +30,20 @@
 		"tabPosition"	"0"
 	}
 	
+	"ClassSelectionAnchor"
+	{
+		"ControlName"					"ImagePanel"
+		"fieldName"						"ClassSelectionAnchor"
+		"xpos"							"c0"
+		"ypos"							"c0"
+		"zpos"							"100"		
+		"wide"							"0"
+		"tall"							"0"
+		"visible"						"0"
+		"enabled"						"1"
+		"fillcolor"						"mDark"
+	}
+	
 	"random"
 	{
 		"ControlName"		"CExImageButton"
@@ -41,7 +55,7 @@
 		"tall"				"17"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"labelText"			"RANDOM (&R)"
@@ -70,18 +84,58 @@
 		"keyboardinputenabled"	"0"				
 	}
 	
+	"randombutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"randombutton"
+		"xpos"				"0"
+		"ypos"				"3"
+		"zpos"				"6"
+		"wide"				"490"
+		"tall"				"20"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"labelText"			"RANDOM (&R)"
+		"textAlignment"		"center"
+		"Command"			"select 12"
+		"Default"			"1"
+		"font"				"Avenir12"
+		"scaleImage"		"1"
+
+		"defaultBgColor_override"		"mClear"
+		"armedBgColor_override"			"mClearWhite"
+		"depressedBgColor_override"		"mClear"
+		
+		"defaultFgColor_override"		"mWhite"
+		"armedFgColor_override" 		"mDark"
+		"depressedFgColor_override"		"mWhite"
+		
+		"paintbackground"	"1"
+		
+		"pin_to_sibling"		"MainBGPanel"
+		"pin_corner_to_sibling" "PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+	
 	"MainBGPanel"
 	{
 		"ControlName" 			"ImagePanel"
 		"fieldName" 			"MainBGPanel"
-		"xpos"					"c-245"
-		"ypos"					"c-50"
+		"xpos"					"-245"
+		"ypos"					"-50"
 		"zpos"					"3"
 		"wide"					"490"
 		"tall"					"81"
 		"visible" 				"1"
 		"enabled" 				"1"
 		"fillcolor"				"mClear"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"DarkenPanel"
@@ -95,23 +149,23 @@
 		"tall"					"f0"
 		"visible" 				"1"
 		"enabled" 				"1"
-		"fillcolor"				"0 0 0 195"
+		"fillcolor"				"0 0 0 225"
 	}
 	
 	// first test of emblems font
-	"lel"
+	"EmblemsTest"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"	"lel"
-		"xpos"	"c-150"
-		"ypos"	"c0"
+		"fieldName"	"EmblemsTest"
+		"xpos"	"20"
+		"ypos"	"20"
 		"zpos"	"5"
-		"wide"	"500"
+		"wide"	"f0"
 		"tall"	"50"
 		"visible"	"0"
-		"enabled"	"1"
+		"enabled"	"0"
 		"font"	"Emblems40"
-		"labelText"		"A B C D E F G H I"
+		"labelText"		"ABCDEFGHIJKL"
 		"fgcolor"	"mWhite"
 	}
 	
@@ -152,14 +206,13 @@
 		"tall"				"44"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"Command"			"select 1"
 		"Default"			"0"
-		"scaleImage"		"1"
 		"font"				"Emblems40"
-		"labelText"			"A"
+		"labelText"			"K"
 		"textAlignment"		"center"
 		
 		"defaultBgColor_override"		"mNone"
@@ -167,7 +220,7 @@
 		"depressedBgColor_override"		"mNone"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
+		"armedFgColor_override" 		"mGray"
 		"depressedFgColor_override"		"mWhite"
 		
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -178,8 +231,69 @@
 		
 		"stayselectedonclick"	"1"
 		"selectonhover"			"1"
-		"keyboardinputenabled"	"0"			
+		"keyboardinputenabled"	"0"
 	}
+	"scoutbutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"scoutbutton"
+		"xpos"				"-234"
+		"ypos"				"-22"
+		"zpos"				"7"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Command"			"select 1"
+		"Default"			"0"
+		"font"				"Emblems40"
+		"labelText"			"K"
+		"textAlignment"		"center"
+		
+		"border_default"	"NoBorder"
+		"border_armed"		"NoBorder"
+		"paintbackground"	"0"
+		
+		"defaultBgColor_override"	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		"depressedBgColor_override"	"0 0 0 0"
+		
+		"defaultFgColor_override"	"0 0 0 0"
+		"armedFgColor_override" 	"255 255 255 15"
+		"depressedFgColor_override" "0 0 0 0"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	"scoutlabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"scoutlabel"
+		"xpos"				"-234"
+		"ypos"				"-22"
+		"zpos"				"6"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Default"			"0"
+		"scaleImage"		"1"
+		"font"				"Emblems40"
+		"labelText"			"A"
+		"textAlignment"		"center"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	
 	"soldier"
 	{
 		"ControlName"		"CExImageButton"
@@ -191,7 +305,7 @@
 		"tall"				"44"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"Command"			"select 3"
@@ -206,7 +320,7 @@
 		"depressedBgColor_override"		"mNone"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
+		"armedFgColor_override" 		"mGray"
 		"depressedFgColor_override"		"mWhite"
 		
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -217,7 +331,67 @@
 		
 		"stayselectedonclick"	"1"
 		"selectonhover"			"1"
-		"keyboardinputenabled"	"0"				
+		"keyboardinputenabled"	"0"
+	}
+	"soldierbutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"soldierbutton"
+		"xpos"				"-186"
+		"ypos"				"-22"
+		"zpos"				"7"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Command"			"select 3"
+		"Default"			"0"
+		"font"				"Emblems40"
+		"labelText"			"K"
+		"textAlignment"		"center"
+		
+		"border_default"	"NoBorder"
+		"border_armed"		"NoBorder"
+		"paintbackground"	"0"
+		
+		"defaultBgColor_override"	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		"depressedBgColor_override"	"0 0 0 0"
+		
+		"defaultFgColor_override"	"0 0 0 0"
+		"armedFgColor_override" 	"255 255 255 15"
+		"depressedFgColor_override" "0 0 0 0"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	"soldierlabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"soldierlabel"
+		"xpos"				"-186"
+		"ypos"				"-22"
+		"zpos"				"6"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Default"			"0"
+		"scaleImage"		"1"
+		"font"				"Emblems40"
+		"labelText"			"B"
+		"textAlignment"		"center"	
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to	
 	}
 	
 	"pyro"
@@ -231,7 +405,7 @@
 		"tall"				"44"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"Command"			"select 7"
@@ -246,7 +420,7 @@
 		"depressedBgColor_override"		"mNone"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
+		"armedFgColor_override" 		"mGray"
 		"depressedFgColor_override"		"mWhite"
 		
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -258,6 +432,66 @@
 		"stayselectedonclick"	"1"
 		"selectonhover"			"1"
 		"keyboardinputenabled"	"0"				
+	}
+	"pyrobutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"pyrobutton"
+		"xpos"				"-138"
+		"ypos"				"-22"
+		"zpos"				"7"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Command"			"select 7"
+		"Default"			"0"
+		"font"				"Emblems40"
+		"labelText"			"K"
+		"textAlignment"		"center"
+		
+		"border_default"	"NoBorder"
+		"border_armed"		"NoBorder"
+		"paintbackground"	"0"
+		
+		"defaultBgColor_override"	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		"depressedBgColor_override"	"0 0 0 0"
+		
+		"defaultFgColor_override"	"0 0 0 0"
+		"armedFgColor_override" 	"255 255 255 15"
+		"depressedFgColor_override" "0 0 0 0"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	"pyrolabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"pyrolabel"
+		"xpos"				"-138"
+		"ypos"				"-22"
+		"zpos"				"6"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Default"			"0"
+		"scaleImage"		"1"
+		"font"				"Emblems40"
+		"labelText"			"C"
+		"textAlignment"		"center"	
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to	
 	}
 	
 	"Defense"
@@ -298,7 +532,7 @@
 		"tall"				"44"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"Command"			"select 4"
@@ -313,7 +547,7 @@
 		"depressedBgColor_override"		"mNone"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
+		"armedFgColor_override" 		"mGray"
 		"depressedFgColor_override"		"mWhite"
 		
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -325,7 +559,67 @@
 		"stayselectedonclick"	"1"
 		"selectonhover"			"1"
 		"keyboardinputenabled"	"0"				
-	}	
+	}
+	"demomanbutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"demomanbutton"
+		"xpos"				"-70"
+		"ypos"				"-22"
+		"zpos"				"7"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Command"			"select 4"
+		"Default"			"0"
+		"font"				"Emblems40"
+		"labelText"			"K"
+		"textAlignment"		"center"
+		
+		"border_default"	"NoBorder"
+		"border_armed"		"NoBorder"
+		"paintbackground"	"0"
+		
+		"defaultBgColor_override"	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		"depressedBgColor_override"	"0 0 0 0"
+		
+		"defaultFgColor_override"	"0 0 0 0"
+		"armedFgColor_override" 	"255 255 255 15"
+		"depressedFgColor_override" "0 0 0 0"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	"demomanlabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"demomanlabel"
+		"xpos"				"-70"
+		"ypos"				"-22"
+		"zpos"				"6"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Default"			"0"
+		"scaleImage"		"1"
+		"font"				"Emblems40"
+		"labelText"			"D"
+		"textAlignment"		"center"		
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
 	
 	"heavyweapons"
 	{
@@ -338,7 +632,7 @@
 		"tall"				"44"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"Command"			"select 6"
@@ -353,7 +647,7 @@
 		"depressedBgColor_override"		"mNone"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
+		"armedFgColor_override" 		"mGray"
 		"depressedFgColor_override"		"mWhite"
 		
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -365,6 +659,66 @@
 		"stayselectedonclick"	"1"
 		"selectonhover"			"1"
 		"keyboardinputenabled"	"0"				
+	}
+	"heavyweaponsbutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"heavyweaponsbutton"
+		"xpos"				"-22"
+		"ypos"				"-22"
+		"zpos"				"7"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Command"			"select 6"
+		"Default"			"0"
+		"font"				"Emblems40"
+		"labelText"			"K"
+		"textAlignment"		"center"
+		
+		"border_default"	"NoBorder"
+		"border_armed"		"NoBorder"
+		"paintbackground"	"0"
+		
+		"defaultBgColor_override"	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		"depressedBgColor_override"	"0 0 0 0"
+		
+		"defaultFgColor_override"	"0 0 0 0"
+		"armedFgColor_override" 	"255 255 255 15"
+		"depressedFgColor_override" "0 0 0 0"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	"heavyweaponslabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"heavyweaponslabel"
+		"xpos"				"-22"
+		"ypos"				"-22"
+		"zpos"				"6"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Default"			"0"
+		"scaleImage"		"1"
+		"font"				"Emblems40"
+		"labelText"			"E"
+		"textAlignment"		"center"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"engineer"
@@ -378,7 +732,7 @@
 		"tall"				"44"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"Command"			"select 9"
@@ -393,7 +747,7 @@
 		"depressedBgColor_override"		"mNone"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
+		"armedFgColor_override" 		"mGray"
 		"depressedFgColor_override"		"mWhite"
 		
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -405,6 +759,66 @@
 		"stayselectedonclick"	"1"
 		"selectonhover"			"1"
 		"keyboardinputenabled"	"0"				
+	}
+	"engineerbutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"engineerbutton"
+		"xpos"				"26"
+		"ypos"				"-22"
+		"zpos"				"7"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Command"			"select 9"
+		"Default"			"0"
+		"font"				"Emblems40"
+		"labelText"			"K"
+		"textAlignment"		"center"
+		
+		"border_default"	"NoBorder"
+		"border_armed"		"NoBorder"
+		"paintbackground"	"0"
+		
+		"defaultBgColor_override"	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		"depressedBgColor_override"	"0 0 0 0"
+		
+		"defaultFgColor_override"	"0 0 0 0"
+		"armedFgColor_override" 	"255 255 255 15"
+		"depressedFgColor_override" "0 0 0 0"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	"engineerlabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"engineerlabel"
+		"xpos"				"26"
+		"ypos"				"-22"
+		"zpos"				"6"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Default"			"0"
+		"scaleImage"		"1"
+		"font"				"Emblems40"
+		"labelText"			"F"
+		"textAlignment"		"center"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"Support"
@@ -445,7 +859,7 @@
 		"tall"				"44"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"Command"			"select 5"
@@ -460,7 +874,7 @@
 		"depressedBgColor_override"		"mNone"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
+		"armedFgColor_override" 		"mGray"
 		"depressedFgColor_override"		"mWhite"
 		
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -472,6 +886,66 @@
 		"stayselectedonclick"	"1"
 		"selectonhover"			"1"
 		"keyboardinputenabled"	"0"				
+	}
+	"medicbutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"medicbutton"
+		"xpos"				"94"
+		"ypos"				"-22"
+		"zpos"				"7"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Command"			"select 5"
+		"Default"			"0"
+		"font"				"Emblems40"
+		"labelText"			"K"
+		"textAlignment"		"center"
+		
+		"border_default"	"NoBorder"
+		"border_armed"		"NoBorder"
+		"paintbackground"	"0"
+		
+		"defaultBgColor_override"	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		"depressedBgColor_override"	"0 0 0 0"
+		
+		"defaultFgColor_override"	"0 0 0 0"
+		"armedFgColor_override" 	"255 255 255 15"
+		"depressedFgColor_override" "0 0 0 0"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	"mediclabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"mediclabel"
+		"xpos"				"94"
+		"ypos"				"-22"
+		"zpos"				"6"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Default"			"0"
+		"scaleImage"		"1"
+		"font"				"Emblems40"
+		"labelText"			"G"
+		"textAlignment"		"center"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"sniper"
@@ -485,7 +959,7 @@
 		"tall"				"44"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"Command"			"select 2"
@@ -500,7 +974,7 @@
 		"depressedBgColor_override"		"mNone"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
+		"armedFgColor_override" 		"mGray"
 		"depressedFgColor_override"		"mWhite"
 		
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -512,6 +986,66 @@
 		"stayselectedonclick"	"1"
 		"selectonhover"			"1"
 		"keyboardinputenabled"	"0"				
+	}
+	"sniperbutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"sniperbutton"
+		"xpos"				"142"
+		"ypos"				"-22"
+		"zpos"				"7"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Command"			"select 2"
+		"Default"			"0"
+		"font"				"Emblems40"
+		"labelText"			"K"
+		"textAlignment"		"center"
+		
+		"border_default"	"NoBorder"
+		"border_armed"		"NoBorder"
+		"paintbackground"	"0"
+		
+		"defaultBgColor_override"	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		"depressedBgColor_override"	"0 0 0 0"
+		
+		"defaultFgColor_override"	"0 0 0 0"
+		"armedFgColor_override" 	"255 255 255 15"
+		"depressedFgColor_override" "0 0 0 0"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	"sniperlabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"sniperlabel"
+		"xpos"				"142"
+		"ypos"				"-22"
+		"zpos"				"6"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Default"			"0"
+		"scaleImage"		"1"
+		"font"				"Emblems40"
+		"labelText"			"H"
+		"textAlignment"		"center"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"spy"
@@ -525,7 +1059,7 @@
 		"tall"				"44"
 		"autoResize"		"0"
 		"pinCorner"			"2"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"Command"			"select 8"
@@ -540,7 +1074,7 @@
 		"depressedBgColor_override"		"mNone"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
+		"armedFgColor_override" 		"mGray"
 		"depressedFgColor_override"		"mWhite"
 		
 		"sound_depressed"	"UI/buttonclick.wav"
@@ -552,7 +1086,67 @@
 		"stayselectedonclick"	"1"
 		"selectonhover"			"1"
 		"keyboardinputenabled"	"0"				
-	}	
+	}
+	"spybutton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"spybutton"
+		"xpos"				"190"
+		"ypos"				"-22"
+		"zpos"				"7"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Command"			"select 8"
+		"Default"			"0"
+		"font"				"Emblems40"
+		"labelText"			"K"
+		"textAlignment"		"center"
+		
+		"border_default"	"NoBorder"
+		"border_armed"		"NoBorder"
+		"paintbackground"	"0"
+		
+		"defaultBgColor_override"	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		"depressedBgColor_override"	"0 0 0 0"
+		
+		"defaultFgColor_override"	"0 0 0 0"
+		"armedFgColor_override" 	"255 255 255 15"
+		"depressedFgColor_override" "0 0 0 0"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	"spylabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"spylabel"
+		"xpos"				"190"
+		"ypos"				"-22"
+		"zpos"				"6"
+		"wide"				"44"
+		"tall"				"44"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"Default"			"0"
+		"scaleImage"		"1"
+		"font"				"Emblems40"
+		"labelText"			"I"
+		"textAlignment"		"center"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
 
 	"CancelButton2"
 	{
@@ -563,6 +1157,38 @@
 		"zpos"							"100"
 		"wide"							"490"
 		"tall"							"17"
+		"autoResize"					"0"
+		"pinCorner"						"2"
+		"visible"						"0"
+		"enabled"						"1"
+		"tabPosition"					"2"
+		"labelText"						"CANCEL (&Q)"
+		"textAlignment"					"center"
+		"dulltext"						"0"
+		"brighttext"					"0"
+		"paintborder"					"0"
+		"command"						"vguicancel"
+		"associated_model"				"autodoor"	
+		"font"							"Avenir12"
+		
+		"defaultBgColor_override"		"mClear"
+		"armedBgColor_override"			"mClearWhite"
+		"depressedBgColor_override"		"mClear"
+		
+		"defaultFgColor_override"		"mWhite"
+		"armedFgColor_override" 		"mDark"
+		"depressedFgColor_override"		"mWhite"
+	}
+	
+	"CancelButton"
+	{
+		"ControlName"					"CExImageButton"
+		"fieldName"						"CancelButton"
+		"xpos"							"0"
+		"ypos"							"3"
+		"zpos"							"100"
+		"wide"							"490"
+		"tall"							"20"
 		"autoResize"					"0"
 		"pinCorner"						"2"
 		"visible"						"1"
@@ -584,38 +1210,21 @@
 		"defaultFgColor_override"		"mWhite"
 		"armedFgColor_override" 		"mDark"
 		"depressedFgColor_override"		"mWhite"
+		
+		"pin_to_sibling"		"EditLoadoutButton"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
-	"CancelButton" [$WIN32] 
-	{
-		"ControlName"	"CExButton"
-		"fieldName"		"CancelButton"
-		"xpos"			"9999"
-		"ypos"			"r38"
-		"zpos"			"6"
-		"wide"			"100"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"#TF_ClassMenu_Cancel"
-		"textAlignment"	"center"
-		"Command"		"vguicancel"
-		"font"			"HudFontSmallBold"
-		"fgcolor_override" "200 80 60 255"
-	}
-	
-	"EditLoadoutButton" [$WIN32] 
+	"EditLoadoutButton"
 	{
 		"ControlName"					"CExImageButton"
 		"fieldName"						"EditLoadoutButton"
-		"xpos"							"c-245"
-		"ypos"							"c34"
+		"xpos"							"0"
+		"ypos"							"3"
 		"zpos"							"6"
 		"wide"							"490"
-		"tall"							"17"
+		"tall"							"20"
 		"autoResize"					"0"
 		"pinCorner"						"2"
 		"visible"						"1"
@@ -637,9 +1246,13 @@
 		"defaultFgColor_override"		"mWhite"
 		"armedFgColor_override" 		"mDark"
 		"depressedFgColor_override"		"mWhite"
+		
+		"pin_to_sibling"		"MainBGPanel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 
-	"ResetButton" [$WIN32] 
+	"ResetButton"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ResetButton"
@@ -1033,8 +1646,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numScout"
-		"xpos"			"c-234"
-		"ypos"			"c-56"
+		"xpos"			"-234"
+		"ypos"			"-56"
 		"zpos"			"5"
 		"wide"			"44"
 		"tall"			"44"
@@ -1047,14 +1660,18 @@
 		"textAlignment"	"center"
 		"font"			"Numbers20"
 		"fgcolor"		"mWhite"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}	
 	
 	"numSoldier" [$WIN32]
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numSoldier"
-		"xpos"			"c-186"
-		"ypos"			"c-56"
+		"xpos"			"-186"
+		"ypos"			"-56"
 		"zpos"			"5"
 		"wide"			"44"
 		"tall"			"44"
@@ -1067,14 +1684,18 @@
 		"textAlignment"	"center"
 		"font"			"Numbers20"
 		"fgcolor"		"mWhite"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}		
 	
 	"numPyro" [$WIN32]
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numPyro"
-		"xpos"			"c-138"
-		"ypos"			"c-56"
+		"xpos"			"-138"
+		"ypos"			"-56"
 		"zpos"			"5"
 		"wide"			"44"
 		"tall"			"44"
@@ -1087,14 +1708,18 @@
 		"textAlignment"	"center"
 		"font"			"Numbers20"
 		"fgcolor"		"mWhite"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}			
 	
 	"numDemoman" [$WIN32]
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numDemoman"
-		"xpos"			"c-70"
-		"ypos"			"c-56"
+		"xpos"			"-70"
+		"ypos"			"-56"
 		"zpos"			"5"
 		"wide"			"44"
 		"tall"			"44"
@@ -1107,14 +1732,18 @@
 		"textAlignment"	"center"
 		"font"			"Numbers20"
 		"fgcolor"		"mWhite"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}				
 	
 	"numHeavy" [$WIN32]
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numHeavy"
-		"xpos"			"c-22"
-		"ypos"			"c-56"
+		"xpos"			"-22"
+		"ypos"			"-56"
 		"zpos"			"5"
 		"wide"			"44"
 		"tall"			"44"
@@ -1127,14 +1756,18 @@
 		"textAlignment"	"center"
 		"font"			"Numbers20"
 		"fgcolor"		"mWhite"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}					
 	
 	"numEngineer" [$WIN32]
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numEngineer"
-		"xpos"			"c26"
-		"ypos"			"c-56"
+		"xpos"			"26"
+		"ypos"			"-56"
 		"zpos"			"5"
 		"wide"			"44"
 		"tall"			"44"
@@ -1147,14 +1780,18 @@
 		"textAlignment"	"center"
 		"font"			"Numbers20"
 		"fgcolor"		"mWhite"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}						
 	
 	"numMedic" [$WIN32]
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numMedic"
-		"xpos"			"c94"
-		"ypos"			"c-56"
+		"xpos"			"94"
+		"ypos"			"-56"
 		"zpos"			"5"
 		"wide"			"44"
 		"tall"			"44"
@@ -1167,14 +1804,18 @@
 		"textAlignment"	"center"
 		"font"			"Numbers20"
 		"fgcolor"		"mWhite"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}							
 	
 	"numSniper" [$WIN32]
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numSniper"
-		"xpos"			"c142"
-		"ypos"			"c-56"
+		"xpos"			"142"
+		"ypos"			"-56"
 		"zpos"			"5"
 		"wide"			"44"
 		"tall"			"44"
@@ -1187,14 +1828,18 @@
 		"textAlignment"	"center"
 		"font"			"Numbers20"
 		"fgcolor"		"mWhite"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}						
 	
 	"numSpy" [$WIN32]
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numSpy"
-		"xpos"			"c190"
-		"ypos"			"c-56"
+		"xpos"			"190"
+		"ypos"			"-56"
 		"zpos"			"5"
 		"wide"			"44"
 		"tall"			"44"
@@ -1207,6 +1852,10 @@
 		"textAlignment"	"center"
 		"font"			"Numbers20"
 		"fgcolor"		"mWhite"
+		
+		"pin_to_sibling"		"ClassSelectionAnchor"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}								
 	
 	"MvMUpgradeImageScout"

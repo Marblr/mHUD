@@ -73,7 +73,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"WaveCompleteLabel"
-			"font"			"Avenir20"
+			"font"			"AvenirCaps20"
 			"textAlignment"	"center"
 			"labelText"		"%titletext%"
 			"xpos"			"0"

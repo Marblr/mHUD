@@ -88,7 +88,7 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"ToggleLabel"
-		"font"			"Avenir13"
+		"font"			"AvenirMed12"
 		"fgcolor"		"mWhite"
 		"xpos"			"77"
 		"ypos"			"96"

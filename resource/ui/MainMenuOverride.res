@@ -175,12 +175,12 @@
 		"image"			""
 		"scaleImage"	"1"
 		
-		if_operation
-		{
-			"image"		"../console/title_team_tough_break"
-		}
+//		if_operation
+//		{
+//			"image"		"../console/title_team_tough_break"
+//		}
 	}
-					
+
 	"TFLogoImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -296,7 +296,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TipLabel"
-			"font"			"Avenir14"
+			"font"			"AvenirCaps14"
 			"labelText"		"%tiptext%"
 			"textAlignment"	"center"
 			"xpos"			"4"
@@ -543,7 +543,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"labelText"		"d"
+			"labelText"		"q"
 			"font"			"Icons16"
 			"command"		"watch_stream"
 			"textAlignment"	"center"
@@ -591,13 +591,13 @@
 		"fieldName"		"StreamListPanel"
 		"xpos"			"r375"
 		"ypos"			"60"
-		"zpos"			"1"
+		"zpos"			"100"
 		"wide"			"300"
 		"tall"			"395"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
 		"paintbackground"	"0"
-		"border"		"MainMenuHighlightBorder"
+		"border"		"NoBorder"
 		
 
 		"navDown"		"SettingsButton"		// when a sub element can't nav down it will pass through this
@@ -635,7 +635,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"labelText"		"b"
+			"labelText"		"s"
 			"font"			"Icons16"
 			"command"		"questlog"
 			"textAlignment"	"center"
@@ -790,13 +790,13 @@
 		"fieldName"		"MOTD_Panel"
 		"xpos"			"r375"
 		"ypos"			"60"
-		"zpos"			"1"
+		"zpos"			"100"
 		"wide"			"300"
 		"tall"			"395"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
 		"paintbackground"	"0"
-		"border"		"MainMenuHighlightBorder"
+		"border"		"NoBorder"
 
 		"navDown"		"SettingsButton"		// when a sub element can't nav down it will pass through this
 		"navLeft"		"MOTD_ShowButtonPanel"	// when a sub element can't nav left it will pass through this
@@ -899,7 +899,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"labeltext"		"B"
+			"labeltext"		"N"
 			"font"			"Icons12"
 			"textAlignment"	"center"
 			"dulltext"		"0"
@@ -974,11 +974,11 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"MOTD_Label"
-			"font"			"AvenirMed12"
+			"font"			"AvenirMed11"
 			"labelText"		"%motddate%"
 			"textAlignment"	"center"
 			"xpos"			"0"
-			"ypos"			"51"
+			"ypos"			"50"
 			"zpos"			"4"
 			"wide"			"300"
 			"tall"			"16"
@@ -986,7 +986,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"mWhite"
+			"fgcolor_override"	"mWhite2"
 		}
 		
 		"MOTD_TitleImageBg"
@@ -1060,7 +1060,7 @@
 				{
 					"ControlName"	"CExLabel"
 					"fieldName"		"MOTD_TextLabel"
-					"font"			"HudFontSmall"
+					"font"			"AvenirMed12"
 					"labelText"		"%motdtext%"
 					"textAlignment"	"north-west"
 					"xpos"			"0"
@@ -1081,10 +1081,10 @@
 		{
 			"ControlName"	"CExButton"
 			"fieldName"		"MOTD_URLButton"
-			"xpos"			"75"
+			"xpos"			"cs-0.5"
 			"ypos"			"r44"
 			"zpos"			"4"
-			"wide"			"150"
+			"wide"			"250"
 			"tall"			"22"
 			"autoResize"	"0"
 			"pinCorner"		"3"
@@ -1109,9 +1109,9 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"defaultBgColor_override"	"mClear"
+			"defaultBgColor_override"	"mDarker"
 			"armedBgColor_override"		"mWhite"
-			"depressedBgColor_override"	"mClear"
+			"depressedBgColor_override"	"mDarker"
 			
 			"defaultFgColor_override"	"mWhite"
 			"armedFgColor_override" 	"mDark"
@@ -1149,7 +1149,7 @@
 			"enabled"		"1"
 			"font"			"AvenirMed9"
 			"textAlignment"	"center"
-			"labelText"		"mHUD version 2016-03-27"
+			"labelText"		"mHUD version 2016-06-09"
 			"fgcolor"		"mWhite"
 		}
 		
@@ -1324,7 +1324,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"labeltext"		"B"
+			"labeltext"		"N"
 			"font"			"Icons12"
 			"textAlignment"	"center"
 			"dulltext"		"0"
@@ -2602,9 +2602,9 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"textinsetx"	"100"
+			"labelText"		"j"
 			"use_proportional_insets" "1"
-			"font"			"Avenir14"
+			"font"			"Icons14"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -2635,8 +2635,8 @@
 				"ypos"			"4"
 				"zpos"			"1"
 				"wide"			"12"
-				"tall"			"12"
-				"visible"		"1"
+				"tall"			"0"
+				"visible"		"0"
 				"enabled"		"1"
 				"image"			"glyph_create"
 				"scaleImage"	"1"
@@ -2667,9 +2667,9 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"textinsetx"	"100"
+			"labelText"		"r"
 			"use_proportional_insets" "1"
-			"font"			"Avenir14"
+			"font"			"Icons14"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -2700,8 +2700,8 @@
 				"ypos"			"4"
 				"zpos"			"1"
 				"wide"			"12"
-				"tall"			"12"
-				"visible"		"1"
+				"tall"			"0"
+				"visible"		"0"
 				"enabled"		"1"
 				"image"			"glyph_create"
 				"scaleImage"	"1"
@@ -2733,9 +2733,9 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"textinsetx"	"100"
+			"labelText"		"k"
 			"use_proportional_insets" "1"
-			"font"			"Avenir14"
+			"font"			"Icons14"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -2766,8 +2766,8 @@
 				"ypos"			"4"
 				"zpos"			"1"
 				"wide"			"12"
-				"tall"			"12"
-				"visible"		"1"
+				"tall"			"0"
+				"visible"		"0"
 				"enabled"		"1"
 				"image"			"glyph_create"
 				"scaleImage"	"1"
@@ -2979,7 +2979,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"R"
+		"labelText"		"B"
 		"font"			"Icons16"
 		"textAlignment"	"center"
 		"dulltext"		"0"
@@ -4036,7 +4036,7 @@
 				"labelText"		"#MMenu_Update"
 				"textAlignment"	"center"
 				"xpos"			"0"
-				"ypos"			"30"
+				"ypos"			"29"
 				"wide"			"260"
 				"tall"			"30"
 				"autoResize"	"0"
@@ -4209,7 +4209,7 @@
 					}
 					"5"
 					{
-						"item"		"Taunt: Aerobic Taunt"
+						"item"		"Taunt: Mannrobics"
 						"show_market"	"0"
 					}
 				}

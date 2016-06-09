@@ -74,15 +74,28 @@
 		"ControlName"		"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"-2"
 		"zpos"			"7"
-		"wide"			"31"
-		"tall"			"22"
+		"wide"			"29"
+		"tall"			"23"
 		"visible"		"1"
 		"enabled"		"1"
 		"labeltext"		"%Health%"
 		"textAlignment"		"center"
 		"font"			"Numbers16"
-		"fgColor"	"mWhite"	
-	}								
+		"fgColor"	"mWhite"
+	}
+	"HealthBackground"
+	{	
+		"ControlName"		"ImagePanel"
+		"fieldName"		"HealthBackground"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"7"
+		"wide"			"29"
+		"tall"			"18"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillColor"		"0 0 0 200"
+	}
 }
