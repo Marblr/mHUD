@@ -42,9 +42,18 @@
 //#base "scheme/Other_solid.res"					// Solid background
 //#base "scheme/Other_none.res"						// No background
 
+//
+// CUSTOMIZATION ENDS HERE
+//
+
 ////////////////////////////////////////////////////////////////////////////////////////
 
+//
+// These **DO NOT** need to be changed:
+//
 
+#base "scheme/ClientScheme_KnucklesCrosshairs.res"
+#base "../scripts/crosshairs/crosshair_colors.res"
 
 
 
@@ -2752,7 +2761,7 @@ Scheme
 		}
 
 		//
-		// mHUD Fonts Start
+		//	mHUD Fonts Start
 		//
 		
 		"AvenirSpecPlayerName"
@@ -3806,8 +3815,13 @@ Scheme
 		}
 		
 		//
-		// mHUD Fonts End
+		//	mHUD Fonts End
 		//
+		
+		//
+		//	KnucklesCrosshairs Start
+		//
+		
 		
 	}
 	
@@ -10116,6 +10130,11 @@ Scheme
 		{
 			"font" "resource/fonts/AvenirLTStd-Black-Caps.otf"
 			"name" "AvenirLTStd-Black-Caps"
+		}
+		"15"
+		{
+			"font" "resource/fonts/KnucklesCrosses.ttf"
+			"name" "KnucklesCrosses"
 		}
 	}
 }

@@ -1,3 +1,9 @@
+///////////////////////////////////////////
+
+#base "crosshairs/hudlayout_crosshairs.res"
+
+///////////////////////////////////////////
+
 "Resource/HudLayout.res"
 {
 	HudPlayerStatus
@@ -391,7 +397,7 @@
 
 	HudDamageIndicator
 	{
-
+	
 	}
 
 	HudCommentary

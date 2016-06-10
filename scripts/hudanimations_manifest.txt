@@ -1,0 +1,7 @@
+hudanimations_manifest
+{
+	"file"		"scripts/hudanimations.txt"									// Source Animations
+	"file"		"scripts/crosshairs/hudanimations_crosshairs.txt"			// Custom Crosshair Animations
+	"file"		"scripts/hudanimations_mHUD.txt"							// mHUD Animations
+	"file"		"scripts/hudanimations_tf.txt"								// Team Fortress 2 Animations
+}
