@@ -44,7 +44,7 @@
 		
 		
 		// Enable or disable (1 or 0) the hitmarker
-		"visible"				"1"
+		"visible"				"0"
 		
 		
 		// Adjust the position of the hitmarker if needed
