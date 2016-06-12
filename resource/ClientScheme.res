@@ -10131,7 +10131,7 @@ Scheme
 			"font" "resource/fonts/AvenirLTStd-Black-Caps.otf"
 			"name" "AvenirLTStd-Black-Caps"
 		}
-		"15"
+		"16"
 		{
 			"font" "resource/fonts/KnucklesCrosses.ttf"
 			"name" "KnucklesCrosses"
