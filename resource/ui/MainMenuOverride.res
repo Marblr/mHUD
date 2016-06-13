@@ -185,11 +185,11 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TFLogoImage"
-		"xpos"			"78" //c-290
+		"xpos"			"80" //c-290
 		"ypos"			"143" //24
 		"zpos"			"-99"
-		"wide"			"256"
-		"tall"			"64"
+		"wide"			"250"
+		"tall"			"63"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../logo/new_tf2_logo"
@@ -205,7 +205,25 @@
 		{
 			"ypos"		"143" //113
 		}
-	}	
+	}
+	
+	"TFLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"TFLabel"
+		"xpos"			"75"
+		"ypos"			"166"
+		"zpos"			"-99"
+		"wide"			"260"
+		"tall"			"34"
+		"visible"		"0"
+		"enabled"		"1"
+		"textAlignment"	"center"
+		"labelText"		"TEAM FORTRESS 2"
+		"font"			"Avenir32"
+		"fgcolor"		"mWhite"
+		"bgcolor_override"		"mClear"
+	}
 	
 	"TFCharacterImage"
 	{
