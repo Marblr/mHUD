@@ -4,7 +4,7 @@
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"TimePanelBG"
-		"xpos"			"0"
+		"xpos"			"20"
 		"ypos"			"1"
 		"zpos"			"2"
 		"wide"			"40"
@@ -135,8 +135,8 @@
 		
 		if_comp
 		{
-			"xpos"			"2"
-			"ypos"			"23"
+			"xpos"			"-1"
+			"ypos"			"4"
 			"wide"			"37"
 		}
 	}
@@ -160,8 +160,8 @@
 		
 		if_comp
 		{
-			"xpos"			"2"
-			"ypos"			"23"
+			"xpos"			"-1"
+			"ypos"			"4"
 			"wide"			"37"
 			"tall"			"12"
 			"border"		"mWhiteTop"

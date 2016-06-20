@@ -527,14 +527,30 @@ event HudCartAlarmPulseStop
 // Active Timer BG Pulse
 event ActiveTimerBGPulse
 {
-	Animate	ActiveTimerBG 	Alpha		"0"			Linear 0.1 0.1
-	Animate	ActiveTimerBG 	Alpha		"255"		Linear 0.3 0.1
-	
-	Animate	ActiveTimerBG 	Alpha		"0"			Linear 0.5 0.1
-	Animate	ActiveTimerBG 	Alpha		"255"		Linear 0.7 0.1
-	
-	Animate	ActiveTimerBG 	Alpha		"0"			Linear 0.9 0.1
-	Animate	ActiveTimerBG 	Alpha		"255"		Linear 1.1 0.1
+	Animate	ActiveTimerBG 	Alpha		"255"		Linear 0.0 0.0
+}
+
+event ActiveTimerHighlight
+{
+	Animate TimePanelValue FgColor	mWhite		Linear 0.0 0.0
+}
+
+event ActiveTimerDim
+{
+	// Slow fade out
+	Animate TimePanelValue FgColor	mWhite2		Linear 0.0 0.0
+}
+
+//===========================================
+
+event OvertimeLabelPulseRed
+{
+	Animate	OvertimeLabel 	FgColor		mWhite		Linear 0.0 0.0
+}
+
+event SuddenDeathLabelPulseRed
+{
+	Animate	SuddenDeathLabel 	FgColor		mWhite		Linear 0.0 0.0
 }
 
 //===========================================
