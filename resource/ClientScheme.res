@@ -3627,6 +3627,39 @@ Scheme
 			}
 		}
 		
+		"Avenir32"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Black"
+				"tall"			"32"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirMed32"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Medium"
+				"tall"			"32"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"AvenirLight32"
+		{
+			"1"
+			{
+				"name"			"AvenirLTStd-Light"
+				"tall"			"32"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"Icons34"
 		{
 			"1"
@@ -3817,12 +3850,6 @@ Scheme
 		//
 		//	mHUD Fonts End
 		//
-		
-		//
-		//	KnucklesCrosshairs Start
-		//
-		
-		
 	}
 	
 	//
