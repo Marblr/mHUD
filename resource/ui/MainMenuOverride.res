@@ -786,6 +786,8 @@
 			"brighttext"	"0"
 			"default"		"1"
 
+			
+			"actionsignallevel"	"2"
 			"Command"		"motd_show"
 			"navActivate"	"<QuickplayButton"		// after selecting this, nav to this sibling
 
@@ -1015,7 +1017,7 @@
 			"ypos"			"72"
 			"zpos"			"99"
 			"wide"			"250"
-			"tall"			"150"
+			"tall"			"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"item_bg"

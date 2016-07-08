@@ -234,9 +234,9 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
-		"defaultBgColor_override"	"mDarker"
+		"defaultBgColor_override"	"22 22 22 255"
 		"armedBgColor_override"		"227 227 227 255"
-		"depressedBgColor_override"	"mDarker"
+		"depressedBgColor_override"	"22 22 22 255"
 		
 		"defaultFgColor_override"	"227 227 227 255"
 		"armedFgColor_override" 	"30 30 30 255"
