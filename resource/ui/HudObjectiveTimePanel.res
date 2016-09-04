@@ -17,7 +17,7 @@
 		"draw_corner_width"		"-5"
 		"draw_corner_height" 	"-5"
 		
-		if_comp
+		if_match
 		{
 			"tall"		"18"
 			"visible"	"0"
@@ -73,7 +73,7 @@
 		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		
-		if_comp
+		if_match
 		{
 			"xpos"			"1"
 			"ypos"			"23"
@@ -99,7 +99,7 @@
 		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		
-		if_comp
+		if_match
 		{
 			"xpos"			"1"
 			"ypos"			"23"
@@ -133,7 +133,7 @@
 		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		
-		if_comp
+		if_match
 		{
 			"xpos"			"-1"
 			"ypos"			"4"
@@ -158,7 +158,7 @@
 		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		
-		if_comp
+		if_match
 		{
 			"xpos"			"-1"
 			"ypos"			"4"
@@ -192,7 +192,7 @@
 		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		
-		if_comp
+		if_match
 		{
 			"xpos"			"1"
 			"ypos"			"23"
@@ -218,7 +218,7 @@
 		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		
-		if_comp
+		if_match
 		{
 			"xpos"			"1"
 			"ypos"			"23"
@@ -251,12 +251,16 @@
 		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		
-		if_comp
+		if_match
 		{
-			"xpos"			"1"
-			"ypos"			"37"
+			"xpos"			"0"
+			"ypos"			"22"
 			"wide"			"76"
 			"tall"			"12"
+		
+			"pin_to_sibling"	"TimerBackground"
+			"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+			"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		}
 	}
 	
@@ -277,13 +281,17 @@
 		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		
-		if_comp
+		if_match
 		{
-			"xpos"			"1"
-			"ypos"			"37"
+			"xpos"			"0"
+			"ypos"			"22"
 			"wide"			"76"
 			"tall"			"12"
 			"border"		"mWhiteTop"
+		
+			"pin_to_sibling"	"TimerBackground"
+			"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+			"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 		}
 	}
 	

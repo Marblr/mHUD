@@ -1,8 +1,8 @@
-"Resource/UI/Competitive.res"
+"Resource/UI/HudMatchStatus.res"
 {
 	"HudMatchStatus"
 	{
-		"fieldName"		"RoundSignModel"
+		"fieldName"		"HudMatchStatus"
 		"avatar_width"	"63"
 		"spacer"		"5"
 		"name_width"	"57"
@@ -27,7 +27,7 @@
 		
 		"model"
 		{
-			"modelname"	"models/props_ui/round_banner.mdl"
+			"modelname"	"models/props_ui/banner.mdl"
 			"skin"		"0"
 			"angles_x"	"30"
 			"angles_y"	"180"
@@ -217,9 +217,15 @@
 		"zpos"				"0"
 		"wide"				"365"
 		"tall"				"0"
+		"visible"			"0"
 
 		"proportionaltoaparent"	"1"
 		"border"			"TFFatLineBorder"
+		
+		if_match
+		{
+			"visible"		"1"
+		}
 	}
 	
 	"ObjectiveStatusTimePanel"
@@ -241,7 +247,7 @@
 		"delta_lifetime"		"0"
 		"delta_item_font"		"Numbers16"
 
-		if_comp
+		if_match
 		{
 			"xpos"					"c-38"
 			"delta_item_x"			"21"
@@ -269,7 +275,7 @@
 			"textAlignment"		"center"
 			"labelText"		"0:00"
 
-			if_comp
+			if_match
 			{
 				"proportionaltoparent"	"1"
 
@@ -555,8 +561,14 @@
 		"zpos"			"50"
 		"wide"			"150"
 		"tall"			"260"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
+		
+		if_large
+		{
+			"ypos"			"65"
+			"tall"			"385"
+		}
 
 		"BlueTeamBG"
 		{
@@ -651,6 +663,12 @@
 			"linespacing"	"26"
 			"linegap"		"2"
 			//"show_columns"	"1"
+		
+			if_large
+			{
+				"ypos"			"65"
+				"tall"			"290"
+			}
 		}
 		"BluePlayerListBG"
 		{
@@ -660,7 +678,7 @@
 			"ypos"			"0"
 			"zpos"			"0"
 			"wide"			"147"
-			"tall"			"179"
+			"tall"			"180"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -671,6 +689,12 @@
 			"pin_to_sibling"	"BlueTeamBG"
 			"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 			"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+			if_large
+			{
+				"ypos"			"65"
+				"tall"			"290"
+			}
 		}
 	}
 
@@ -683,8 +707,14 @@
 		"zpos"			"50"
 		"wide"			"150"
 		"tall"			"260"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
+		
+		if_large
+		{
+			"ypos"			"65"
+			"tall"			"385"
+		}
 
 		"RedTeamBG"
 		{
@@ -779,6 +809,12 @@
 			"linespacing"	"26"
 			"linegap"		"2"
 			//"show_columns"	"1"
+		
+			if_large
+			{
+				"ypos"			"65"
+				"tall"			"290"
+			}
 		}
 		"RedPlayerListBG"
 		{
@@ -788,7 +824,7 @@
 			"ypos"			"0"
 			"zpos"			"0"
 			"wide"			"147"
-			"tall"			"179"
+			"tall"			"180"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -799,6 +835,12 @@
 			"pin_to_sibling"	"RedTeamBG"
 			"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
 			"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		
+			if_large
+			{
+				"ypos"			"65"
+				"tall"			"290"
+			}
 		}
 	}
 }

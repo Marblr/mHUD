@@ -118,9 +118,6 @@
 			
 			"inset_eq_x"	"2"
 			"inset_eq_y"	"2"
-
-			"deferred_description"	"1"
-			"deferred_icon"			"1"
 			
 			"itemmodelpanel"
 			{

@@ -2,7 +2,7 @@
 {	
 	"HudKothTimeStatus"
 	{
-		if_comp
+		if_match
 		{
 			"zpos"		"5"
 		}
@@ -20,7 +20,7 @@
 		"visible"			"1"
 		"enabled"			"1"
 		
-		if_comp
+		if_match
 		{
 			"xpos"			"42"
 			"ypos"			"8"
@@ -56,7 +56,7 @@
 		"visible"			"1"
 		"enabled"			"1"
 		
-		if_comp
+		if_match
 		{
 			"xpos"			"79"
 			"ypos"			"8"

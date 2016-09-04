@@ -179,6 +179,30 @@
 //		{
 //			"image"		"../console/title_team_tough_break"
 //		}
+//		if_meet_your_match_0
+//		{
+//			"xpos"		"rs1"
+//			"image"		"../console/title_team_heavy01_blu_widescreen"
+//		}
+//		if_meet_your_match_1
+//		{
+//			"xpos"		"rs1"
+//			"image"		"../console/title_team_heavy01_red_widescreen"
+//		}
+//		if_meet_your_match_2
+//		{
+//			"xpos"		"rs1"
+//			"image"		"../console/title_team_pyro01_blu_widescreen"
+//		}
+//		if_meet_your_match_3
+//		{
+//			"xpos"		"rs1"
+//			"image"		"../console/title_team_pyro01_red_widescreen"
+//		}
+//		if_meet_your_match_4
+//		{
+//			"image"		"../console/title_team_competitive_widescreen"
+//		}
 	}
 
 	"TFLogoImage"
@@ -187,13 +211,14 @@
 		"fieldName"		"TFLogoImage"
 		"xpos"			"80" //c-290
 		"ypos"			"143" //24
-		"zpos"			"-99"
+		"zpos"			"1"
 		"wide"			"250"
 		"tall"			"63"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../logo/new_tf2_logo"
 		"scaleImage"	"1"
+		"mouseinputenabled"	"0"
 		
 		if_operation
 		{
@@ -204,6 +229,47 @@
 		if_competitive
 		{
 			"ypos"		"143" //113
+		}
+		
+		if_meet_your_match_0
+		{
+			"xpos"			"79"
+			"ypos"			"107"
+			"wide"			"o2"
+			"tall"			"130"
+			"image"		"../logo/meet_your_match_logo"
+		}
+		if_meet_your_match_1
+		{
+			"xpos"			"79"
+			"ypos"			"107"
+			"wide"			"o2"
+			"tall"			"130"
+			"image"		"../logo/meet_your_match_logo"
+		}
+		if_meet_your_match_2
+		{
+			"xpos"			"79"
+			"ypos"			"107"
+			"wide"			"o2"
+			"tall"			"130"
+			"image"		"../logo/meet_your_match_logo"
+		}
+		if_meet_your_match_3
+		{
+			"xpos"			"79"
+			"ypos"			"107"
+			"wide"			"o2"
+			"tall"			"130"
+			"image"		"../logo/meet_your_match_logo"
+		}
+		if_meet_your_match_4
+		{
+			"xpos"			"79"
+			"ypos"			"107"
+			"wide"			"o2"
+			"tall"			"130"
+			"image"		"../logo/meet_your_match_logo"
 		}
 	}
 	
@@ -497,6 +563,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"default"		"1"
+			"actionsignallevel" "2"
 
 			"Command"		"noti_show"
 			"navActivate"	"<QuickplayButton"
@@ -1121,6 +1188,7 @@
 			"default"		"1"
 			"command"		"motd_viewurl"
 			"proportionaltoparent" "1"
+			"actionsignallevel" "2"
 
 			"navUp"			"MOTD_CloseButton"
 			"navLeft"		"MOTD_PrevButton"
@@ -1194,6 +1262,7 @@
 			"brighttext"	"0"
 			"default"		"1"
 			"Command"		"motd_prev"
+			"actionsignallevel" "2"
 
 			"navUp"			"MOTD_CloseButton"
 			"navRight"		"MOTD_URLButton"
@@ -1241,6 +1310,7 @@
 			"brighttext"	"0"
 			"default"		"1"
 			"Command"		"motd_next"
+			"actionsignallevel" "2"
 
 			"navUp"			"MOTD_CloseButton"
 			"navLeft"		"MOTD_URLButton"
@@ -1266,47 +1336,6 @@
 				"scaleImage"	"1"
 			}
 		}
-	}	
-
-	"ShowWarButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"ShowWarButton"
-		"xpos"			"c100"
-		"ypos"			"30"
-		"zpos"			"1"
-		"wide"			"120"
-		"tall"			"28"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"0"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"War is here!"
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"textinsetx"	"25"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"showcomic"
-		"proportionaltoparent" "1"
-		
-		"navUp"			"Notifications_Panel"
-		"navLeft"		"SettingsButton"
-		
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"border_default"	"MainMenuButtonDefault"
-		"border_armed"		"MainMenuButtonArmed"
-		"paintbackground"	"0"
-		
-		"defaultFgColor_override" "46 43 42 255"
-		"armedFgColor_override" "235 226 202 255"
-		"depressedFgColor_override" "46 43 42 255"
-
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
 	}
 	
 	"Notifications_Panel"
@@ -1320,7 +1349,7 @@
 		"tall"			"80"
 		"visible"		"0"
 		"PaintBackgroundType"	"0"
-		"paintbackground"	"0"
+		"paintbackground"	"1"
 		"border"		"NoBorder"
 		"bgcolor_override"	"mDark"
 
@@ -1404,10 +1433,10 @@
 			"font"			"Avenir16"
 			"labelText"		"%notititle%"
 			"textAlignment"	"center"
-			"xpos"			"2"
+			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"2"
-			"wide"			"211"
+			"wide"			"212"
 			"tall"			"27"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1420,10 +1449,10 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"Notifications_TitleBG"
-			"xpos"			"2"
+			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"1"
-			"wide"			"211"
+			"wide"			"212"
 			"tall"			"27"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -3023,10 +3052,10 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"TF2SettingsButton"
-		"xpos"			"271"
+		"xpos"			"270"
 		"ypos"			"396"
 		"zpos"			"1"
-		"wide"			"59"
+		"wide"			"60"
 		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"3"
@@ -4039,24 +4068,24 @@
 				"ControlName"	"ImagePanel"
 				"fieldname"		"EventBGPanel"
 				"xpos"			"-1"
-				"ypos"			"30"
+				"ypos"			"5"
 				"zpos"			"0"
 				"wide"			"260"
-				"tall"			"90"
+				"tall"			"115"
 				"visible"		"1"
 				"enabled"		"1"
 				"fillcolor"		"mClear"
 			}
 
-			"OperationTitleLabel"
+			"TitleLabel"
 			{
 				"ControlName"	"CExLabel"
-				"fieldName"		"OperationTitleLabel"
+				"fieldName"		"TitleLabel"
 				"font"			"Avenir14"
 				"labelText"		"#MMenu_Update"
 				"textAlignment"	"center"
 				"xpos"			"0"
-				"ypos"			"29"
+				"ypos"			"2"
 				"wide"			"260"
 				"tall"			"30"
 				"autoResize"	"0"
@@ -4067,16 +4096,34 @@
 				"fgcolor_override"	"mWhite"
 			}
 
+			"ViewDetailsGlow"
+			{
+				"ControlName"	"Panel"
+				"fieldName"		"ViewDetailsGlow"
+				"xpos"			"5"
+				"ypos"			"27"
+				"zpos"			"10"
+				"wide"			"123"
+				"tall"			"25"
+				"visible"		"0"
+				"proportionaltoparent"	"1"
+
+				"paintborder"	"0"
+				"border"	"MainMenuButtonGlow"
+				"paintbackground"		"3"
+				"bgcolor_override"	"238 103 17 255"
+			}
+
 			"ViewDetailsButton"
 			{
 				"ControlName"	"EditablePanel"
 				"fieldname"		"ViewDetailsButton"
-				"xpos"			"4"
+				"xpos"			"5"
 				"ypos"			"27"
 				"zpos"			"11"
-				"wide"			"124"
-				"tall"			"26"
-				"visible"		"0"
+				"wide"			"123"
+				"tall"			"25"
+				"visible"		"1"
 				"PaintBackgroundType"	"0"
 				"proportionaltoparent"	"1"
 
@@ -4094,45 +4141,49 @@
 					"enabled"		"1"
 					"tabPosition"	"0"
 					"use_proportional_insets" "1"
-					"font"			"Avenir14"
+					"font"			"HudFontSmallBold"
 					"textAlignment"	"center"
 					"dulltext"		"0"
 					"brighttext"	"0"
 					"default"		"1"
 					"sound_depressed"	"UI/buttonclick.wav"
 					"sound_released"	"UI/buttonclickrelease.wav"
-					"labeltext"		"DETAILS" //#MMenu_ViewUpdateDetails
+					"labeltext"		"#MMenu_ViewUpdateDetails"
 					"proportionaltoparent"	"1"
 					"command"		"view_update_page"
 					"actionsignallevel"	"4"
-			
-					"border_default"	"NoBorder"
-					"border_armed"		"NoBorder"
 					"paintbackground"	"1"
-			
-					"defaultBgColor_override"	"mDark"
-					"armedBgColor_override"		"mWhite"
-					"depressedBgColor_override"	"mDark"
-			
-					"defaultFgColor_override"	"mWhite"
-					"armedFgColor_override" 	"mDark"
-					"depressedFgColor_override" "mWhite"
-			
-					"image_drawcolor"	"mWhite"
-					"image_armedcolor"	"mDark"
 				}
 			}
-			
-			"ViewComicButton"
+
+			"ViewWarButtonGlow"
+			{
+				"ControlName"	"Panel"
+				"fieldName"		"ViewWarButtonGlow"
+				"xpos"			"131"
+				"ypos"			"27"
+				"zpos"			"10"
+				"wide"			"124"
+				"tall"			"25"
+				"visible"		"0"
+				"proportionaltoparent"	"1"
+
+				"paintborder"	"0"
+				"border"	"MainMenuButtonGlow"
+				"paintbackground"		"3"
+				"bgcolor_override"	"238 103 17 255"
+			}
+
+			"ViewWarButton"
 			{
 				"ControlName"	"EditablePanel"
-				"fieldname"		"ViewComicButton"
-				"xpos"			"132"
+				"fieldname"		"ViewWarButton"
+				"xpos"			"131"
 				"ypos"			"27"
 				"zpos"			"11"
-				"wide"			"122"
-				"tall"			"26"
-				"visible"		"0"
+				"wide"			"124"
+				"tall"			"25"
+				"visible"		"1"
 				"PaintBackgroundType"	"0"
 				"proportionaltoparent"	"1"
 
@@ -4150,32 +4201,18 @@
 					"enabled"		"1"
 					"tabPosition"	"0"
 					"use_proportional_insets" "1"
-					"font"			"Avenir14"
+					"font"			"HudFontSmallBold"
 					"textAlignment"	"center"
 					"dulltext"		"0"
 					"brighttext"	"0"
 					"default"		"1"
 					"sound_depressed"	"UI/buttonclick.wav"
 					"sound_released"	"UI/buttonclickrelease.wav"
-					"labeltext"		"COMIC" //#MMenu_ViewUpdateComic
+					"labeltext"		"#MMenu_ViewWar"
 					"proportionaltoparent"	"1"
-					"command"		"view_update_comic"
+					"command"		"view_war"
 					"actionsignallevel"	"4"
-			
-					"border_default"	"NoBorder"
-					"border_armed"		"NoBorder"
 					"paintbackground"	"1"
-			
-					"defaultBgColor_override"	"mDark"
-					"armedBgColor_override"		"mWhite"
-					"depressedBgColor_override"	"mDark"
-			
-					"defaultFgColor_override"	"mWhite"
-					"armedFgColor_override" 	"mDark"
-					"depressedFgColor_override" "mWhite"
-			
-					"image_drawcolor"	"mWhite"
-					"image_armedcolor"	"mDark"
 				}
 			}
 
@@ -4186,12 +4223,13 @@
 				"xpos"					"5"
 				"ypos"					"55"
 				"zpos"					"100"
-				"wide"					"f10"
+				"wide"					"250"
 				"tall"					"60"
 				"visible"				"1"
 				"enabled"				"1"
 				"scaleImage"			"1"
 				"proportionaltoparent"	"1"
+				"paintborder"	"0"
 
 				"bgcolor_override"		"30 30 30 255"
 
@@ -4199,37 +4237,27 @@
 				{
 					"0"
 					{
-						"item"		 	"Unused Operation Tough Break Pass"
+						"item"		"Competitive Matchmaking Official"
 						"show_market"	"0"
 					}
 					"1"
 					{
-						"item"		"Tough Break Case 01 Pyroland"
-						"show_market"	"1"
+						"item"		"Taunt: The Carlton"
+						"show_market"	"0"
 					}
 					"2"
 					{
-						"item"		"Tough Break Case 02 Warbirds"
-						"show_market"	"1"
+						"item"		"Taunt: The Balloonibouncer"
+						"show_market"	"0"
 					}
 					"3"
 					{
-						"item"		"Tough Break Key"
+						"item"		"Taunt: Disco Fever"
 						"show_market"	"0"
 					}
 					"4"
 					{
-						"item"		"Tough Break Cosmetic Case"
-						"show_market"	"1"
-					}
-					"5"
-					{
-						"item"		"Tough Break Cosmetic Key"
-						"show_market"	"0"
-					}
-					"5"
-					{
-						"item"		"Taunt: Mannrobics"
+						"item"		"Taunt: The Fubar Fanfare"
 						"show_market"	"0"
 					}
 				}
@@ -4237,28 +4265,119 @@
 
 		} // Background
 
-		"NewImage"
-		{
-			"ControlName"			"ImagePanel"
-			"fieldName"				"NewImage"
-			"xpos"					"-60"
-			"ypos"					"-52"
-			"zpos"					"100"
-			"wide"					"80"
-			"tall"					"o1"
-			"visible"				"0"
-			"enabled"				"0"
-			"image"					"new_large"
-			"scaleImage"			"1"
-			"proportionaltoparent"	"1"
-			"mouseinputenabled"		"0"
-
-			"pin_to_sibling"		"Background"
-			"pin_corner_to_sibling"	"PIN_BOTTOMLEFT"
-			"pin_to_sibling_corner"	"PIN_TOPRIGHT"	
-		}
-
 	} // EventPromo
+
+	"WarHighlightPanel"
+	{
+		"ControlName"	"CExplanationPopup"
+		"fieldName"		"WarHighlightPanel"
+		"xpos"			"c0"
+		"ypos"			"300"
+		"zpos"			"100"
+		"wide"			"250"
+		"tall"			"60"
+		"visible"		"0"
+		"PaintBackgroundType"	"2"
+		"paintbackground" "0"
+		"border"		"MainMenuHighlightBorder"
+		
+		"start_x"		"c20"
+		"start_y"		"285"
+		"start_wide"	"250"
+		"start_tall"	"125"
+		"end_x"			"c20"
+		"end_y"			"285"
+		"end_wide"		"250"
+		"end_tall"		"125"
+		"callout_inparents_x"	"c-40"
+		"callout_inparents_y"	"267"
+		
+		"TitleLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"TitleLabel"
+			"font"			"HudFontSmallBold"
+			"labelText"		"#MMenu_WarHighlightPanel_Title"
+			"textAlignment"	"north-west"
+			"xpos"			"10"
+			"ypos"			"10"
+			"wide"			"210"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"wrap"			"1"
+			"fgcolor_override" "46 43 42 255"
+		}
+		
+		"TextLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"TextLabel"
+			"font"			"HudFontSmall"
+			"labelText"		"#MMenu_WarHighlightPanel_Body"
+			"textAlignment"	"north-west"
+			"xpos"			"20"
+			"ypos"			"30"
+			"wide"			"210"
+			"tall"			"190"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"wrap"			"1"
+			"fgcolor_override" "46 43 42 255"
+		}
+		
+		"CloseButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"CloseButton"
+			"xpos"			"230"
+			"ypos"			"5"
+			"zpos"			"10"
+			"wide"			"14"
+			"tall"			"14"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"labeltext"		""
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"Command"		"close"
+			
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+			
+			"image_drawcolor"	"117 107 94 255"
+			"image_armedcolor"	"200 80 60 255"
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"14"
+				"tall"			"14"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"close_button"
+				"scaleImage"	"1"
+			}				
+		}		
+	}
 
 	"icon_generator"
 	{

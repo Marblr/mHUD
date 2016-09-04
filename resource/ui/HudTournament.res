@@ -858,7 +858,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"0"
-		"bgcolor_override"		"mClearOther2"
+		"bgcolor_override"		"0 0 0 0"
 		"labelText"		"%readylabel%"
 		"textAlignment"		"center"
 		"proportionaltoparent"	"1"
@@ -897,7 +897,7 @@
 	
 	"TournamentInstructionsLabelShadow"
 	{	
-		"ControlName"		"ImagePanel"
+		"ControlName"		"CExLabel"
 		"fieldName"		"TournamentInstructionsLabelShadow"
 		"xpos"			"0"
 		"ypos"			"54"
@@ -907,8 +907,8 @@
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
-		"fillcolor"		"mClearOther2"
+		"enabled"		"0"
+		"fillcolor"		"0 0 0 0"
 		"proportionaltoparent"	"1"
 		
 		if_mvm
@@ -926,7 +926,7 @@
 			"ypos"			"90"
 			"wide"			"92"
 			"tall"			"15"
-			"visible"		"1"
+			"visible"		"0"
 		}
 
 		if_readymode
