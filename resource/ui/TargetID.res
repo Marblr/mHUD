@@ -4,7 +4,7 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG"
-		"xpos"			"34"
+		"xpos"			"31"
 		"ypos"			"0"
 		"zpos"			"1"
 		"wide"			"252"
@@ -16,22 +16,21 @@
 		"image"			"../hud/color_panel_brown"
 		"scaleImage"		"1"
 		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
-		"teambg_2_lodef"	"../hud/color_panel_red"
-		"teambg_3"		"../hud/color_panel_blu"
-		"teambg_3_lodef"	"../hud/color_panel_blu"
+		"teambg_2"		"../hud/color_panel_red_opaque"
+		"teambg_3"		"../hud/color_panel_blu_opaque"
 		
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
-			
+		
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"0"	
 	}
+	
 	"TargetIDBG_Spec_Blue"
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"TargetIDBG_Spec_Blue"
-		"xpos"			"34"
+		"xpos"			"31"
 		"ypos"			"0"
 		"zpos"			"-1"
 		"wide"			"252"
@@ -40,20 +39,20 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_blu"
-		"image_lodef"	"../hud/color_panel_blu"
+		"image"			"../hud/color_panel_blu_opaque"
 		
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
-			
+		
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"0"
 	}
+	
 	"TargetIDBG_Spec_Red"
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"TargetIDBG_Spec_Red"
-		"xpos"			"34"
+		"xpos"			"31"
 		"ypos"			"0"
 		"zpos"			"-1"
 		"wide"			"252"
@@ -62,12 +61,11 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_red"
-		"image_lodef"	"../hud/color_panel_red"
+		"image"			"../hud/color_panel_red_opaque"
 		
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
-			
+		
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"0"
 	}
@@ -76,50 +74,48 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TargetNameLabel"
-		"font"			"AvenirMed12"
-		"xpos"			"34"
-		"ypos"			"1"
+		"font"			"Avenir12"
+		"xpos"			"31"
+		"ypos"			"0"
 		"zpos"			"2"
 		"wide"			"640"
-		"tall"			"12"
-		"autoResize"		"0"
-		"pinCorner"		"0"
+		"tall"			"19"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%targetname%"
-		"textAlignment"		"Left"
-		"dulltext"		"0"
-		"brighttext"		"0"
+		"textAlignment"		"west"
 		"fgcolor_override"		"mWhite"
 	}
+	
 	"TargetDataLabel"
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TargetDataLabel"
 		"font"			"AvenirLight8"
-		"xpos"			"34"
+		"xpos"			"31"
 		"ypos"			"9"
 		"zpos"			"2"
 		"wide"			"280"
-		"tall"			"15"
+		"tall"			"16"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%targetdata%"
-		"textAlignment"		"Left"
+		"textAlignment"		"west"
 		"dulltext"		"0"
 		"brighttext"		"0"
 		"fgcolor_override"		"mWhite"
 	}
+	
 	"SpectatorGUIHealth"
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"SpectatorGUIHealth"
 		"xpos"			"0"
 		"ypos"			"0"
-		"wide"			"32"
-		"tall"			"32"
+		"wide"			"31"
+		"tall"			"21"
 		"visible"		"0"
 		"enabled"		"0"	
 		"HealthBonusPosAdj"	"10"
@@ -133,7 +129,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"AmmoIcon"
-		"xpos"			"42"
+		"xpos"			"39"
 		"ypos"			"12"
 		"zpos"			"12"
 		"wide"			"8"
@@ -148,8 +144,8 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"KillStreakIcon"
-		"xpos"			"42"
-		"ypos"			"12"
+		"xpos"			"37"
+		"ypos"			"13"
 		"zpos"			"12"
 		"wide"			"8"
 		"tall"			"8"
@@ -196,12 +192,13 @@
 			"zpos"			"2"
 			"wide"			"14"
 			"tall"			"14"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"icon"			"obj_status_sentrygun_1"
 			"drawcolor"		"mWhite"
 			"scaleImage"	"1"
 		}
+		
 		"MoveableSymbolIcon"
 		{
 			"ControlName"	"ImagePanel"

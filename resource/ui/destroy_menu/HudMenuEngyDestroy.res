@@ -4,15 +4,19 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"MainBackground"
-		"xpos"				"77"
-		"ypos"				"74"
+		"xpos"				"0"
+		"ypos"				"0"
 		"zpos"				"0"
 		"wide"				"319"
-		"tall"				"88"
+		"tall"				"94"
 		"visible"			"1"
 		"enabled"			"1"
 		"scaleImage"		"1"	
 		"fillcolor"			"mClear"
+		
+		"pin_to_sibling"				"TitleLabel"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 
 	"Divider"
@@ -49,7 +53,7 @@
 		"fieldName"		"TitleLabelDropshadow"
 		"font"			"HudFontGiantBold"
 		"fgcolor"		"Black"
-		"xpos"			"32"			// align me to the left edge of the first selection
+		"xpos"			"32"
 		"ypos"			"7"
 		"zpos"			"2"
 		"wide"			"300"
@@ -68,20 +72,18 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"TitleLabel"
-		"font"			"HudFontGiantBold"
-		"xpos"			"31"			// align me to the left edge of the first selection
-		"ypos"			"4"
-		"zpos"			"3"
-		"wide"			"300"
-		"tall"			"38"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"xpos"			"77"
+		"ypos"			"42"
+		"zpos"			"4"
+		"wide"			"319"
+		"tall"			"26"
 		"visible"		"0"
 		"enabled"		"1"
-		"labelText"		"#Hud_menu_demolish_title"
-		"textAlignment"	"Left"
-		"dulltext"		"0"
-		"brighttext"	"0"
+		"font"			"Avenir24"
+		"labelText"		"DESTROY"
+		"textAlignment"	"center"
+		"fgcolor_override"	"mDark"
+		"bgcolor_override"	"mWhite"
 	}
 	
 	"CancelLabel"
@@ -104,100 +106,284 @@
 		"brighttext"	"0"
 	}
 	
+	"SentryBG"
+	{	
+		"ControlName"	"ImagePanel"
+		"fieldName"		"SentryBG"
+		"xpos"			"-10"
+		"ypos"			"-10"
+		"zpos"			"1"
+		"wide"			"70"
+		"tall"			"75"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"mDark"
+		
+		"pin_to_sibling"				"MainBackground"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+	
+	"DispenserBG"
+	{	
+		"ControlName"	"ImagePanel"
+		"fieldName"		"DispenserBG"
+		"xpos"			"6"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"70"
+		"tall"			"75"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"mDark"
+		
+		"pin_to_sibling"				"SentryBG"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
+	}
+	
+	"TeleEntranceBG"
+	{	
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TeleEntranceBG"
+		"xpos"			"6"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"70"
+		"tall"			"75"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"mDark"
+		
+		"pin_to_sibling"				"DispenserBG"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
+	}
+	
+	"TeleExitBG"
+	{	
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TeleExitBG"
+		"xpos"			"6"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"70"
+		"tall"			"75"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"mDark"
+		
+		"pin_to_sibling"				"TeleEntranceBG"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
+	}
+	
+	"SentryBuildingIcon"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"SentryBuildingIcon"
+		"xpos"			"-10"
+		"ypos"			"0"
+		"zpos"			"2"
+		"wide"			"50"
+		"tall"			"50"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"obj_status_sentrygun_1"
+		"iconColor"		"255 255 255 255"
+		
+		"pin_to_sibling"				"SentryBG"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+	
+	"DispenserBuildingIcon"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"DispenserBuildingIcon"
+		"xpos"			"-10"
+		"ypos"			"-4"
+		"zpos"			"2"
+		"wide"			"50"
+		"tall"			"50"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"obj_status_dispenser"
+		"iconColor"		"255 255 255 255"
+		
+		"pin_to_sibling"				"DispenserBG"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+	
+	"TeleEntranceBuildingIcon"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"TeleEntranceBuildingIcon"
+		"xpos"			"-10"
+		"ypos"			"-4"
+		"zpos"			"2"
+		"wide"			"50"
+		"tall"			"50"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"obj_status_tele_entrance"
+		"iconColor"		"255 255 255 255"
+		
+		"pin_to_sibling"				"TeleEntranceBG"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+	
+	"TeleExitBuildingIcon"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"TeleExitBuildingIcon"
+		"xpos"			"-10"
+		"ypos"			"-4"
+		"zpos"			"2"
+		"wide"			"50"
+		"tall"			"50"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"obj_status_tele_exit"
+		"iconColor"		"255 255 255 255"
+		
+		"pin_to_sibling"				"TeleExitBG"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+	
 	"active_item_1"
 	{
 		"ControlName"	"CEngyDestroyMenuItem"
 		"fieldName"		"active_item_1"
-		"xpos"			"72"
-		"ypos"			"64"
+		"xpos"			"-10"
+		"ypos"			"-10"
 		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
+		
+		"pin_to_sibling"				"MainBackground"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
 	}	
 	
 	"active_item_2"
 	{
 		"ControlName"	"CEngyDestroyMenuItem"
 		"fieldName"		"active_item_2"
-		"xpos"			"149"
-		"ypos"			"64"
+		"xpos"			"6"
+		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
-	}	
+		
+		"pin_to_sibling"				"active_item_1"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
+	}
 	
 	"active_item_3"
 	{
 		"ControlName"	"CEngyDestroyMenuItem"
 		"fieldName"		"active_item_3"
-		"xpos"			"226"
-		"ypos"			"64"
+		"xpos"			"6"
+		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
+		
+		"pin_to_sibling"				"active_item_2"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}	
 	
 	"active_item_4"
 	{
 		"ControlName"	"CEngyDestroyMenuItem"
 		"fieldName"		"active_item_4"
-		"xpos"			"303"
-		"ypos"			"64"
+		"xpos"			"6"
+		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
+		
+		"pin_to_sibling"				"active_item_3"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"inactive_item_1"
 	{
 		"ControlName"	"CEngyDestroyMenuItem"
 		"fieldName"		"inactive_item_1"
-		"xpos"			"70"
-		"ypos"			"64"
-		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"xpos"			"-10"
+		"ypos"			"-10"
+		"zpos"			"3"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
+		
+		"pin_to_sibling"				"MainBackground"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
 	}	
 	
 	"inactive_item_2"
 	{
 		"ControlName"	"CEngyDestroyMenuItem"
 		"fieldName"		"inactive_item_2"
-		"xpos"			"148"
-		"ypos"			"64"
-		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"xpos"			"6"
+		"ypos"			"0"
+		"zpos"			"3"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
+		
+		"pin_to_sibling"				"inactive_item_1"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}	
 	
 	"inactive_item_3"
 	{
 		"ControlName"	"CEngyDestroyMenuItem"
 		"fieldName"		"inactive_item_3"
-		"xpos"			"225"
-		"ypos"			"64"
-		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"xpos"			"6"
+		"ypos"			"0"
+		"zpos"			"3"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
+		
+		"pin_to_sibling"				"inactive_item_2"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}	
 	
 	"inactive_item_4"
 	{
 		"ControlName"	"CEngyDestroyMenuItem"
 		"fieldName"		"inactive_item_4"
-		"xpos"			"303"
-		"ypos"			"64"
-		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"xpos"			"6"
+		"ypos"			"0"
+		"zpos"			"3"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
+		
+		"pin_to_sibling"				"inactive_item_3"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}	
 
 	"unavailable_item_1"

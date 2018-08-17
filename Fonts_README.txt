@@ -1,1 +1,0 @@
-In the case of icons showing up as letters instead of displaying properly, navigate to resource/fonts, select all of the font files, right click, and press install.

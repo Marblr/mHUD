@@ -303,7 +303,7 @@
 		"max_size"	"26"
 
 		"6v6_gap"	"1"
-		"12v12_gap"	"1"
+		"12v12_gap"	"9999"
 
 		"team1_grow_dir" "west"
 		"team1_base_x"	"c-41"

@@ -31,7 +31,6 @@
 		"scaleImage"	"1"
 		"alpha"			"0"
 	}
-	//
 	
 	"PlayerStatusHealthImageBG"
 	{
@@ -45,7 +44,8 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"scaleImage"	"1"	
-	}	
+	}
+	
 	"PlayerStatusHealthBonusImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -59,6 +59,7 @@
 		"enabled"		"0"
 		"scaleImage"	"1"	
 	}
+	
 	"PlayerHealthBG"
 	{
 		"ControlName"			"ImagePanel"
@@ -74,6 +75,7 @@
 		"enabled" 				"1"
 		"fillcolor" 			"mClearHealth"
 	}
+	
 	"PlayerStatusHealthValue"
 	{
 		"ControlName"	"CExLabel"
@@ -90,12 +92,13 @@
 		"font"			"NumbersHealth"
 		"fgcolor"		"mHealth"
 	}
+	
 	"PlayerStatusHealthValueShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueShadow"
-		"xpos"			"-6"
-		"ypos"			"57"
+		"xpos"			"-4"
+		"ypos"			"55"
 		"zpos"			"4"
 		"wide"			"150"
 		"tall"			"38"

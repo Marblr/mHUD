@@ -5,7 +5,7 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r150"
+		"xpos"			"r151"
 		"ypos"			"r18"
 		"wide"			"100"
 		"tall"			"50"
@@ -43,7 +43,7 @@
 		"tall"					"15"
 		"visible"				"1"
 		"enabled"				"1"
-		"fillcolor"				"mClearCountMeter"
+		"fillcolor"				"mClearMeterCount"
 	}
 	
 	"ItemEffectMeterLabel"

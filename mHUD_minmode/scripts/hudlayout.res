@@ -181,8 +181,8 @@
 	CHudAccountPanel
 	{
 		"fieldName"				"CHudAccountPanel"
-		"xpos"			"r150"
-		"ypos"			"r77"
+		"xpos"					"r150"
+		"ypos"					"r77"
 		"wide"					"116"
 		"tall"  				"180"
 		"visible" 				"1"
@@ -193,8 +193,8 @@
 	CHealthAccountPanel
 	{
 		"fieldName"				"CHealthAccountPanel"
-		"xpos"			"61"
-		"ypos"			"r134"
+		"xpos"					"42"
+		"ypos"					"c127"
 		"wide"					"116"
 		"tall"  				"180"
 		"visible" 				"1"
@@ -465,12 +465,12 @@
 
 		"MaxDeathNotices" "8"
 		"IconScale"	  "0.35"
-		"LineHeight"	  "15"
+		"LineHeight"	  "16"
 		"LineSpacing"	  "0"
 		"CornerRadius"	  "0"
 		"RightJustify"	  "1"	// If 1, draw notices from the right
 		
-		"TextFont"		"AvenirMed12"
+		"TextFont"		"Avenir12"
 		
 		"TeamBlue"		"mBlueTeam"
 		"TeamRed"		"mRedTeam"
@@ -478,7 +478,7 @@
 		"LocalPlayerColor"	"mDark"
 
 		"BaseBackgroundColor"	"mClearDeathNotice"
-		"LocalBackgroundColor"	"mClearWhite"
+		"LocalBackgroundColor"	"mClearDeathNoticeWhite"
 	}
 
 	HudVehicle

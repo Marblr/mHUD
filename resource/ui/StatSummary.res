@@ -36,7 +36,7 @@
 		"tall"			"480"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/upwardbg"
+		"image"			"replay/thumbnails/background_upward_widescreen"
 		"scaleImage"	"1"
 	}
 

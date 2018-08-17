@@ -8,7 +8,7 @@
 		"ypos"			"14"
 		"zpos"			"10000"
 		"wide"			"130"
-		"tall"			"30"
+		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"border"		"mDark2BorderBG"

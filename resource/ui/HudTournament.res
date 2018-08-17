@@ -4,7 +4,7 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"				"HudTournament"
-				
+		
 		"xpos"					"cs-0.5"
 		"ypos"					"0"
 		"wide"					"f0"

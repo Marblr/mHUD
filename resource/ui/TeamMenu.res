@@ -13,20 +13,7 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"tabPosition"	"0"
-	}
-	
-	"DarkenPanel"
-	{
-		"ControlName" 			"ImagePanel"
-		"fieldName" 			"DarkenPanel"
-		"xpos"					"0"
-		"ypos"					"0"
-		"zpos"					"0"
-		"wide"					"f0"
-		"tall"					"f0"
-		"visible" 				"1"
-		"enabled" 				"1"
-		"fillcolor"				"0 0 0 128"
+		"bgcolor_override"	"0 0 0 150"
 	}
 
 	"SysMenu"
@@ -77,29 +64,33 @@
 		"brighttext"	"1"
 	}
 	
-	"TeamMenuAnchor"
+	"TeamMenuBG"
 	{
 		"ControlName"					"ImagePanel"
-		"fieldName"						"TeamMenuAnchor"
-		"xpos"							"c0"
-		"ypos"							"c0"
-		"zpos"							"100"		
-		"wide"							"0"
-		"tall"							"0"
-		"visible"						"0"
+		"fieldName"						"TeamMenuBG"
+		"xpos"							"4"
+		"ypos"							"4"
+		"zpos"							"1"		
+		"wide"							"140"
+		"tall"							"132"
+		"visible"						"1"
 		"enabled"						"1"
-		"fillcolor"						"mDark"
+		"fillcolor"						"mClear"
+		
+		"pin_to_sibling"				"teambutton2"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
 	}
 	
 	"teambutton0"
 	{
 		"ControlName"					"CTFTImageButton"
 		"fieldName"						"teambutton0"
-		"xpos"							"-2"
-		"ypos"							"22"
-		"zpos"							"100"		
-		"wide"							"56"
-		"tall"							"45"
+		"xpos"							"c-66"
+		"ypos"							"c-32"
+		"zpos"							"2"
+		"wide"							"64"
+		"tall"							"64"
 		"autoResize"					"0"
 		"pinCorner"						"2"
 		"visible"						"1"
@@ -114,48 +105,24 @@
 		"team"							"3"		// team blue
 		"associated_model"				"bluedoor"
 		"hover"							".1"
-		"font"							"Numbers24"
+		"font"							"Numbers30"
 
-		"defaultBgColor_override"		"mClearBlue"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClearBlue"
-		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mBlueTeam"
-		"depressedFgColor_override"		"mWhite"
+		"defaultBgColor_override"		"mBlueTeam"
 		
-		"pin_to_sibling"	"TeamMenuAnchor"
-		"pin_corner_to_sibling" "PIN_BOTTOMRIGHT" // Corner of this Element
-		"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
-	}
-	
-	"teambutton0hotkey"
-	{
-		"ControlName"					"CExImageButton"
-		"fieldName"						"teambutton0hotkey"
-		"xpos"							"9999"
-		"ypos"							"c-22"
-		"zpos"							"100"		
-		"wide"							"56"
-		"tall"							"45"
-		"visible"						"1"
-		"enabled"						"1"
-		"labelText"						"(&1)"
-		"textAlignment"					"center"
-		"command"						"jointeam blue"
-		"team"							"3"		// team blue
-		"font"							"Numbers24"
+		"armedFgColor_override" 		"mBlueTeam"
+		"armedBgColor_override"			"mWhite"
 	}
 
 	"teambutton1"
 	{
 		"ControlName"					"CTFImageButton"
 		"fieldName"						"teambutton1"
-		"xpos"							"-2"
-		"ypos"							"-22"
-		"zpos"							"100"		
-		"wide"							"56"
-		"tall"							"45"
+		"xpos"							"4"
+		"ypos"							"0"
+		"zpos"							"2"
+		"wide"							"64"
+		"tall"							"64"
 		"autoResize"					"0"
 		"pinCorner"						"2"
 		"visible"						"1"
@@ -170,30 +137,182 @@
 		"team"							"2"		// team red
 		"associated_model"				"reddoor"	
 		"hover"							".1"
-		"font"							"Numbers24"
+		"font"							"Numbers30"
 
-		"defaultBgColor_override"		"mClearRed"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClearRed"
+		"defaultFgColor_override"		"mWhite"
+		"defaultBgColor_override"		"mRedTeam"
+		
+		"armedFgColor_override" 		"mRedTeam"
+		"armedBgColor_override"			"mWhite"
+		
+		"pin_to_sibling"				"teambutton0"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
+	}
+
+	"teambutton2"
+	{
+		"ControlName"					"CExImageButton"
+		"fieldName"						"teambutton2"
+		"xpos"							"0"
+		"ypos"							"4"
+		"zpos"							"2"
+		"wide"							"64" 
+		"tall"							"26"
+		"autoResize"					"0"
+		"pinCorner"						"2"
+		"visible"						"1"
+		"enabled"						"1"
+		"tabPosition"					"1"
+		"labelText"						"RANDOM"
+		"textAlignment"					"center"
+		"dulltext"						"0"
+		"brighttext"					"0"
+		"paintborder"					"0"
+		"command"						"jointeam auto"
+		"associated_model"				"autodoor"
+		"font"							"Avenir12"
+
+		"defaultBgColor_override"		"mDark"
+		"armedBgColor_override"			"mWhite"
 		
 		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mRedTeam"
-		"depressedFgColor_override" 	"mWhite"
+		"armedFgColor_override" 		"mDark"
 		
-		"pin_to_sibling"	"TeamMenuAnchor"
-		"pin_corner_to_sibling" "PIN_BOTTOMLEFT" // Corner of this Element
-		"pin_to_sibling_corner" "PIN_TOPLEFT" // Corner of Element you are pinning to
+		"pin_to_sibling"				"teambutton0"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+	
+	"teambutton3"
+	{
+		"ControlName"					"CExImageButton"
+		"fieldName"						"teambutton3"
+		"xpos"							"0"
+		"ypos"							"4"
+		"zpos"							"2"
+		"wide"							"64"
+		"tall"							"26"
+		"autoResize"					"0"
+		"pinCorner"						"2"
+		"visible"						"1"
+		"enabled"						"1"
+		"tabPosition"					"1"
+		"labelText"						"SPECTATE"
+		"textAlignment"					"center"
+		"dulltext"						"0"
+		"brighttext"					"0"
+		"paintborder"					"0"
+		"command"						"jointeam spectate"
+		"associated_model"				"spectate"	
+		"font"							"Avenir12"
+
+		"defaultBgColor_override"		"mDark"
+		"armedBgColor_override"			"mWhite"
+		
+		"defaultFgColor_override"		"mWhite"
+		"armedFgColor_override" 		"mDark"
+		
+		"pin_to_sibling"				"teambutton1"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+	
+	"CancelButton"
+	{
+		"ControlName"					"CExImageButton"
+		"fieldName"						"CancelButton"
+		"xpos"							"0"
+		"ypos"							"4"
+		"zpos"							"101"
+		"wide"							"132"
+		"tall"							"26"
+		"autoResize"					"0"
+		"pinCorner"						"2"
+		"visible"						"1"
+		"enabled"						"1"
+		"tabPosition"					"2"
+		"labelText"						"#TF_Cancel_NoKey"
+		"textAlignment"					"center"
+		"dulltext"						"0"
+		"brighttext"					"0"
+		"paintborder"					"0"
+		"command"						"vguicancel"
+		"associated_model"				"autodoor"	
+		"font"							"Avenir12"
+		
+		"defaultBgColor_override"		"mDark"
+		"armedBgColor_override"			"mWhite"
+		
+		"defaultFgColor_override"		"mWhite"
+		"armedFgColor_override" 		"mDark"
+		
+		"pin_to_sibling"				"teambutton0"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
+	
+	"CancelButton2"
+	{
+		"ControlName"					"CExButton"
+		"fieldName"						"CancelButton2"
+		"xpos"							"0"
+		"ypos"							"4"
+		"zpos"							"100"
+		"wide"							"132"
+		"tall"							"26"
+		"autoResize"					"0"
+		"pinCorner"						"2"
+		"visible"						"1"
+		"enabled"						"1"
+		"tabPosition"					"2"
+		"labelText"						"CANCEL"
+		"textAlignment"					"center"
+		"dulltext"						"0"
+		"brighttext"					"0"
+		"paintborder"					"0"
+		"command"						""
+		"associated_model"				"autodoor"	
+		"font"							"Avenir12"
+		
+		"defaultBgColor_override"		"mDark"
+		"armedBgColor_override"			"mWhite"
+		
+		"defaultFgColor_override"		"mWhite"
+		"armedFgColor_override" 		"mDark"
+		
+		"pin_to_sibling"				"teambutton0"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
+	
+	"teambutton0hotkey"
+	{
+		"ControlName"					"CExButton"
+		"fieldName"						"teambutton0hotkey"
+		"xpos"							"0"
+		"ypos"							"0"
+		"zpos"							"0"
+		"wide"							"0"
+		"tall"							"0"
+		"visible"						"1"
+		"enabled"						"1"
+		"labelText"						"(&1)"
+		"textAlignment"					"center"
+		"command"						"jointeam blue"
+		"team"							"3"		// team blue
+		"font"							"Numbers24"
 	}
 
 	"teambutton1hotkey"
 	{
-		"ControlName"					"CExImageButton"
+		"ControlName"					"CExButton"
 		"fieldName"						"teambutton1hotkey"
-		"xpos"							"9999"
-		"ypos"							"c-22"
-		"zpos"							"100"		
-		"wide"							"56"
-		"tall"							"45"
+		"xpos"							"0"
+		"ypos"							"0"
+		"zpos"							"0"
+		"wide"							"0"
+		"tall"							"0"
 		"visible"						"1"
 		"enabled"						"1"
 		"labelText"						"(&2)"
@@ -203,144 +322,55 @@
 		"font"							"Numbers24"
 	}
 
-	"teambutton2"
+	"teambutton2hotkey"
 	{
-		"ControlName"					"CExImageButton"
-		"fieldName"						"teambutton2"
+		"ControlName"					"CExButton"
+		"fieldName"						"teambutton2hotkey"
 		"xpos"							"0"
-		"ypos"							"3"
-		"zpos"							"100"
-		"wide"							"116" 
-		"tall"							"20"
-		"autoResize"					"0"
-		"pinCorner"						"2"
+		"ypos"							"0"
+		"zpos"							"0"
+		"wide"							"0"
+		"tall"							"0"
 		"visible"						"1"
 		"enabled"						"1"
-		"tabPosition"					"1"
-		"labelText"						"RANDOM (&R)"
+		"labelText"						"(&R)"
 		"textAlignment"					"center"
-		"dulltext"						"0"
-		"brighttext"					"0"
-		"paintborder"					"0"
 		"command"						"jointeam auto"
-		"associated_model"				"autodoor"
-		"font"							"Avenir12"
-
-		"defaultBgColor_override"		"mClear"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClear"
-		
-		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
-		"depressedFgColor_override"		"mWhite"
-		
-		"pin_to_sibling"	"teambutton0"
-		"pin_corner_to_sibling" "PIN_BOTTOMLEFT" // Corner of this Element
-		"pin_to_sibling_corner" "PIN_TOPLEFT" // Corner of Element you are pinning to
+		"font"							"Numbers24"
 	}
-	
-	"teambutton3"
+
+	"teambutton3hotkey"
 	{
-		"ControlName"					"CExImageButton"
-		"fieldName"						"teambutton3"
+		"ControlName"					"CExButton"
+		"fieldName"						"teambutton3hotkey"
 		"xpos"							"0"
-		"ypos"							"3"
-		"zpos"							"100"
-		"wide"							"116"
-		"tall"							"20"
-		"autoResize"					"0"
-		"pinCorner"						"2"
+		"ypos"							"0"
+		"zpos"							"0"
+		"wide"							"0"
+		"tall"							"0"
 		"visible"						"1"
 		"enabled"						"1"
-		"tabPosition"					"1"
-		"labelText"						"SPECTATE (&E)"
+		"labelText"						"(&E)"
 		"textAlignment"					"center"
-		"dulltext"						"0"
-		"brighttext"					"0"
-		"paintborder"					"0"
 		"command"						"jointeam spectate"
-		"associated_model"				"spectate"	
-		"font"							"Avenir12"
+		"font"							"Numbers24"
+	}
 
-		"defaultBgColor_override"		"mClear"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClear"
-		
-		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
-		"depressedFgColor_override"		"mWhite"
-		
-		"pin_to_sibling"	"teambutton0"
-		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
-	}
-	
-	"CancelButton2"
+	"CancelButtonhotkey"
 	{
-		"ControlName"					"CExImageButton"
-		"fieldName"						"CancelButton2"
-		"xpos"							"9999"
-		"ypos"							"c45"
-		"zpos"							"100"
-		"wide"							"116"
-		"tall"							"17"
-		"autoResize"					"0"
-		"pinCorner"						"2"
-		"visible"						"1"
-		"enabled"						"1"
-		"tabPosition"					"2"
-		"labelText"						"CANCEL (&Q)"
-		"textAlignment"					"center"
-		"dulltext"						"0"
-		"brighttext"					"0"
-		"paintborder"					"0"
-		"command"						"vguicancel"
-		"associated_model"				"autodoor"	
-		"font"							"Avenir12"
-		
-		"defaultBgColor_override"		"mClear"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClear"
-		
-		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
-		"depressedFgColor_override"		"mWhite"
-	}
-	
-	"CancelButton"
-	{
-		"ControlName"					"CExImageButton"
-		"fieldName"						"CancelButton"
+		"ControlName"					"CExButton"
+		"fieldName"						"CancelButtonhotkey"
 		"xpos"							"0"
-		"ypos"							"3"
-		"zpos"							"100"
-		"wide"							"116"
-		"tall"							"20"
-		"autoResize"					"0"
-		"pinCorner"						"2"
-		"visible"						"1"
+		"ypos"							"0"
+		"zpos"							"0"
+		"wide"							"0"
+		"tall"							"0"
+		"visible"						"0"
 		"enabled"						"1"
-		"tabPosition"					"2"
-		"labelText"						"CANCEL (&Q)"
+		"labelText"						"(&Q)"
 		"textAlignment"					"center"
-		"dulltext"						"0"
-		"brighttext"					"0"
-		"paintborder"					"0"
 		"command"						"vguicancel"
-		"associated_model"				"autodoor"	
-		"font"							"Avenir12"
-		
-		"defaultBgColor_override"		"mClear"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClear"
-		
-		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
-		"depressedFgColor_override"		"mWhite"
-		
-		"pin_to_sibling"	"teambutton3"
-		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+		"font"							"Numbers24"
 	}
 	
 	"TeamMenuSelect"
@@ -477,7 +507,7 @@
 		"PaintBackgroundType"	"0"
 	}		
 	
-	"HighlanderLabel" [$WIN32] 
+	"HighlanderLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"HighlanderLabel"
@@ -499,7 +529,7 @@
 		"centerwrap"	"1"
 	}
 	
-	"HighlanderLabelShadow" [$WIN32] 
+	"HighlanderLabelShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"HighlanderLabelShadow"
@@ -521,7 +551,7 @@
 		"centerwrap"	"1"
 	}
 	
-	"TeamsFullLabel" [$WIN32] 
+	"TeamsFullLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TeamsFullLabel"
@@ -543,7 +573,7 @@
 		"centerwrap"	"1"
 	}
 	
-	"TeamsFullLabelShadow" [$WIN32] 
+	"TeamsFullLabelShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TeamsFullLabelShadow"
@@ -565,7 +595,7 @@
 		"centerwrap"	"1"
 	}
 
-	"TeamsFullArrow" [$WIN32]
+	"TeamsFullArrow"
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"TeamsFullArrow"

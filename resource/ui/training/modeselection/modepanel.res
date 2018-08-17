@@ -64,7 +64,7 @@
 			"tall"			"205"
 			"visible"		"1"
 			"enabled"		"1"
-			"border"		"MainMenuHighlightBorder"
+			"border"		"NoBorder"
 		}
 		
 		// Parented to ImageFrame in code.

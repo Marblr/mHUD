@@ -14,7 +14,8 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"	
-	}		
+	}
+	
 	"PlayerStatusHealthImageBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -32,7 +33,8 @@
 		"enabled"		"1"
 		"image"			"../hud/health_bg"
 		"scaleImage"	"1"	
-	}	
+	}
+	
 	"BuildingStatusHealthImageBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -50,7 +52,8 @@
 		"enabled"		"1"
 		"image"			"../hud/health_equip_bg"
 		"scaleImage"	"1"	
-	}	
+	}
+	
 	"PlayerStatusHealthBonusImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -76,8 +79,7 @@
 		"fieldName"		"PlayerStatusPlayerLevel"
 		"xpos"			"8"
 		"xpos_minmode"	"0"
-		"ypos"			"9"	[$WIN32]
-		"ypos"			"0"	[$X360]
+		"ypos"			"9"
 		"zpos"			"5"
 		"wide"			"16"
 		"tall"			"12"
@@ -100,9 +102,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"labeltext"		"%Health%"
-		"textAlignment"		"center"
+		"textAlignment"	"center"
 		"font"			"Numbers16"
-		"fgColor"	"mWhite"	
+		"fgColor"		"mWhite"	
 	}	
 	
 	"HealthBackground"
@@ -116,6 +118,6 @@
 		"tall"			"21"
 		"visible"		"1"
 		"enabled"		"1"
-		"fillColor"		"mClear"
+		"fillColor"		"mClearOther2"
 	}
 }

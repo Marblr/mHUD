@@ -37,19 +37,31 @@
 		"iconColor"		"ProgressOffWhite"
 	}
 	
+	"BuildingIconBG"
+	{	
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BuildingIconBG"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"70"
+		"tall"			"75"
+		"visible"		"0"
+		"enabled"		"1"
+		"fillcolor"		"mDark"
+	}
+	
 	"CantBuildReason"
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"CantBuildReason"
-		"font"			"Icons20"
+		"font"			"Icons40"
 		"fgcolor"		"mRed"
 		"xpos"			"0"
-		"ypos"			"44"
+		"ypos"			"0"
 		"zpos"			"2"
-		"wide"			"100"
-		"tall"			"26"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"wide"			"70"
+		"tall"			"60"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"N"
@@ -72,23 +84,51 @@
 		"iconColor"		"TanDarker"
 	}
 	
+	"CostLabelIcon"
+	{	
+		"ControlName"	"CExLabel"
+		"fieldName"		"CostLabelIcon"
+		"font"			"Icons10"
+		"fgcolor"		"mRed"
+		"xpos"			"-5"
+		"ypos"			"0"
+		"zpos"			"3"
+		"wide"			"70"
+		"tall"			"16"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"O"
+		"textAlignment"	"west"
+		
+		"pin_to_sibling"				"BuildingIconBG"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
+	
 	"CostLabel"
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"CostLabel"
 		"font"			"Numbers16"
-		"fgcolor"		"mWhite"
-		"xpos"			"23"
-		"ypos"			"18"
-		"zpos"			"1"
-		"wide"			"56"
-		"tall"			"13"
+		"fgcolor"		"mRed"
+		"bgcolor_override"		"mDark2"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"3"
+		"wide"			"70"
+		"tall"			"16"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%metal%"
-		"textAlignment"	"center"	
+		"textAlignment"	"center"
+		
+		"pin_to_sibling"				"BuildingIconBG"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
 	"ModeLabel"

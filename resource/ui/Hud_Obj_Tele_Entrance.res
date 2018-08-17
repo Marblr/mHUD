@@ -7,7 +7,7 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"150"
-		"tall"			"31"
+		"tall"			"34"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -63,7 +63,7 @@
 			"tall"					"60"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClear"
+			"fillcolor"				"mNotBuiltBG"
 		}
 		
 		"NotBuiltHealthBG"
@@ -77,7 +77,7 @@
 			"tall"					"60"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClear"
+			"fillcolor"				"mNotBuiltHealthBG"
 		}
 
 		"NotBuiltLabel"
@@ -121,7 +121,7 @@
 			"tall"					"60"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClearGray"
+			"fillcolor"				"mBuiltBG"
 		}
 		
 		"BuiltHealthBG"
@@ -135,7 +135,7 @@
 			"tall"					"60"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClear"
+			"fillcolor"				"mBuiltHealthBG"
 		}
 
 		"Icon_Upgrade_1"
@@ -295,6 +295,7 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+				"fgcolor_override"	"mWhite"
 			}
 		}
 	
@@ -350,6 +351,7 @@
 					"textAlignment"	"Left"
 					"dulltext"		"0"
 					"brighttext"	"0"
+					"fgcolor_override"	"mWhite"
 				}	
 			}
 			
@@ -415,6 +417,7 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+				"fgcolor_override"	"mWhite"
 			}
 		}
 	}

@@ -15,7 +15,6 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"#TF_Object_Sentry"
-		"labelText_lodef"		"#TF_Object_Sentry_360"
 		"textAlignment"	"Left"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -41,21 +40,17 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"NotBuiltLabel"
-		"font"			"Icons24"
-		"fgcolor"		"mWhite"
-		"xpos"			"10"
-		"ypos"			"44"
+		"font"			"Icons40"
+		"fgcolor"		"mRed"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"2"
-		"wide"			"80"
-		"tall"			"26"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"wide"			"70"
+		"tall"			"60"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"C"
 		"textAlignment"	"Center"
-		"dulltext"		"0"
-		"brighttext"	"0"
 	}
 
 	"UnavailableLabel"
@@ -77,8 +72,46 @@
 		"textAlignment"	"Center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-	}		
-			
+	}
+	
+	"BuildingIconBG"
+	{	
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BuildingIconBG"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"70"
+		"tall"			"75"
+		"visible"		"0"
+		"enabled"		"1"
+		"fillcolor"		"mDark"
+	}
+	
+	"CostLabel"
+	{	
+		"ControlName"	"CExLabel"
+		"fieldName"		"CostLabel"
+		"font"			"Avenir12"
+		"fgcolor"		"mRed"
+		"bgcolor_override"		"mDark2"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"3"
+		"wide"			"70"
+		"tall"			"16"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"NOT BUILT"
+		"textAlignment"	"center"
+		
+		"pin_to_sibling"				"BuildingIconBG"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
+	
 	"NumberBg"	
 	{
 		"ControlName"	"CIconPanel"

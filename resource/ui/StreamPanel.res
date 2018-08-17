@@ -7,14 +7,13 @@
 		"xpos"			"5"
 		"ypos"			"0"
 		"zpos"			"0"
-		"wide"			"290"
+		"wide"			"250"
 		"tall"			"60"
 		"visible"		"1"
 		"proportionaltoparent"	"1"
 
-		"bgcolor_override"	"mDarker"
+		"bgcolor_override"	"mDark"
 	}
-
 
 	"LoadingPanel"
 	{
@@ -66,7 +65,6 @@
 		}
 	}
 
-
 	"PreviewImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -79,7 +77,7 @@
 		"visible"		"1"
 		"enable"		"1"
 		"scaleImage"	"0"
-		"border"		"mWhiteBorder"
+		"border"		"NoBorder"
 	}
 
 	"DisplayNameLabel"
@@ -90,8 +88,8 @@
 		"labelText"		"%display_name%"
 		"textAlignment"	"west"
 		"xpos"			"112"
-		"ypos"			"2"
-		"wide"			"183"
+		"ypos"			"3"
+		"wide"			"140"
 		"tall"			"15"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -104,13 +102,13 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TextDescriptionLabel"
-		"font"			"AvenirMed12"
+		"font"			"AvenirMed11"
 		"labelText"		"%text_description%"
 		"textAlignment"	"north-west"
 		"xpos"			"112"
-		"ypos"			"18"
-		"wide"			"183"
-		"tall"			"24"
+		"ypos"			"20"
+		"wide"			"140"
+		"tall"			"22"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -127,7 +125,7 @@
 		"labelText"		"%viewer_count%"
 		"textAlignment"	"west"
 		"xpos"			"126"
-		"ypos"			"46"
+		"ypos"			"45"
 		"wide"			"183"
 		"tall"			"12"
 		"autoResize"	"0"
@@ -145,7 +143,7 @@
 		"labelText"		"e"
 		"textAlignment"	"west"
 		"xpos"			"112"
-		"ypos"			"46"
+		"ypos"			"45"
 		"wide"			"185"
 		"tall"			"12"
 		"autoResize"	"0"
@@ -162,7 +160,7 @@
 		"xpos"			"5"
 		"ypos"			"0"
 		"zpos"			"100"
-		"wide"			"290"
+		"wide"			"250"
 		"tall"			"60"
 		"autoResize"	"0"
 		"pinCorner"		"0"

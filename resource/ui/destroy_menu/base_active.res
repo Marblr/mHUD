@@ -51,7 +51,7 @@
 		"icon"			"ico_demolish"
 		"iconColor"		"255 255 255 255"
 	}
-		
+	
 	"BuildingIcon"	
 	{
 		"ControlName"	"CIconPanel"
@@ -67,7 +67,7 @@
 		"icon"			"obj_status_dispenser"
 		"iconColor"		"255 255 255 128"
 	}
-		
+	
 	"NumberBg"	
 	{
 		"ControlName"	"CIconPanel"

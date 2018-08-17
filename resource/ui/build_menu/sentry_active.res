@@ -10,7 +10,8 @@
 	
 	"BuildingIcon"	
 	{
-		"icon"			"hud_menu_sentry_build"
+		"ypos"			"0"
+		"icon"			"obj_status_sentrygun_1"
 	}
 	
 	"NumberLabel"

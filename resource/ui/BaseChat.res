@@ -7,10 +7,10 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"10"
-		"ypos"			"286"
+		"ypos"			"287"
 		"wide"	 		"250"
 		"tall"	 		"120"
-		"PaintBackgroundType"	"2"
+		"PaintBackgroundType"	"0"
 	}
 
 	ChatInputLine
@@ -22,7 +22,7 @@
 		"xpos"			"5"
 		"ypos"			"395"
 		"wide"	 		"240"
-		"tall"	 		"2"
+		"tall"	 		"0"
 		"PaintBackgroundType"	"0"
 	}
 
@@ -36,7 +36,7 @@
 		"tall"			"13"
 		"autoResize"		"1"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"labelText"		"#chat_filterbutton"
@@ -50,9 +50,9 @@
 	{
 		"ControlName"		"RichText"
 		"fieldName"		"HudChatHistory"
-		"xpos"			"5"
-		"ypos"			"17"
-		"wide"	 		"240"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"250"
 		"tall"			"75"
 		"wrap"			"1"
 		"autoResize"		"1"

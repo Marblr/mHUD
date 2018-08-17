@@ -52,7 +52,7 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"Avenir12"
+		"font"					"AvenirCaps12"
 		"fgcolor_override"		"mChargeLabel"
 	}
 

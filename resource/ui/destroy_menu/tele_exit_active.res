@@ -40,18 +40,18 @@
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"DestroyIcon"
-		"xpos"			"15"
-		"ypos"			"20"
+		"xpos"			"5"
+		"ypos"			"5"
 		"zpos"			"1"
-		"wide"			"66"
-		"tall"			"66"
+		"wide"			"60"
+		"tall"			"60"
 		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"ico_demolish"
 		"iconColor"		"255 255 255 255"
 	}
-		
+	
 	"BuildingIcon"	
 	{
 		"ControlName"	"CIconPanel"
@@ -61,13 +61,51 @@
 		"zpos"			"2"
 		"wide"			"56"
 		"tall"			"56"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_tele_exit"
 		"iconColor"		"255 255 255 128"
 	}
+	
+	"BuildingIconBG"
+	{	
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BuildingIconBG"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"70"
+		"tall"			"75"
+		"visible"		"0"
+		"enabled"		"1"
+		"fillcolor"		"mDark"
+	}
+	
+	"CostLabel"
+	{	
+		"ControlName"	"CExLabel"
+		"fieldName"		"CostLabel"
+		"font"			"Avenir12"
+		"fgcolor"		"mWhite"
+		"bgcolor_override"		"mDark2"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"3"
+		"wide"			"70"
+		"tall"			"16"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"DESTROY"
+		"textAlignment"	"center"
 		
+		"pin_to_sibling"				"BuildingIconBG"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
+	
 	"NumberBg"	
 	{
 		"ControlName"	"CIconPanel"

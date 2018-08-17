@@ -44,7 +44,7 @@
 		"tall"				"15"
 		"visible"			"1"
 		"enabled"			"1"
-		"fillcolor"			"mClearStreak"				
+		"fillcolor"			"mClearMeterCount"				
 	}
 	
 	"ItemEffectMeterLabel"

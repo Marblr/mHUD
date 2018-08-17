@@ -7,5 +7,7 @@ Scheme
 		
 		"mDarkHealth"			"30 30 30 0"
 		"mDarkAmmo"				"30 30 30 0"
+		
+		"mWhiteBox"				"0 0 0 0"
 	}
 }

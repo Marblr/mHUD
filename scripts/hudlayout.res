@@ -1,12 +1,40 @@
-///////////////////////////////////////////
+/////////////////////////////////////////
 
-// Don't change
-#base "crosshairs/hudlayout_crosshairs.res"
+// Do not change
+#base "crosshairs/crosshair_settings.res"
 
-///////////////////////////////////////////
+/////////////////////////////////////////
 
 "Resource/HudLayout.res"
 {
+	"KnucklesCrosshair"
+    {
+		"controlName"			"CExLabel"
+		"fieldName"				"KnucklesCrosshair"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"1"
+		"wide"					"f0"
+		"tall"					"480"
+		"fgcolor"				"CrosshairColor"
+		"textAlignment"			"center"
+		"enabled"				"1"
+    }
+	
+	"CrosshairHitmarker"
+    {
+		"controlName"			"CExLabel"
+		"fieldName"				"CrosshairHitmarker"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"3"
+		"wide"					"f0"
+		"tall"					"480"
+		"fgcolor"				"CrosshairHitmarkerColorOff"
+		"textAlignment"			"center"
+		"enabled"				"1"
+    }
+	
 	HudPlayerStatus
 	{
 		"fieldName" "HudPlayerStatus"
@@ -193,8 +221,8 @@
 	CHealthAccountPanel
 	{
 		"fieldName"				"CHealthAccountPanel"
-		"xpos"					"76"
-		"ypos"					"r152"
+		"xpos"					"c-192"
+		"ypos"					"c74"
 		"wide"					"116"
 		"tall"  				"180"
 		"visible" 				"1"
@@ -465,12 +493,12 @@
 
 		"MaxDeathNotices" "8"
 		"IconScale"	  "0.35"
-		"LineHeight"	  "15"
+		"LineHeight"	  "16"
 		"LineSpacing"	  "0"
 		"CornerRadius"	  "0"
 		"RightJustify"	  "1"	// If 1, draw notices from the right
 		
-		"TextFont"		"AvenirMed12"
+		"TextFont"		"Avenir12"
 		
 		"TeamBlue"		"mBlueTeam"
 		"TeamRed"		"mRedTeam"
@@ -478,7 +506,7 @@
 		"LocalPlayerColor"	"mDark"
 
 		"BaseBackgroundColor"	"mClearDeathNotice"
-		"LocalBackgroundColor"	"mClearWhite"
+		"LocalBackgroundColor"	"mClearDeathNoticeWhite"
 	}
 
 	HudVehicle
@@ -551,12 +579,12 @@
 
 	HudSpellMenu
 	{
-		"fieldName" "HudSpellMenu"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-		"zpos" 	"2"
+		"fieldName"		"HudSpellMenu"
+		"visible"		"1"
+		"enabled" 		"1"
+		"wide"			"640"
+		"tall"			"480"
+		"zpos" 			"2"
 		"xpos"			"130"
 		"ypos"			"r61"
 		
@@ -939,12 +967,11 @@
 		"fieldName" 		"HudChat"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"10"	[$WIN32]
-		"xpos"			"42"	[$X360]
+		"xpos"			"10"
 		"ypos"			"275"
 		"wide"	 		"320"
 		"tall"	 		"120"
-		"PaintBackgroundType"	"2"
+		"PaintBackgroundType"	"0"
 	}
 	
 	"HudMenuEngyBuild"
@@ -1390,18 +1417,6 @@
 		"wide"	"f0"
 		"tall"	"f0"
 	}
-
-	"QuestLogContainer"
-	{
-		"ControlName"		"EditablePanel"
-		"fieldName" 		"QuestLogContainer"
-		"visible" 		"1"
-		"enabled" 		"1"
-		"xpos"			"0"
-		"ypos"			"0"
-		"wide"	 		"f0"
-		"tall"	 		"f0"
-	}
 	
 	"MatchMakingContainer"
 	{
@@ -1449,4 +1464,20 @@
         "wide"                  "f0"
         "tall"                  "f0"
     }
+
+	"QueueHUDStatus"
+	{
+		"fieldName"				"QueueHUDStatus"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"rs1-5"
+		"ypos"					"1"
+		"zpos"					"1001"
+		"wide"					"200"
+		"tall"					"18"
+		"proportionaltoparent"	"1"
+		"keyboardinputenabled"	"1"
+		"mouseinputenabled"		"0"
+		"alpha"					"100"
+	}
 }

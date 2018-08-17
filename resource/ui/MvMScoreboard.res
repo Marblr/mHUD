@@ -4,7 +4,7 @@
 	{
 		"ControlName"		"CWaveStatusPanel"
 		"fieldName"			"WaveStatusPanel"
-		"xpos"				"20"
+		"xpos"				"c-300"
 		"ypos"				"0"
 		"zpos"				"0"
 		"wide"				"600"
@@ -33,7 +33,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"DifficultyContainer"
-		"xpos"			"45"
+		"xpos"			"c-275"
 		"ypos"			"228"
 		"wide"			"550"
 		"tall"			"205"
@@ -86,7 +86,7 @@
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"MvMPlayerList"
-		"xpos"			"55"
+		"xpos"			"c-265"
 		"ypos"			"79"
 		"wide"			"530"
 		"tall"			"150"
@@ -103,7 +103,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CreditStatsContainer"
-		"xpos"			"45"
+		"xpos"			"c-275"
 		"ypos"			"228"
 		"wide"			"550"
 		"tall"			"205"

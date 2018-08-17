@@ -2,11 +2,11 @@ Scheme
 {
 	Colors
 	{
-		"KnucklesCrosshairColor"		"227 227 227 255"		// Color of the custom crosshair
-		"KnucklesCrosshairDamage"		"227 60 60 255"			// Color that crosshair flashes when damage is dealt
+		"CrosshairColor"				"0 0 0 200"				// Crosshair color
+		"CrosshairDamage"				"0 0 0 200"				// Crosshair color when damage is dealt
 		
-		"CrosshairHitmarkerColor"		"227 227 227 255"		// Color of the hitmarker
-		"CrosshairHitmarkerBlank"		"227 227 227 0"			// Color that the hitmarker fades to (transparent)
+		"CrosshairHitmarkerColor"		"255 255 255 255"		// Hitmarker color
+		"CrosshairHitmarkerColorOff"	"255 255 255 0"			// Hitmarker color when invisible
 	}
 }
 

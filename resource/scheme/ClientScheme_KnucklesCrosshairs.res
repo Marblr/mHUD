@@ -194,7 +194,7 @@ Scheme
 			"1"
 			{
 				"name"	"KnucklesCrosses"
-				"tall"	"26"
+				"tall"	"27"
 				"antialias" "1"
 				"additive"	"0"
 				"outline"	"0"
@@ -453,6 +453,28 @@ Scheme
 				"outline"	"0"
 			}
 		}
+		"size:10,outline:on"
+		{
+			"1"
+			{
+				"name"	"KnucklesCrosses"
+				"tall"	"10"
+				"antialias" "1"
+				"additive"	"0"
+				"outline"	"1"
+			}
+		}
+		"size:11,outline:on"
+		{
+			"1"
+			{
+				"name"	"KnucklesCrosses"
+				"tall"	"11"
+				"antialias" "1"
+				"additive"	"0"
+				"outline"	"1"
+			}
+		}
 		"size:12,outline:on"
 		{
 			"1"
@@ -623,7 +645,7 @@ Scheme
 			"1"
 			{
 				"name"	"KnucklesCrosses"
-				"tall"	"26"
+				"tall"	"27"
 				"antialias" "0"
 				"additive"	"0"
 				"outline"	"1"

@@ -19,7 +19,8 @@
 		"brighttext"	"0"
 		"fgcolor_override"	"mWhite"
 		"bgcolor_override"	"mClearMeter"
-	}	
+	}
+	
 	"ChargeMeterLabel"
 	{
 		"ControlName"			"CExLabel"

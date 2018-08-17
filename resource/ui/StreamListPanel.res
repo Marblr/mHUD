@@ -6,43 +6,27 @@
 		"fieldName"		"HeaderContainer"
 		"xpos"			"0"
 		"ypos"			"0"
-		"wide"			"300"
-		"tall"			"27"
+		"wide"			"260"
+		"tall"			"26"
 		"visible"		"1"
 		
 		"HeaderLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"HeaderLabel"
-			"font"			"Avenir16"
+			"font"			"Avenir20"
 			"textAlignment"	"center"
-			"labelText"		"#MMenu_Stream_LiveStream"
+			"labelText"		"TWITCH" //#MMenu_Stream_LiveStream
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"4"
-			"wide"			"300"
-			"tall"			"27"
-			"autoResize"	"0"
-			"pinCorner"		"0"
+			"wide"			"260"
+			"tall"			"26"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"30 30 30 255"
-		}
-		
-		"HeaderBG"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"HeaderBG"
-			"xpos"			"0"
-			"ypos"			"0"
-			"zpos"			"2"
-			"wide"			"300"
-			"tall"			"27"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fillcolor"		"227 227 227 255"
+			"fgcolor_override"	"mDark"
+			"bgcolor_override"	"mWhite"
+			"paintbackground"	"1"
 		}
 	}
 	
@@ -50,22 +34,16 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CloseButton"
-		"xpos"			"277"
-		"ypos"			"4"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"10"
-		"wide"			"19"
-		"tall"			"19"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"wide"			"26"
+		"tall"			"26"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
 		"labeltext"		"N"
-		"font"			"Icons12"
+		"font"			"Icons14"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"0"
 		"Command"		"hide_streams"
 		"proportionaltoparent" "1"
 		"actionsignallevel" "2"
@@ -75,13 +53,18 @@
 
 		"border_default"	"NoBorder"
 		"border_armed"		"NoBorder"
-		"paintborder"		"0"
-		"paintbackground"	"1"
-		"paintbackgroundtype"	"2"
 		
-		"defaultFgColor_override"	"mWhite"
-		"armedFgColor_override" 	"mDark"
-		"depressedFgColor_override" "mWhite"
+		"paintbackground"	"0"
+		
+		"defaultFgColor_override" 	"mDark"
+		"armedFgColor_override"		"mRed"
+		
+		"defaultBgColor_override" 	"0 0 0 0"
+		"armedBgColor_override"		"0 0 0 0"
+		
+		"pin_to_sibling"				"HeaderContainer"
+		"pin_corner_to_sibling" 		"PIN_TOPRIGHT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPRIGHT" // Corner of Element you are pinning to
 		
 		"SubImage"
 		{
@@ -106,13 +89,13 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"			"500"
-		"tall"			"500"
+		"wide"			"260"
+		"tall"			"379"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fillcolor"		"30 30 30 255"
+		"fillcolor"		"mClear"
 	}
 	
 	"TitleLabel"
@@ -138,37 +121,7 @@
 		"ControlName"	"CTFStreamPanel"
 		"fieldName"		"Stream1"
 		"xpos"			"0"
-		"ypos"			"32"
-		"wide"			"p1"
-		"tall"			"65"
-		"autoResize"	"1"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"proportionaltoparent"	"1"
-	}
-
-	"Stream2"
-	{
-		"ControlName"	"CTFStreamPanel"
-		"fieldName"		"Stream2"
-		"xpos"			"0"
-		"ypos"			"99"
-		"wide"			"p1"
-		"tall"			"65"
-		"autoResize"	"1"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"proportionaltoparent"	"1"
-	}
-
-	"Stream3"
-	{
-		"ControlName"	"CTFStreamPanel"
-		"fieldName"		"Stream3"
-		"xpos"			"0"
-		"ypos"			"166"
+		"ypos"			"5"
 		"wide"			"p1"
 		"tall"			"60"
 		"autoResize"	"1"
@@ -176,6 +129,48 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"proportionaltoparent"	"1"
+		
+		"pin_to_sibling"				"HeaderContainer"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
+
+	"Stream2"
+	{
+		"ControlName"	"CTFStreamPanel"
+		"fieldName"		"Stream2"
+		"xpos"			"0"
+		"ypos"			"3"
+		"wide"			"p1"
+		"tall"			"60"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"proportionaltoparent"	"1"
+		
+		"pin_to_sibling"				"Stream1"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
+
+	"Stream3"
+	{
+		"ControlName"	"CTFStreamPanel"
+		"fieldName"		"Stream3"
+		"xpos"			"0"
+		"ypos"			"3"
+		"wide"			"p1"
+		"tall"			"60"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"proportionaltoparent"	"1"
+		
+		"pin_to_sibling"				"Stream2"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 
 	"Stream4"
@@ -183,14 +178,18 @@
 		"ControlName"	"CTFStreamPanel"
 		"fieldName"		"Stream4"
 		"xpos"			"0"
-		"ypos"			"233"
+		"ypos"			"3"
 		"wide"			"p1"
-		"tall"			"65"
+		"tall"			"60"
 		"autoResize"	"1"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"proportionaltoparent"	"1"
+		
+		"pin_to_sibling"				"Stream3"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 
 	"Stream5"
@@ -198,48 +197,46 @@
 		"ControlName"	"CTFStreamPanel"
 		"fieldName"		"Stream5"
 		"xpos"			"0"
-		"ypos"			"300"
+		"ypos"			"3"
 		"wide"			"p1"
-		"tall"			"65"
+		"tall"			"60"
 		"autoResize"	"1"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"proportionaltoparent"	"1"
+		
+		"pin_to_sibling"				"Stream4"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 
 	"Stream_URLButton"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"Stream_URLButton"
-		"xpos"			"5"
-		"ypos"			"366"
-		"wide"			"290"
-		"tall"			"22"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"xpos"			"-5"
+		"ypos"			"-6"
+		"wide"			"250"
+		"tall"			"26"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"#MMenu_Stream_ViewMore"
-		"textinsetx"	"20"
-		"use_proportional_insets" "1"
+		"labelText"		"MORE STREAMS" //#MMenu_Stream_ViewMore
 		"font"			"Avenir14"
 		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
 		"command"		"view_more"
 
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
-		"defaultBgColor_override"	"22 22 22 255"
-		"armedBgColor_override"		"227 227 227 255"
-		"depressedBgColor_override"	"22 22 22 255"
+		"defaultBgColor_override"	"mDark"
+		"armedBgColor_override"		"mWhite"
 		
-		"defaultFgColor_override"	"227 227 227 255"
-		"armedFgColor_override" 	"30 30 30 255"
-		"depressedFgColor_override" "227 227 227 255"
+		"defaultFgColor_override"	"mWhite"
+		"armedFgColor_override" 	"mDark"
+		
+		"pin_to_sibling"				"Background"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}	
 }

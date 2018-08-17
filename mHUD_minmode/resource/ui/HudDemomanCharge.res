@@ -5,7 +5,7 @@
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ChargeMeter"
 		"font"			"Default"
-		"xpos"			"21"
+		"xpos"			"1"
 		"ypos"			"10"
 		"zpos"			"2"
 		"wide"			"75"
@@ -19,12 +19,13 @@
 		"brighttext"	"0"
 		"fgcolor_override"	"mWhite"
 		"bgcolor_override"	"mClearMeter"
-	}	
+	}
+	
 	"ChargeMeterLabel"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ChargeMeterLabel"
-		"xpos"					"21"
+		"xpos"					"1"
 		"ypos"					"11"
 		"zpos"					"3"
 		"wide"					"75"

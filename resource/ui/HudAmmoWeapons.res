@@ -18,6 +18,7 @@
 		"teambg_3"		"../hud/ammo_blue_bg"
 		"teambg_3_lodef"	"../hud/ammo_blue_bg_lodef"			
 	}
+	
 	"HudWeaponLowAmmoImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -37,15 +38,13 @@
 		"teambg_3_lodef"	"../hud/ammo_blue_bg_lodef"			
 	}
 	
-	
-	
 	"PlayerAmmoBG"
 	{
 		"ControlName"			"ImagePanel"
 		"fieldName"				"PlayerAmmoBG"
 		"xpos"					"40"
 		"ypos"					"7"
-		"zpos"					"2"
+		"zpos"					"0"
 		"wide"					"75"
 		"tall"					"38"
 		"autoResize" 			"0"
@@ -54,8 +53,6 @@
 		"enabled" 				"1"
 		"fillcolor" 			"mClearAmmo"
 	}
-	
-	
 	
 	"AmmoInClip"
 	{
@@ -73,14 +70,15 @@
 		"textAlignment"	"east"	
 		"labelText"		"%Ammo%"
 	}
+	
 	"AmmoInClipShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoInClipShadow"
 		"font"			"NumbersAmmoShadow"
 		"fgcolor"		"mDarkAmmo"
-		"xpos"			"24"
-		"ypos"			"9"
+		"xpos"			"26"
+		"ypos"			"7"
 		"zpos"			"4"
 		"wide"			"63"
 		"tall"			"38"
@@ -89,8 +87,6 @@
 		"textAlignment"	"east"	
 		"labelText"		"%Ammo%"
 	}
-	
-	
 	
 	"AmmoInReserve"
 	{
@@ -107,15 +103,16 @@
 		"enabled"		"1"
 		"textAlignment"	"west"		
 		"labelText"		"%AmmoInReserve%"
-	}		
+	}
+	
 	"AmmoInReserveShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoInReserveShadow"
 		"font"			"NumbersAmmoReserveShadow"
 		"fgcolor"		"mDarkAmmo"
-		"xpos"			"90"
-		"ypos"			"8"
+		"xpos"			"91"
+		"ypos"			"7"
 		"zpos"			"4"
 		"wide"			"64"
 		"tall"			"39"
@@ -124,8 +121,6 @@
 		"textAlignment"	"west"		
 		"labelText"		"%AmmoInReserve%"
 	}
-	
-	
 	
 	"AmmoNoClip"
 	{
@@ -143,14 +138,15 @@
 		"textAlignment"	"center"		
 		"labelText"		"%Ammo%"
 	}
+	
 	"AmmoNoClipShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoNoClipShadow"
 		"font"			"NumbersAmmoShadow"
 		"fgcolor"		"mDarkAmmo"
-		"xpos"			"12"
-		"ypos"			"9"
+		"xpos"			"14"
+		"ypos"			"7"
 		"zpos"			"4"
 		"wide"			"130"
 		"tall"			"38"

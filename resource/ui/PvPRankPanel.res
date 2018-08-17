@@ -4,13 +4,11 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"ModelContainer"
-
 		"xpos"			"cs-0.5"
-		"ypos"			"cs-0.5-28"
-
+		"ypos"			"cs-0.5"
 		"zpos"			"3"		
-		"wide"			"o1"
-		"tall"			"500"
+		"wide"			"f0"
+		"tall"			"f0"
 		"proportionaltoparent"	"1"
 		"actionsignallevel"	"2"
 
@@ -50,13 +48,23 @@
 			"ypos"			"cs-0.5"
 			"zpos"			"0"		
 			"wide"			"o1"
-			"tall"			"200"
+			"tall"			"p0.12"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"fov"			"70"
 			"proportionaltoparent"	"1"
+
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+				"ypos"		"cs-0.5"
+				"wide"		"200"
+				"tall"		"200"
+			}
+
+			"paintbackground"	"0"
 
 			"render_texture"	"0"
 		
@@ -68,10 +76,15 @@
 				"angles_x"	"0"
 				"angles_y"	"180"
 				"angles_z"	"0"
-				"origin_x"		"50"
+				"origin_x"		"45"
 				"origin_y"		"0"
 				"origin_z"		"0"
 				"spotlight"	"1"
+
+				if_mini
+				{
+					"origin_x"		"55"
+				}
 
 				"animation"
 				{
@@ -102,6 +115,8 @@
 			"tall"			"f0"
 			"visible"		"1"
 			"proportionaltoparent"	"1"
+
+			"paintbackground"	"0"
 
 			"ParticleEffects"
 			{
@@ -134,19 +149,22 @@
 				}
 			}
 
-			"paintbackground"	"0"	
+			"paintbackground"	"1"
 		}
 
 		"MedalButton"
 		{
-			"ControlName"	"Panel"
+			"ControlName"	"Button"
 			"fieldName"		"MedalButton"
 			"xpos"			"cs-0.5"
-			"ypos"			"cs-0.5"
+			"ypos"			"cs-0.5+2"
 			"zpos"			"100"
 			"wide"			"o1"
-			"tall"			"60"
+			"tall"			"42"
 			"proportionaltoparent"	"1"
+			"command"	"medal_clicked"
+			"actionsignallevel"	"2"
+			"labeltext"	""
 
 			"paintbackground"	"0"
 			"backgroundenabled"	"0"
@@ -160,28 +178,103 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"			"f0"
-		"tall"			"480"
+		"wide"			"155"
+		"tall"			"26"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
-		"proportionaltoparent"	"1"
+		"border"		"NoBorder"
+		"proportionaltoparent"	"0"
 
-		if_mini
+		//if_mini
+		//{
+		//	"xpos"			"cs-0.5"
+		//	"ypos"			"cs-0.5"
+		//	"tall"			"35"
+		//	"wide"			"505"
+		//}
+		
+		"RankBGPanel"
 		{
-			"ypos"			"cs-0.5"
-			"tall"			"35"
-			"wide"			"505"
+			"ControlName"	"ImagePanel"
+			"fieldname"		"RankBGPanel"
+			"xpos"			"0"
+			"ypos"			"0"
+			"zpos"			"0"
+			"wide"			"117"
+			"tall"			"26"
+			"visible"		"1"
+			"enabled"		"1"
+			"fillcolor"		"mClear"
+		}
+
+		"NameLabel"
+		{
+			"ControlName"	"Label"
+			"fieldName"		"NameLabel"
+			"xpos"			"30"
+			"ypos"			"0"
+			"zpos"			"100"
+			"wide"			"54"
+			"tall"			"26"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"AvenirMedCn12"
+			"fgcolor_override"	"mWhite"
+			"textAlignment"		"west"
+			"labelText"			"%name%"
+
+			//if_mini
+			//{
+			//	"visible"	"0"
+			//}
+		}
+		
+		"LevelDivider"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldname"		"LevelDivider"
+			"xpos"			"89"
+			"ypos"			"2"
+			"zpos"			"0"
+			"wide"			"1"
+			"tall"			"22"
+			"visible"		"1"
+			"enabled"		"1"
+			"fillcolor"		"0 0 0 0"
+			"border"		"mGrayLeft"
+		}
+
+		"LevelLabel"
+		{
+			"ControlName"	"Label"
+			"fieldName"		"LevelLabel"
+			"xpos"			"91"
+			"ypos"			"0"
+			"zpos"			"100"
+			"wide"			"26"
+			"tall"			"27"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"JustNumbers12"
+			"fgcolor_override"	"mWhite"
+			"textAlignment"		"center"
+			"labelText"			"%level%"
+
+			//if_mini
+			//{
+			//	"xpos"	"67"
+			//	"ypos"	"4"
+			//}
 		}
 
 		"StatsContainer"
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"StatsContainer"
-			"xpos"			"0"
+			"xpos"			"rs1-5"
 			"ypos"			"0"
-			"wide"			"f0"
-			"tall"			"f0"
+			"wide"			"f70"
+			"tall"			"0" //f0
 			"proportionaltoparent"	"1"
 
 			if_mini
@@ -195,47 +288,28 @@
 			{
 				"Controlname"	"EditablePanel"
 				"fieldName"		"XPBar"
-				"xpos"			"c-347"
-				"ypos"			"64"
-				"wide"			"691"
-				"tall"			"38"
+				"xpos"			"cs-0.5"
+				"ypos"			"rs1-3"
+				"wide"			"p1"
+				"tall"			"30"
 				"proportionaltoparent"	"1"
-				"bgcolor_override"	"mClear"
-				"border"		"mWhiteBorder"
-				"paintborder"	"1"
 
-				"LevelLabel"
-				{
-					"ControlName"	"Label"
-					"fieldName"		"LevelLabel"
-					"xpos"			"0"
-					"ypos"			"17"
-					"wide"			"f0"
-					"zpos"			"100"
-					"tall"			"20"
-					"visible"		"1"
-					"enabled"		"1"
-					"font"			"Avenir14"
-					"fgcolor_override"	"mWhite"
-					"textAlignment"	"center"
-					"labelText"		"%level%"
-					"proportionaltoparent"	"1"
-				}
+	
 
 				"CurrentXPLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"CurrentXPLabel"
-					"xpos"			"9"
-					"ypos"			"16"
+					"xpos"			"0"
+					"ypos"			"rs1"
 					"zpos"			"0"
-					"wide"			"f0"
+					"wide"			"100"
 					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"AvenirMed11"
-					"fgcolor_override"	"mWhite"
-					"textAlignment"	"west"
+					"font"			"ItemFontAttribSmall"
+					"fgcolor_override"	"TanLight"
+					"textAlignment"	"south-west"
 					"labelText"		"%current_xp%"
 					"proportionaltoparent"	"1"
 				}
@@ -244,16 +318,16 @@
 				{
 					"ControlName"	"Label"
 					"fieldName"		"NextLevelXPLabel"
-					"xpos"			"-10"
-					"ypos"			"16"
+					"xpos"			"rs1"
+					"ypos"			"rs1"
 					"zpos"			"0"
-					"wide"			"f0"
+					"wide"			"100"
 					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"AvenirMed11"
-					"fgcolor_override"	"mWhite"
-					"textAlignment"	"east"
+					"font"			"ItemFontAttribSmall"
+					"fgcolor_override"	"TanLight"
+					"textAlignment"	"south-east"
 					"labelText"		"%next_level_xp%"
 					"proportionaltoparent"	"1"
 				}
@@ -263,9 +337,9 @@
 					"Controlname"	"EditablePanel"
 					"fieldName"		"ProgressBarsContainer"
 					"xpos"			"0"
-					"ypos"			"5"
+					"ypos"			"rs1-10"
 					"wide"			"p1"
-					"tall"			"12"
+					"tall"			"7"
 					"proportionaltoparent"	"1"
 
 					"ProgressBar"
@@ -274,13 +348,13 @@
 						"fieldName"		"ProgressBar"
 						"xpos"			"0"
 						"ypos"			"cs-0.5"
-						"wide"			"f8"
-						"tall"			"f0"
+						"wide"			"f0"
+						"tall"			"f-2"
 						"zpos"			"1"
 						"proportionaltoparent"	"1"
 						"progress"		"1"
 
-						"fgcolor_override"	"mClear"
+						"fgcolor_override"	"20 20 20 180"
 						"bgcolor_override"	"0 0 0 0"
 					}
 
@@ -290,13 +364,12 @@
 						"fieldName"		"ContinuousProgressBar"
 						"xpos"			"cs-0.5"
 						"ypos"			"cs-0.5"
-						"wide"			"f12"
-						"tall"			"f4"
+						"wide"			"f2"
+						"tall"			"f2"
 						"proportionaltoparent"	"1"
 						"progress"		"0"
 
-						"fgcolor_override"	"mBlue"
-						"bgcolor_override"	"mDark"
+						"fgcolor_override"	"CreditsGreen"
 					}
 
 					"Frame"
@@ -318,14 +391,13 @@
 			{
 				"ControlName"	"EditablePanel"
 				"fieldName"		"Stats"
-				"xpos"			"c-72"
-				"ypos"			"285"
-				"wide"			"142"
-				"tall"			"133"
+				"xpos"			"0"
+				"ypos"			"5"
+				"wide"			"f0"
+				"tall"			"p0.45"
+				"visible"		"0"
 				"proportionaltoparent"	"1"
-				"bgcolor_override"	"mClear"
-				"border"		"mWhiteBorder"
-				"paintborder"	"1"
+				"bgcolor_override"	"0 0 0 150"
 
 				"if_mini"
 				{
@@ -345,172 +417,135 @@
 					"border"		"InnerShadowBorder"
 				}
 
-				"StatsLabel"
-				{
-					"ControlName"	"Label"
-					"fieldName"		"StatsLabel"
-					"xpos"			"0"
-					"ypos"			"10"
-					"zpos"			"0"
-					"wide"			"f0"
-					"tall"			"20"
-					"visible"		"1"
-					"enabled"		"1"
-					"font"			"HudFontMediumBold"
-					"fgcolor_override"	"mWhite"
-					"textAlignment"	"center"
-					"labelText"		"STATS"
-					"proportionaltoparent"	"1"
-				}
 
+	
+				// First column
 				"GamesLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"GamesLabel"
-					"xpos"			"20"
-					"ypos"			"35"
-					"zpos"			"0"
-					"wide"			"100"
-					"tall"			"13"
-					"visible"		"1"
-					"enabled"		"1"
-					"font"			"AvenirMed12"
-					"fgcolor_override"	"mWhite"
-					"textAlignment"	"north-west"
-					"labelText"		"%stat_games%"
-					"proportionaltoparent"	"1"
-				}
-
-				"ScoreLabel"
-				{
-					"ControlName"	"Label"
-					"fieldName"		"ScoreLabel"
-					"xpos"			"0"
+					"xpos"			"10"
 					"ypos"			"0"
 					"zpos"			"0"
 					"wide"			"100"
-					"tall"			"13"
+					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"AvenirMed12"
-					"fgcolor_override"	"mWhite"
+					"font"			"HudFontSmallest"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
-					"labelText"		"%stat_score%"
+					"labelText"		"%stat_games%"
 					"proportionaltoparent"	"1"
-					
-					"pin_to_sibling"	"GamesLabel"
-					"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-					"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 				}
 
 				"KillsLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"KillsLabel"
-					"xpos"			"0"
-					"ypos"			"0"
+					"xpos"			"10"
+					"ypos"			"10"
 					"zpos"			"0"
 					"wide"			"100"
-					"tall"			"13"
+					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"AvenirMed12"
-					"fgcolor_override"	"mWhite"
+					"font"			"HudFontSmallest"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_kills%"
 					"proportionaltoparent"	"1"
-					
-					"pin_to_sibling"	"ScoreLabel"
-					"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-					"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 				}
 
 				"DeathsLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"DeathsLabel"
-					"xpos"			"0"
-					"ypos"			"0"
+					"xpos"			"10"
+					"ypos"			"20"
 					"zpos"			"0"
 					"wide"			"100"
-					"tall"			"13"
+					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"AvenirMed12"
-					"fgcolor_override"	"mWhite"
+					"font"			"HudFontSmallest"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_deaths%"
 					"proportionaltoparent"	"1"
-					
-					"pin_to_sibling"	"KillsLabel"
-					"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-					"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 				}
 
+				// Second column
 				"DamageLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"DamageLabel"
-					"xpos"			"0"
+					"xpos"			"c-20"
 					"ypos"			"0"
 					"zpos"			"0"
 					"wide"			"100"
-					"tall"			"13"
+					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"AvenirMed12"
-					"fgcolor_override"	"mWhite"
+					"font"			"HudFontSmallest"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_damage%"
 					"proportionaltoparent"	"1"
-					
-					"pin_to_sibling"	"DeathsLabel"
-					"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-					"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 				}
 
 				"HealingLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"HealingLabel"
-					"xpos"			"0"
-					"ypos"			"0"
+					"xpos"			"c-20"
+					"ypos"			"10"
 					"zpos"			"0"
 					"wide"			"100"
-					"tall"			"13"
+					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"AvenirMed12"
-					"fgcolor_override"	"mWhite"
+					"font"			"HudFontSmallest"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_healing%"
 					"proportionaltoparent"	"1"
-					
-					"pin_to_sibling"	"DamageLabel"
-					"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-					"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 				}
 
 				"SupportLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"SupportLabel"
-					"xpos"			"0"
-					"ypos"			"0"
+					"xpos"			"c-20"
+					"ypos"			"20"
 					"zpos"			"0"
 					"wide"			"100"
-					"tall"			"13"
+					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"AvenirMed12"
-					"fgcolor_override"	"mWhite"
+					"font"			"HudFontSmallest"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_support%"
 					"proportionaltoparent"	"1"
-					
-					"pin_to_sibling"	"HealingLabel"
-					"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-					"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+				}
+
+				// Third column
+				"ScoreLabel"
+				{
+					"ControlName"	"Label"
+					"fieldName"		"ScoreLabel"
+					"xpos"			"rs1"
+					"ypos"			"0"
+					"zpos"			"0"
+					"wide"			"100"
+					"tall"			"20"
+					"visible"		"1"
+					"enabled"		"1"
+					"font"			"HudFontSmallest"
+					"fgcolor_override"	"TanLight"
+					"textAlignment"	"north-west"
+					"labelText"		"%stat_score%"
+					"proportionaltoparent"	"1"
 				}
 			}
 		}

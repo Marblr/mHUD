@@ -5,8 +5,8 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r150"
-		"ypos"			"r94"
+		"xpos"			"r151"
+		"ypos"			"r77"
 		"wide"			"200"
 		"tall"			"20"
 		"MeterFG"		"White"
@@ -51,7 +51,7 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"Avenir12"
+		"font"					"AvenirCaps12"
 		"fgcolor_override"		"mChargeLabel"
 	}
 

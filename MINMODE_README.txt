@@ -1,1 +1,0 @@
-To use the alternative version of mHUD, simply bring the contents of mHUD_minmode to the root HUD folder and overwrite the files.

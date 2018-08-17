@@ -63,7 +63,7 @@
 			"tall"					"60"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClear"
+			"fillcolor"				"mNotBuiltBG"
 		}
 		
 		"NotBuiltHealthBG"
@@ -77,7 +77,7 @@
 			"tall"					"60"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClear"
+			"fillcolor"				"mNotBuiltHealthBG"
 		}
 
 		"NotBuiltLabel"
@@ -121,7 +121,7 @@
 			"tall"					"60"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClearGray"
+			"fillcolor"				"mBuiltBG"
 		}
 		
 		"BuiltHealthBG"
@@ -135,7 +135,7 @@
 			"tall"					"60"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClear"
+			"fillcolor"				"mBuiltHealthBG"
 		}
 		
 		"Icon_Upgrade_1"
@@ -264,6 +264,7 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+				"fgcolor_override"	"mWhite"
 			}
 		}
 		
@@ -292,7 +293,7 @@
 				"image"			"../hud/hud_obj_status_kill_64"
 				"drawcolor"		"ProgressOffWhite"
 			}
-						
+			
 			"KillsLabel"
 			{	
 				"ControlName"	"CExLabel"
@@ -311,7 +312,7 @@
 				"dulltext"		"0"
 				"brighttext"	"0"
 			}
-					
+			
 			"ShellIcon"	
 			{
 				"ControlName"	"ImagePanel"
@@ -344,6 +345,7 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+				"fgcolor_override"	"mWhite"
 			}
 		}
 	}

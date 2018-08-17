@@ -7,7 +7,7 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"160"
-		"tall"			"60"
+		"tall"			"74"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -32,7 +32,7 @@
 		"ControlName"	"CIconPanel"
 		"fieldName"		"Icon_Sentry_1"
 		"xpos"			"22"
-		"ypos"			"12"
+		"ypos"			"29"
 		"wide"			"36"
 		"tall"			"36"
 		"visible"		"1"
@@ -47,7 +47,7 @@
 		"ControlName"	"CIconPanel"
 		"fieldName"		"Icon_Sentry_2"
 		"xpos"			"22"
-		"ypos"			"12"
+		"ypos"			"29"
 		"wide"			"36"
 		"tall"			"36"
 		"visible"		"0"
@@ -62,7 +62,7 @@
 		"ControlName"	"CIconPanel"
 		"fieldName"		"Icon_Sentry_3"
 		"xpos"			"22"
-		"ypos"			"12"
+		"ypos"			"29"
 		"wide"			"36"
 		"tall"			"36"
 		"visible"		"0"
@@ -77,9 +77,9 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"NotBuiltPanel"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"20"
 		"wide"			"160"
-		"tall"			"60"
+		"tall"			"50"
 		"visible"		"1"
 		
 		"NotBuiltBG"
@@ -90,10 +90,10 @@
 			"ypos"					"0"
 			"zpos"					"-10"		
 			"wide"					"120"
-			"tall"					"60"
+			"tall"					"50"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClear"
+			"fillcolor"				"mNotBuiltBG"
 		}
 		
 		"NotBuiltHealthBG"
@@ -104,10 +104,10 @@
 			"ypos"					"0"
 			"zpos"					"-9"		
 			"wide"					"16"
-			"tall"					"60"
+			"tall"					"50"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClear"
+			"fillcolor"				"mNotBuiltHealthBG"
 		}
 
 		"NotBuiltLabel"
@@ -136,9 +136,9 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"BuiltPanel"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"20"
 		"wide"			"160"
-		"tall"			"60"
+		"tall"			"50"
 		"visible"		"0"
 		
 		"BuiltBG"
@@ -149,10 +149,10 @@
 			"ypos"					"0"
 			"zpos"					"-10"		
 			"wide"					"120"
-			"tall"					"60"
+			"tall"					"50"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClearGray"
+			"fillcolor"				"mBuiltBG"
 		}
 		
 		"BuiltHealthBG"
@@ -163,10 +163,10 @@
 			"ypos"					"0"
 			"zpos"					"-10"		
 			"wide"					"16"
-			"tall"					"60"
+			"tall"					"50"
 			"visible"				"1"
 			"enabled"				"1"
-			"fillcolor"				"mClear"
+			"fillcolor"				"mBuiltHealthBG"
 		}
 		
 		"Icon_Upgrade_1"
@@ -174,7 +174,7 @@
 			"ControlName"	"CIconPanel"
 			"fieldName"		"Icon_Upgrade_1"
 			"xpos"			"46"
-			"ypos"			"4"
+			"ypos"			"5"
 			"zpos"			"1"
 			"wide"			"12"
 			"tall"			"12"
@@ -190,7 +190,7 @@
 			"ControlName"	"CIconPanel"
 			"fieldName"		"Icon_Upgrade_2"
 			"xpos"			"46"
-			"ypos"			"4"
+			"ypos"			"5"
 			"zpos"			"1"
 			"wide"			"12"
 			"tall"			"12"
@@ -206,7 +206,7 @@
 			"ControlName"	"CIconPanel"
 			"fieldName"		"Icon_Upgrade_3"
 			"xpos"			"46"
-			"ypos"			"4"
+			"ypos"			"5"
 			"zpos"			"1"
 			"wide"			"12"
 			"tall"			"12"
@@ -225,7 +225,7 @@
 			"ypos"			"-2"
 			"zpos"			"-2"
 			"wide"			"37"
-			"tall"			"66"
+			"tall"			"56"
 			"visible"		"1"
 			"enabled"		"1"	
 			"icon"			"obj_status_alert_background_tall"
@@ -236,7 +236,7 @@
 			"ControlName"	"CIconPanel"
 			"fieldName"		"WrenchIcon"
 			"xpos"			"121"
-			"ypos"			"18"
+			"ypos"			"12"
 			"zpos"			"1"
 			"wide"			"27"
 			"tall"			"27"
@@ -271,7 +271,7 @@
 			"xpos"			"4"
 			"ypos"			"3"
 			"wide"			"8"
-			"tall"			"55"
+			"tall"			"45"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -286,7 +286,7 @@
 			"ControlName"	"EditablePanel"
 			"fieldName"		"BuildingPanel"
 			"xpos"			"60"
-			"ypos"			"0"
+			"ypos"			"-5"
 			"wide"			"100"
 			"tall"			"60"
 			"visible"		"0"
@@ -326,6 +326,7 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+				"fgcolor_override"	"mWhite"
 			}
 		}
 		
@@ -334,7 +335,7 @@
 			"ControlName"	"EditablePanel"
 			"fieldName"		"RunningPanel"
 			"xpos"			"60"
-			"ypos"			"0"
+			"ypos"			"-5"
 			"wide"			"100"
 			"tall"			"60"
 			"visible"		"0"
@@ -354,7 +355,7 @@
 				"image"			"../hud/hud_obj_status_kill_64"
 				"drawcolor"		"ProgressOffWhite"
 			}
-						
+			
 			"KillsLabel"
 			{	
 				"ControlName"	"CExLabel"
@@ -373,7 +374,7 @@
 				"dulltext"		"0"
 				"brighttext"	"0"
 			}
-					
+			
 			"ShellIcon"	
 			{
 				"ControlName"	"ImagePanel"
@@ -406,6 +407,7 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+				"fgcolor_override"	"mWhite"
 			}
 			
 			"RocketIcon"	
@@ -440,6 +442,7 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+				"fgcolor_override"	"mWhite"
 			}
 
 			"UpgradeIcon"
@@ -474,6 +477,7 @@
 				"textAlignment"	"Left"
 				"dulltext"		"0"
 				"brighttext"	"0"
+				"fgcolor_override"	"mWhite"
 			}
 		}
 	}

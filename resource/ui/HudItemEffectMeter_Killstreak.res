@@ -21,7 +21,7 @@
 		"ypos"			"0"
 		"zpos"			"0"
 		"wide"			"76"
-		"tall"			"44"
+		"tall"			"0"
 		"visible"		"0"
 		"visible_minmode"	"0"
 		"enabled"		"1"
@@ -44,7 +44,7 @@
 		"tall"				"15"
 		"visible"			"1"
 		"enabled"			"1"
-		"fillcolor"			"mClearStreak"				
+		"fillcolor"			"mClearMeterCount"
 	}
 	
 	"ItemEffectMeterLabel"

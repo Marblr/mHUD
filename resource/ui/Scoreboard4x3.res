@@ -2,15 +2,15 @@
 {
 	"BlueScoreBG"
 	{
-		"xpos"				"25"
-		"ypos"				"75"
+		"xpos"				"2"
+		"ypos"				"165"
 		"ypos_minmode"		"135"
 		"wide"				"292"
 		"tall"				"30"
 	}
 	"RedScoreBG"
 	{
-		"ypos"				"75"
+		"ypos"				"165"
 		"ypos_minmode"		"135"
 		"wide"				"292"
 		"tall"				"30"
@@ -25,21 +25,26 @@
 	}
 	"BottomBG"
 	{
-		"xpos"				"25"
-		"wide"				"590"
+		"xpos"				"0"
+		"wide"				"587"
+		
+		if_mvm
+		{
+			"xpos"			"-19"
+		}
 	}
 	"BlueTeamLabel"
 	{
-		"xpos"			"32"
+		"xpos"			"-8"
 	}
 	"BlueTeamPlayerCount"
 	{
-		"xpos"			"25"
+		"xpos"			"0"
 		"wide"			"292"
 	}
 	"RedTeamLabel"
 	{
-		"xpos"			"407"
+		"xpos"			"-8"
 	}
 	"RedTeamPlayerCount"
 	{
@@ -47,29 +52,40 @@
 	}
 	"BluePlayerList"
 	{
-		"xpos"			"23"
-		"ypos"			"118"
-		"ypos_minmode"	"180"
+		"xpos"			"c-296"
+		"ypos"			"c-123"
+		"ypos_minmode"	"c-71"
 		"wide"			"296"
 		"tall"			"215"
 		"tall_minmode"	"125"
 	}
 	"RedPlayerList"
 	{
-		"xpos"			"321"
-		"ypos"			"118"
-		"ypos_minmode"	"180"
+		"xpos"			"c0"
+		"ypos"			"c-123"
+		"ypos_minmode"	"c-71"
 		"wide"			"296"
 		"tall"			"215"
 		"tall_minmode"	"125"
 	}
 	"ServerLabel"
 	{
-		"xpos"			"29"
+		"xpos"			"-2"
 		"wide"			"284"
 	}
 	"ServerTimeLeft"
 	{
 		"wide"			"284"
+	}
+	"LocalPlayerStatsPanel"
+	{
+		"KillsLabel"
+		{
+			"wide"			"55"
+		}
+		"DominationLabel"
+		{
+			"xpos"			"20"
+		}
 	}
 }

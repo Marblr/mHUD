@@ -96,6 +96,6 @@
 		"tall"			"18"
 		"visible"		"1"
 		"enabled"		"1"
-		"fillColor"		"0 0 0 200"
+		"fillColor"		"mClearOther2"
 	}
 }

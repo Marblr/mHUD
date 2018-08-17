@@ -13,6 +13,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		"paintbackground"	"0"
 	}
 	
 	"DarkenPanel"
@@ -28,7 +29,7 @@
 		"pinCorner"			"0"
 		"visible"			"1"
 		"enabled"			"1"
-		"fillcolor"			"0 0 0 128"
+		"fillcolor"			"0 0 0 150"
 	}
 	
 	"BGPanel"
@@ -36,10 +37,10 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"			"BGPanel"
 		"xpos"				"c-200"
-		"ypos"				"c-146"
+		"ypos"				"c-150"
 		"zpos"				"-1"
 		"wide"				"400"
-		"tall"				"292"
+		"tall"				"300"
 		"autoResize"		"0"
 		"pinCorner"			"0"
 		"visible"			"1"
@@ -47,37 +48,47 @@
 		"fillcolor"			"mClear"
 	}
 	
+	"Title"
+	{
+		"ControlName"	"Label"
+		"fieldName"		"Title"
+		"xpos"			"c-200"
+		"ypos"			"c-150"
+		"zpos"			"1"
+		"wide"			"400"
+		"tall"			"26"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"MAP INFO"
+		"font"			"AvenirCaps20"
+		"textAlignment"	"center"
+		"fgcolor_override"		"mDark"
+		"bgcolor_override"		"mWhite"
+		"paintbackground"	"1"
+	}
+	
 	"MapInfoTitle"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"MapInfoTitle"
-		"xpos"			"c-200"
-		"ypos"			"c-146"
+		"xpos"			"-10"
+		"ypos"			"0"
 		"zpos"			"2"
-		"wide"			"400"
-		"tall"			"24"
+		"wide"			"380"
+		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%mapname%"
 		"textAlignment"	"center"
-		"font"			"AvenirCaps20"
-		"fgcolor"		"mDark"
-	}
-	
-	"MapInfoTitleBG"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"MapInfoTitleBG"
-		"xpos"			"c-200"
-		"ypos"			"c-146"
-		"zpos"			"1"
-		"wide"			"400"
-		"tall"			"24"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"mWhite"
+		"font"			"Avenir18"
+		"fgcolor"		"mWhite"
+		"border"		"mGrayBottom"
+		
+		"pin_to_sibling"				"Title"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
 	"MapInfoType"
@@ -91,7 +102,7 @@
 		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"%gamemode%"
 		"textAlignment"	"center"
@@ -103,10 +114,10 @@
 	{
 		"ControlName"	"CExRichText"
 		"fieldName"		"MapInfoText"
-		"xpos"			"c-185"
-		"ypos"			"c-65"
+		"xpos"			"-4"
+		"ypos"			"10"
 		"zpos"			"3"
-		"wide"			"190"
+		"wide"			"185"
 		"tall"			"200"
 		"autoResize"	"3"
 		"pinCorner"		"0"
@@ -114,85 +125,163 @@
 		"enabled"		"1"
 		"paintborder"	"0"
 		"fgcolor"		"mWhite"
-		"font"			"AvenirLight12"
+		"font"			"AvenirLight11"
+		
+		"pin_to_sibling"				"MapInfoTitle"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
 	"MapImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MapImage"
-		"xpos"			"c5"
-		"ypos"			"c-70"
+		"xpos"			"-4"
+		"ypos"			"10"
 		"zpos"			"2"
-		"wide"			"190"
-		"tall"			"190"
+		"wide"			"185"
+		"tall"			"200"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			""
 		"scaleImage"	"1"
-	}
-
-	"MapInfoContinue"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"MapInfoContinue"
-		"xpos"			"9999"
-		"ypos"			"c150"
-		"zpos"			"6"
-		"wide"			"198"
-		"tall"			"24"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"CONTINUE (&E)" //#TF_Continue
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"command"		"continue"
-		"default"		"1"
-		"font"			"AvenirCaps16"
 		
-		"defaultBgColor_override"		"mClear"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClear"
-		
-		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
-		"depressedFgColor_override"		"mWhite"
+		"pin_to_sibling"				"MapInfoTitle"
+		"pin_corner_to_sibling" 		"PIN_TOPRIGHT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 	}
 
 	"MapInfoContinue2"
 	{
-		"ControlName"	"CExImageButton"
+		"ControlName"	"CExButton"
 		"fieldName"		"MapInfoContinue2"
-		"xpos"			"c2"
-		"ypos"			"c150"
+		"xpos"			"-5"
+		"ypos"			"-5"
 		"zpos"			"6"
-		"wide"			"198"
-		"tall"			"24"
-		"autoResize"	"0"
-		"pinCorner"		"2"
+		"wide"			"193"
+		"tall"			"26"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"CONTINUE (&E)" //#TF_Continue
+		"labelText"		"NEXT" //#TF_Continue
+		"textAlignment"	"center"
+		"command"		"continue"
+		"font"			"AvenirCaps16"
+		
+		"defaultBgColor_override"		"mDark"
+		"armedBgColor_override"			"mWhite"
+		
+		"defaultFgColor_override"		"mWhite"
+		"armedFgColor_override" 		"mDark"
+		
+		"pin_to_sibling"				"BGPanel"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMRIGHT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
+	}
+	
+	"MapInfoBack2"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoBack2"
+		"xpos"			"-5"
+		"ypos"			"-5"
+		"zpos"			"6"
+		"wide"			"193"
+		"tall"			"26"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"BACK" //#TF_Back
+		"textAlignment"	"center"
+		"command"		"back"
+		"font"			"AvenirCaps16"
+		
+		"defaultBgColor_override"		"mDark"
+		"armedBgColor_override"			"mWhite"
+		
+		"defaultFgColor_override"		"mWhite"
+		"armedFgColor_override" 		"mDark"
+		
+		"pin_to_sibling"				"BGPanel"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
+
+	"MapInfoContinuehotkey"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoContinuehotkey"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"(&E)"
+		"textAlignment"	"center"
+		"command"		"continue"
+		"font"			"AvenirCaps16"
+	}
+	
+	"MapInfoBackhotkey"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoBackhotkey"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"(&Q)"
+		"textAlignment"	"center"
+		"command"		"back"
+		"font"			"AvenirCaps16"
+	}
+
+	"MapInfoContinue"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoContinue"
+		"xpos"			"-5"
+		"ypos"			"-5"
+		"zpos"			"6"
+		"wide"			"193"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		"#TF_Continue"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"command"		"continue"
-		"default"		"0"
 		"font"			"AvenirCaps16"
-		
-		"defaultBgColor_override"		"mClear"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClear"
-		
-		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
-		"depressedFgColor_override"		"mWhite"
 	}
 	
-	"MapInfoWatchIntro" [$WIN32]
+	"MapInfoBack"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoBack"
+		"xpos"			"-5"
+		"ypos"			"-5"
+		"zpos"			"6"
+		"wide"			"193"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		"#TF_Back"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"back"
+		"font"			"AvenirCaps16"
+	}
+	
+	"MapInfoWatchIntro"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"MapInfoWatchIntro"
@@ -213,64 +302,6 @@
 		"default"		"1"
 		"font"			"MenuSmallFont"
 		"fgcolor"		"Black"
-	}
-	
-	"MapInfoBack"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"MapInfoBack"
-		"xpos"			"9999"
-		"ypos"			"c150"
-		"zpos"			"6"
-		"wide"			"198"
-		"tall"			"24"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"0"
-		"enabled"		"0"
-		"labelText"		"BACK (&Q)" //#TF_Back
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"command"		"back"
-		"font"			"AvenirCaps16"
-		
-		"defaultBgColor_override"		"mClear"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClear"
-		
-		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
-		"depressedFgColor_override"		"mWhite"
-	}
-	
-	"MapInfoBack2"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"MapInfoBack2"
-		"xpos"			"c-200"
-		"ypos"			"c150"
-		"zpos"			"6"
-		"wide"			"198"
-		"tall"			"24"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"BACK (&Q)" //#TF_Back
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"command"		"back"
-		"font"			"AvenirCaps16"
-		
-		"defaultBgColor_override"		"mClear"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClear"
-		
-		"defaultFgColor_override"		"mWhite"
-		"armedFgColor_override" 		"mDark"
-		"depressedFgColor_override"		"mWhite"
 	}
 	
 	"MenuBG"
@@ -320,37 +351,5 @@
 		"image"			"loadout_bottom_gradient"
 		"tileImage"		"1"
 		"PaintBackgroundType"	"0"
-	}	
-
-	"Footer" [$X360]
-	{
-		"ControlName"		"CTFFooter"
-		"fieldName"			"Footer"
-		"zpos"				"6"
-		"tall"				"80"
-		"button_separator"	"10"
-		"button_separator_lodef"	"5"
-		"buttongap"			"50"
-		"textadjust"		"3"
-		"buttonoffsety"		"20"
-		"buttonoffsety_hidef"		"0"
-		"buttonoffsety_lodef"		"18"
-		"fonttext"			"MatchmakingDialogMenuLarge"
-		"fonttext_lodef"			"MatchmakingDialogMenuSmall"
-		"fgcolor"			"HudOffWhite" 	
-		
-		"button"
-		{
-			"name"		"intro"
-			"text"		"#TF_WatchIntro_360"
-			"icon"		"#GameUI_Icons_Y_BUTTON"	
-		}
-		
-		"button"
-		{
-			"name"		"continue"
-			"text"		"#TF_Continue_360"
-			"icon"		"#GameUI_Icons_A_BUTTON"	
-		}
-	}	
+	}
 }

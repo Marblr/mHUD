@@ -16,22 +16,6 @@
 		"settitlebarvisible"	"0"
 	}
 	
-	"BGPanel"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"			"BGPanel"
-		"xpos"				"c-200"
-		"ypos"				"c-146"
-		"zpos"				"-1"
-		"wide"				"400"
-		"tall"				"292"
-		"autoResize"		"0"
-		"pinCorner"			"0"
-		"visible"			"1"
-		"enabled"			"1"
-		"fillcolor"			"mClear"
-	}
-	
 	"DarkenPanel"
 	{
 		"ControlName"		"ImagePanel"
@@ -45,18 +29,53 @@
 		"pinCorner"			"0"
 		"visible"			"1"
 		"enabled"			"1"
-		"fillcolor"			"0 0 0 225"
+		"fillcolor"			"0 0 0 150"
+	}
+	
+	"BGPanel"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"			"BGPanel"
+		"xpos"				"c-200"
+		"ypos"				"c-150"
+		"zpos"				"-1"
+		"wide"				"400"
+		"tall"				"300"
+		"autoResize"		"0"
+		"pinCorner"			"0"
+		"visible"			"1"
+		"enabled"			"1"
+		"fillcolor"			"mClear"
+	}
+	
+	"Title"
+	{
+		"ControlName"	"Label"
+		"fieldName"		"Title"
+		"xpos"			"c-200"
+		"ypos"			"c-150"
+		"zpos"			"1"
+		"wide"			"400"
+		"tall"			"26"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"SERVER INFO"
+		"font"			"AvenirCaps20"
+		"textAlignment"	"center"
+		"fgcolor_override"		"mDark"
+		"bgcolor_override"		"mWhite"
+		"paintbackground"	"1"
 	}
 	
 	"TFMessageTitle"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TFMessageTitle"
-		"xpos"			"c-200"
-		"ypos"			"c-146"
+		"xpos"			"-10"
+		"ypos"			"0"
 		"zpos"			"2"
-		"wide"			"400"
-		"tall"			"24"
+		"wide"			"380"
+		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -65,22 +84,13 @@
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"AvenirCaps20"
-		"fgcolor"		"mDark"
-	}
-	
-	"TFMessageTitleBG"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"TFMessageTitleBG"
-		"xpos"			"c-200"
-		"ypos"			"c-146"
-		"zpos"			"1"
-		"wide"			"400"
-		"tall"			"24"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"mWhite"
+		"font"			"Avenir18"
+		"fgcolor"		"mWhite"
+		"border"		"mGrayBottom"
+		
+		"pin_to_sibling"				"Title"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 
 	"TextMessage"
@@ -95,11 +105,11 @@
 	{
 		"ControlName"	"CExRichText"
 		"fieldName"		"TFTextMessage"
-		"xpos"			"c-185"
-		"ypos"			"c-110"
+		"xpos"			"-4"
+		"ypos"			"10"
 		"zpos"			"1"
 		"wide"			"370"
-		"tall"			"240"
+		"tall"			"193"
 		"autoResize"	"3"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -107,7 +117,11 @@
 		"paintborder"	"0"
 		"textAlignment"	"northwest"
 		"fgcolor"		"mWhite"
-		"font"			"AvenirLight12"
+		"font"			"AvenirLight11"
+		
+		"pin_to_sibling"				"TFMessageTitle"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 
 	"HTMLMessage"
@@ -125,38 +139,51 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"paintborder"	"0"
+		"paintbackground"	"0"
 	}
 	
 	"ok"
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"ok"
-		"xpos"			"c-200"
-		"ypos"			"c150"
+		"xpos"			"-5"
+		"ypos"			"-5"
 		"zpos"			"6"
-		"wide"			"400"
-		"tall"			"24"
-		"autoResize"	"0"
-		"pinCorner"		"2"
+		"wide"			"390"
+		"tall"			"26"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"		"0"
-		"labelText"		"CONTINUE (&E)" //#TF_Continue
+		"labelText"		"NEXT" //#TF_Continue
 		"textAlignment"		"center"
-		"dulltext"		"0"
-		"brighttext"		"0"
-		"wrap"		"0"
 		"command"		"okay"
-		"default"		"1"
 		"font"			"AvenirCaps16"
 		
-		"defaultBgColor_override"		"mClear"
-		"armedBgColor_override"			"mClearWhite"
-		"depressedBgColor_override"		"mClear"
+		"defaultBgColor_override"		"mDark"
+		"armedBgColor_override"			"mWhite"
 		
 		"defaultFgColor_override"		"mWhite"
 		"armedFgColor_override" 		"mDark"
-		"depressedFgColor_override"		"mWhite"
+		
+		"pin_to_sibling"				"BGPanel"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_BOTTOMLEFT" // Corner of Element you are pinning to
+	}
+	
+	"okhotkey"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"ok"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"(&E)"
+		"textAlignment"	"center"
+		"command"		"okay"
+		"font"			"AvenirCaps16"
 	}
 	
 	"MenuBG"
