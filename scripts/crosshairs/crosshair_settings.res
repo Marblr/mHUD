@@ -7,7 +7,7 @@
     {
 		// Enable or disable (1 or 0) the crosshair
 		
-		"visible"				"1"
+		"visible"				"0"
 		
 		
 		// Change the crosshair used, its size (10-50), and its outline (on or off)
@@ -21,7 +21,7 @@
     {
 		// Enable or disable (1 or 0) the hitmarker
 		
-		"visible"				"1"
+		"visible"				"0"
 		
 		
 		// Change the hitmarker used (recommended: < = or >), its size (10-50), and its outline (on or off)
