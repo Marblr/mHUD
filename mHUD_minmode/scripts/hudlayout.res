@@ -74,7 +74,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"	"r175"
-		"ypos"	"c175"
+		"ypos"	"c140"
 		"wide"			"332"
 		"tall"	"84"
 	}
@@ -84,7 +84,7 @@
 		"fieldName"		"HudDemomanCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"	"r170"
+		"xpos"	"r151"
 		"ypos"	"c154"
 		"zpos"			"1"			// draw in front of ammo
 		"wide"			"200"
