@@ -6,7 +6,35 @@
 ///////////////////////////////////////////
 
 "Resource/HudLayout.res"
-{
+{	
+	"KnucklesCrosshair"
+    {
+		"controlName"			"CExLabel"
+		"fieldName"				"KnucklesCrosshair"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"1"
+		"wide"					"f0"
+		"tall"					"480"
+		"fgcolor"				"CrosshairColor"
+		"textAlignment"			"center"
+		"enabled"				"1"
+    }
+	
+	"CrosshairHitmarker"
+    {
+		"controlName"			"CExLabel"
+		"fieldName"				"CrosshairHitmarker"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"3"
+		"wide"					"f0"
+		"tall"					"480"
+		"fgcolor"				"CrosshairHitmarkerColorOff"
+		"textAlignment"			"center"
+		"enabled"				"1"
+    }
+	
 	HudPlayerStatus
 	{
 		"fieldName" "HudPlayerStatus"
