@@ -677,7 +677,7 @@
 			"enabled"		"1"
 			"font"			"AvenirMed9"
 			"textAlignment"	"center"
-			"labelText"		"mHUD version 2017.11.04"
+			"labelText"		"mHUD version 2018.10.01"
 			"fgcolor"		"mWhite"
 			"border"		"mGrayBottom"
 		}
