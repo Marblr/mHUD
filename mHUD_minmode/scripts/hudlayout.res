@@ -1,7 +1,7 @@
 ///////////////////////////////////////////
 
 // Don't change
-#base "crosshairs/hudlayout_crosshairs.res"
+#base "crosshairs/crosshair_settings.res"
 
 ///////////////////////////////////////////
 
