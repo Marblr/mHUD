@@ -1175,6 +1175,98 @@
 		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
 	}
 
+	"PlayText"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayText"
+		"xpos"			"-2"
+		"ypos"			"0"
+		"zpos"			"12"
+		"wide"			"50"
+		"tall"			"26"
+		"visible"		"0"
+		"enabled"		"1"
+		"fgcolor"		"mDark"
+		"font"			"AvenirLight8"
+		"textAlignment"	"west"
+		"labelText"		"this button doesn't work thanks valve :)"
+		"wrap"			"1"
+		
+		"pin_to_sibling"				"PlayButton"
+		"pin_corner_to_sibling" 		"PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
+	}
+
+	"ResumeGameButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"ResumeGameButton"
+		"xpos"			"0"
+		"ypos"			"5"
+		"zpos"			"11"
+		"wide"			"251"
+		"tall"			"26"
+		"visible"		"1"
+		"PaintBackgroundType"	"0"
+		
+		"pin_to_sibling"				"PlayButtonAnchor"
+		"pin_corner_to_sibling" 		"PIN_BOTTOMLEFT" // Corner of this Element
+		"pin_to_sibling_corner" 		"PIN_TOPLEFT" // Corner of Element you are pinning to
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"251"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"0"
+			"use_proportional_insets" "1"
+			"font"			"Avenir14"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"NoBorder"
+			"border_armed"		"NoBorder"
+			"paintbackground"	"1"
+			
+			"defaultBgColor_override"	"mDark"
+			"armedBgColor_override"		"mWhite"
+			"depressedBgColor_override"	"mDark"
+			
+			"defaultFgColor_override"	"mWhite"
+			"armedFgColor_override" 	"mDark"
+			"depressedFgColor_override" "mWhite"
+			
+			"image_drawcolor"	"mWhite"
+			"image_armedcolor"	"mDark"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"6"
+				"ypos"			"6"
+				"zpos"			"1"
+				"wide"			"0"
+				"tall"			"0"
+				"visible"		"0"
+				"enabled"		"0"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
 	"PlayButton"
 	{
 		"ControlName"	"CExImageButton"
@@ -2077,72 +2169,6 @@
 		}
 	}
 
-	"ResumeGameButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"ResumeGameButton"
-		"xpos"			"80"
-		"ypos"			"211"
-		"zpos"			"11"
-		"wide"			"270"
-		"tall"			"0"
-		"visible"		"0"
-		"PaintBackgroundType"	"0"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"250"
-			"tall"			"26"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"textinsetx"	"25"
-			"use_proportional_insets" "1"
-			"font"			"Avenir14"
-			"textAlignment"	"center"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"default"		"1"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"NoBorder"
-			"border_armed"		"NoBorder"
-			"paintbackground"	"1"
-			
-			"defaultBgColor_override"	"mDark"
-			"armedBgColor_override"		"mWhite"
-			"depressedBgColor_override"	"mDark"
-			
-			"defaultFgColor_override"	"mWhite"
-			"armedFgColor_override" 	"mDark"
-			"depressedFgColor_override" "mWhite"
-			
-			"image_drawcolor"	"mWhite"
-			"image_armedcolor"	"mDark"
-
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"6"
-				"ypos"			"6"
-				"zpos"			"1"
-				"wide"			"14"
-				"tall"			"14"
-				"visible"		"0"
-				"enabled"		"0"
-				"scaleImage"	"1"
-			}
-		}
-	}
-
 	"QuickplayChangeButton"
 	{
 		"ControlName"	"EditablePanel"
@@ -2970,6 +2996,582 @@
 			"angles_x"		"10"
 			"angles_y"		"130"
 			"angles_z"		"0"
+		}
+	}
+	
+// PRELOAD CP ICONS
+	
+	"icon_obj_a_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_a_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_a"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_b_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_b_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_b"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_blu_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_blu_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_blu"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_blu_locked_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_blu_locked_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_blu_locked"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_c_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_c_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_c"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_cap_blu_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_cap_blu_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_cap_blu"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_cap_mask_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_cap_mask_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_cap_mask"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_cap_red_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_cap_red_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_cap_red"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_d_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_d_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_d"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_e_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_e_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_e"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_neutral_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_neutral_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_neutral"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_neutral_locked_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_neutral_locked_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_neutral_locked"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_red_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_red_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_red"
+				"scaleImage"	"1"
+			}
+		}
+	}
+	
+	"icon_obj_red_locked_preload"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"icon_obj_red_locked_preload"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"11"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"font"			"Default"
+			"textAlignment"	"west"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"../sprites/obj_icons/icon_obj_red_locked"
+				"scaleImage"	"1"
+			}
 		}
 	}
 }

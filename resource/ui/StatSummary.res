@@ -2114,7 +2114,7 @@
 		"xpos"			"c-247"
 		"ypos"			"350"
 		"zpos"			"12"
-		"wide"			"345"
+		"wide"			"390"
 		"tall"			"48"
 		"autoResize"	"0"
 		"pinCorner"		"0"
