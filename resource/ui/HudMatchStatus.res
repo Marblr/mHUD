@@ -232,11 +232,11 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"			"ObjectiveStatusTimePanel"
-		"xpos"				"c-40"
+		"xpos"				"c-20"
 		"ypos"				"3"
 		"zpos"				"2"
-		"wide"				"110"
-		"tall"				"150"
+		"wide"				"100"
+		"tall"				"100"
 		"visible"			"0"
 		"enabled"			"1"
 		"delta_item_x"			"21"
@@ -268,7 +268,7 @@
 			"xpos"			"0"
 			"ypos"			"1"
 			"zpos"			"3"
-			"wide"			"80"
+			"wide"			"40"
 			"tall"			"19"
 			"visible"		"1"
 			"enabled"		"1"
@@ -303,7 +303,7 @@
 		"max_size"	"26"
 
 		"6v6_gap"	"1"
-		"12v12_gap"	"9999"
+		"12v12_gap"	"1"
 
 		"team1_grow_dir" "west"
 		"team1_base_x"	"c-41"

@@ -71,6 +71,17 @@ event HudMedicChargedStop
 }
 
 //--------------------------------------------------------------------------
+// Prevent wrong colors on respawn
+
+event HudSnapShotReminderIn
+{
+    RunEvent HudHealthDyingPulseStop 5.0
+    RunEvent HudHealthBonusPulseStop 5.0
+    RunEvent HudLowAmmoPulseStop 5.0
+    RunEvent HudMedicChargedStop 5.0
+}
+
+//--------------------------------------------------------------------------
 // KOTH Timer
 
 event ActiveTimerBGPulse
@@ -251,23 +262,23 @@ event HudTournament_MoveChatWindow
 
 event TeamStatus_PlayerDead
 {
-	SetVisible DeathPanel  1 0
-	SetVisible SkullPanel  1 0
-	SetVisible respawntime  1 0
+	//SetVisible DeathPanel  1 0
+	//SetVisible SkullPanel  1 0
+	SetVisible respawntime 1 0
 
-	Animate DeathPanel ypos 19 Accel 0 0.2
-	Animate SkullPanel ypos 0 Accel 0 0.2
-	Animate respawntime ypos 16 Accel 0 0.2
+	//Animate DeathPanel ypos 19 Accel 0 0.2
+	//Animate SkullPanel ypos 0 Accel 0 0.2
+	//Animate respawntime ypos 16 Accel 0 0.2
 }
 
 event TeamStatus_PlayerAlive
 {
-	Animate DeathPanel ypos 0 Accel 0 0.2
-	Animate SkullPanel ypos 0 Accel 0 0.2
-	Animate respawntime ypos 0 Accel 0 0.2
+	//Animate DeathPanel ypos 0 Accel 0 0.2
+	//Animate SkullPanel ypos 0 Accel 0 0.2
+	//Animate respawntime ypos 0 Accel 0 0.2
 
-	SetVisible DeathPanel  0 0.2
-	SetVisible SkullPanel  0 0.2
+	//SetVisible DeathPanel  0 0.2
+	//SetVisible SkullPanel  0 0.2
 	SetVisible respawntime 0 0.2
 }
 

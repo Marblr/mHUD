@@ -821,11 +821,11 @@ Scheme
 			}
 		}
 		
-		"AvenirMedCn12"
+		"AvenirDemiCn12"
 		{
 			"1"
 			{
-				"name"			"AvenirNextLTPro-MediumCn"
+				"name"			"AvenirNextLTPro-DemiCn"
 				"tall"			"12"
 				"additive"		"0"
 				"antialias"		"1"
@@ -925,17 +925,6 @@ Scheme
 			"1"
 			{
 				"name"			"AvenirLTStd-Medium"
-				"tall"			"13"
-				"additive"		"0"
-				"antialias"		"1"
-			}
-		}
-		
-		"AvenirMedCn13"
-		{
-			"1"
-			{
-				"name"			"AvenirNextLTPro-MediumCn"
 				"tall"			"13"
 				"additive"		"0"
 				"antialias"		"1"
@@ -4338,6 +4327,86 @@ Scheme
 				"1"
 				{
 					"color" "mWhite"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mWhite2Border
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "mWhite2"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "mWhite2"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "mWhite2"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "mWhite2"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		mGrayBorder
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "mGray"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "mGray"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "mGray"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "mGray"
 					"offset" "0 0"
 				}
 			}
