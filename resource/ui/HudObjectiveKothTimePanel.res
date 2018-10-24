@@ -12,7 +12,7 @@
 	{
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"BlueTimer"
-		"xpos"				"37"
+		"xpos"				"55"
 		"ypos"				"4"
 		"zpos"				"2"
 		"wide"				"80"
@@ -22,7 +22,7 @@
 		
 		if_match
 		{
-			"xpos"			"42"
+			"xpos"			"59"
 			"ypos"			"8"
 		}
 		
@@ -32,7 +32,7 @@
 			"fieldName"		"TimePanelValue"
 			"font"			"Numbers16"
 			"fgcolor"		"mWhite"
-			"xpos"			"0"
+			"xpos"			"-18"
 			"ypos"			"0"
 			"zpos"			"3"
 			"wide"			"80"
@@ -48,7 +48,7 @@
 	{
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"RedTimer"
-		"xpos"				"84"
+		"xpos"				"102"
 		"ypos"				"4"
 		"zpos"				"2"
 		"wide"				"80"
@@ -58,7 +58,7 @@
 		
 		if_match
 		{
-			"xpos"			"79"
+			"xpos"			"96"
 			"ypos"			"8"
 		}
 		
@@ -68,7 +68,7 @@
 			"fieldName"		"TimePanelValue"
 			"font"			"Numbers16"
 			"fgcolor"		"mWhite"
-			"xpos"			"0"
+			"xpos"			"-18"
 			"ypos"			"0"
 			"zpos"			"3"
 			"wide"			"80"

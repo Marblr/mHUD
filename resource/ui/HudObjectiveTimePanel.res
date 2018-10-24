@@ -4,7 +4,7 @@
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"TimePanelBG"
-		"xpos"			"0"
+		"xpos"			"2"
 		"ypos"			"1"
 		"zpos"			"2"
 		"wide"			"40"
